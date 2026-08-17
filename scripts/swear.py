@@ -150,7 +150,7 @@ CORRECTION_RX = re.compile(
 )
 
 # User-side guards. Same failure mode as the assistant side: a word that is an
-# insult in prose and vocabulary in code. "lazy" was reported as Zach's #2 term
+# insult in prose and vocabulary in code. "lazy" was reported as the user's #2 term
 # (58 hits) when most are loading="lazy" and "lazy engine".
 USER_GUARD = {
     "lazy":    re.compile(r'loading=|lazy load|lazy-load|lazily|lazy engine|lazy init|'
@@ -195,7 +195,7 @@ PATTERNS = [(name, build(words)) for name, words in CATEGORIES]
 
 
 # Caps words that carry frustration on their own. A bare all-caps heuristic is
-# useless here: Zach's own prompt templates are full of LOW / HIGH / MED / DONE /
+# useless here: the user's own prompt templates are full of LOW / HIGH / MED / DONE /
 # PASS / FILES CHANGED headers, which flagged 1027 messages as "shouting" when
 # only a couple hundred were angry.
 FRUSTRATION_CAPS = set("""

@@ -145,7 +145,7 @@ def normalize(text):
     """
     for bad, good in SMART.items():
         text = text.replace(bad, good)
-    # Drop apostrophes entirely rather than just straightening them. Zach types
+    # Drop apostrophes entirely rather than just straightening them. The user types
     # "didnt" / "doesnt" / "isnt", and requiring the apostrophe silently scored
     # real corrections as neutral. Patterns get the same treatment so both
     # spellings collapse to one token. "youre" stays distinct from "your".

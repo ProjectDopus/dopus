@@ -194,7 +194,7 @@ def main():
                             "phrase": "fucking", "n": 89}]}
         planted = {"tally": [{"phrase": "well this is what antigravity looks like "
                                         "but maybe we proceed and finish"}],
-                   "path": "-Users-zach-GitHub-BearCode",
+                   "path": "-Users-alice-GitHub-SomeRepo",
                    "multiline": "line one\nline two"}
         ok_clean = not guard(clean, vocab)
         caught = guard(planted, vocab)

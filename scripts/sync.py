@@ -97,7 +97,7 @@ def slug(path):
 
 def addr(h):
     """What we actually dial: the 'ssh' field (e.g. the Tailscale alias
-    umzflash.ts) when present, else the host's name. Names stay stable
+    host1.ts) when present, else the host's name. Names stay stable
     labels; addressing lives in ~/.ssh/config."""
     return h.get("ssh", h["name"])
 
