@@ -1,0 +1,34 @@
+# Intake gate for contributed data. A contribution is a pull request that adds
+# one file to bundles/. This job runs the validator over every bundle the PR
+# touches: schema, filename/participant/date agreement, dictionary provenance,
+# and -- the part that matters -- the deny-by-default text guard over every
+# string in the file. A bundle carrying anything that looks like prose, a
+# path, or a token is rejected before a human ever opens it.
+name: bundles
+
+on:
+  pull_request:
+    paths: ["bundles/**"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: find bundles touched by this PR
+        id: changed
+        run: |
+          git diff --name-only --diff-filter=AM origin/${{ github.base_ref }}...HEAD -- 'bundles/*.json' > changed.txt
+          echo "count=$(wc -l < changed.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          cat changed.txt
+      - name: validate
+        if: steps.changed.outputs.count != '0'
+        run: xargs -a changed.txt python3 scripts/validate_bundle.py
+      - name: nothing to validate
+        if: steps.changed.outputs.count == '0'
+        run: echo "no bundle files added or modified"

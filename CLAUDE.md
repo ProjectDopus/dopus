@@ -29,7 +29,8 @@ artifact that matters. Every user-side number was wrong until this was caught.
 scripts/sync.py        pull new/grown transcripts (diff-based, never deletes, verifies on disk)
 scripts/build_db.py    archive/ -> history.sqlite   (every message, flags preserved)
 scripts/build_rows.py  history.sqlite -> results/all-matches.jsonl + denominators.json
-scripts/verify.py      33 invariant checks
+scripts/verify.py      invariant checks (--ci = data-free subset; GitHub Actions gates PRs on it)
+scripts/validate_bundle.py  intake gate for bundles/ (CI runs it on any PR touching bundles/)
 ```
 
 Support: `scripts/scan.py` (matchers), `scripts/swear.py` (user-side detectors), `scripts/audit.py`

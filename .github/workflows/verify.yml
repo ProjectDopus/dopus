@@ -1,0 +1,28 @@
+# Gate on every pull request and every push to main. Runs the data-free half
+# of verify.py: matcher fixtures (does the dictionary still classify the
+# known-answer sentences correctly?), wrapper-stripping fixtures, phrases.json
+# parsing, the export text guard's self-test, and the report template.
+#
+# The other half of verify.py needs history.sqlite, which never leaves the
+# analyst's machine -- by design (IRB: transcripts stay put). So CI can prove a
+# change did not break the instrument, but only the analyst's local run proves
+# the dataset still matches. Both are required; this is the first.
+name: verify
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: verify --ci
+        run: python3 scripts/verify.py --ci
+      - name: bundle validator self-test
+        run: python3 scripts/validate_bundle.py --selftest

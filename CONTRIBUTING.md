@@ -58,8 +58,10 @@ python3 scripts/followthrough.py --code 25
 # 5. Build the bundle
 python3 scripts/export.py --id <your-handle>
 
-# 6. Read the bundle. Then send it.
-#    results/dopus-bundle-<handle>-<date>.json  ->  PR or maintainer email
+# 6. Read the bundle. Then open a pull request that adds it to bundles/.
+cp results/dopus-bundle-<handle>-<date>.json bundles/
+#    (or run  python3 scripts/validate_bundle.py bundles/dopus-bundle-*.json
+#     first -- it is exactly what CI will run on your PR)
 ```
 
 Multiple machines? Run steps 1–2 on each and copy the `archive/<machine-id>/`
@@ -85,6 +87,20 @@ exists because this distinction is easy to get wrong — if `export.py` refuses
 to run, report the error; never work around it.
 
 ## What happens with your bundle
+
+**The pull request is the submission.** Adding your file to `bundles/` triggers
+`scripts/validate_bundle.py` in CI, which checks the file's shape and
+provenance and runs the same deny-by-default text guard `export.py` applied
+when it was built. If any string looks like prose, a path, or a token, the
+check fails and the PR shows red — you can see exactly why, fix the source,
+and re-export. Nobody reads a bundle by hand until the machine has already
+said it is only counts.
+
+Bundles from participants other than the project's own analyst are validated
+but **not merged** until the human-subjects determination for the
+multi-participant phase is in hand (METHOD.md, *Data governance*). Your PR
+proves the path works end to end and then waits; you will be told when it
+merges.
 
 Your rates join the cross-participant comparison (research question 5): does
 tone-driven concession replicate beyond one developer? Your handle (or hashed

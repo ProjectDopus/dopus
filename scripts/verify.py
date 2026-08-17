@@ -2,7 +2,8 @@
 """
 Invariant checks. Run after ANY change to a detector, phrases.json, or the sync.
 
-Usage:  python3 scripts/verify.py
+Usage:  python3 scripts/verify.py          all checks (needs the local DB)
+        python3 scripts/verify.py --ci     data-free subset (what CI gates PRs on)
 
 Exists because the same bug shipped three times in one day: a fix landed in one
 code path while the dataset was produced by another. SHOUT_RX, shouting(), and
@@ -101,6 +102,23 @@ def main():
         got = S.message_text(entry).strip()
         ok = (got == "") if expect_empty else ("fix the build" in got and "task-id" not in got)
         check("%-46s" % name, ok, repr(got[:60]))
+
+    # --ci: everything above runs without data and is what a pull request can
+    # be gated on. Everything below needs history.sqlite, which never leaves
+    # the analyst's machine -- so in CI the absence of the DB is expected, not
+    # a failure, and we stop here.
+    if "--ci" in sys.argv:
+        print("\nCI MODE -- data-free checks only (the DB never leaves the analyst's machine)")
+        check("phrases.json parses and every pattern compiles", bool(pats) and bool(rgx))
+        import subprocess
+        r = subprocess.run([sys.executable, os.path.join(HERE, "export.py"), "--selftest"],
+                           capture_output=True, text=True)
+        check("export.py --selftest (text guard catches planted prose)", r.returncode == 0,
+              r.stdout[-200:])
+        import webdata
+        check("webdata.py imports (report template intact)",
+              "__CONTENT__" in webdata.REPORT_TEMPLATE)
+        return report()
 
     print("\nPIPELINE INTEGRITY")
     dbp = P.DB
