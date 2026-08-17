@@ -293,7 +293,7 @@ def classify(row, timeline, ambient, rare, variant="full"):
 def load_inputs():
     import sqlite3
     where = ("m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 "
-             "AND m.is_visible_only=0 AND f.project != '-Users-zach-GitHub-Dopus'")
+             "AND m.is_visible_only=0 AND f.project != '%s'" % P.PROJECT_SLUG)
     db = sqlite3.connect(P.DB)
     rows = [json.loads(l) for l in open(P.ROWS, encoding="utf-8")]
     seen, uniq = set(), []

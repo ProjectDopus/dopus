@@ -117,8 +117,11 @@ def file_tag(root):
 # Transcripts of THIS research project quote every target phrase in their own
 # prompts, so they match themselves. Excluded at scan time, where the project
 # name is actually known -- trying to subtract them later is impossible because
-# phrase counts are not broken down per project.
-EXCLUDE_PROJECTS = {"-Users-zach-GitHub-Dopus"}
+# phrase counts are not broken down per project. The slug is derived from this
+# file's location (scan.py must stay import-free of paths.py -- sync.py ships
+# it to /tmp on remote hosts, where the value is meaningless and unused).
+EXCLUDE_PROJECTS = {re.sub(r"[^A-Za-z0-9]", "-",
+                           os.path.dirname(os.path.dirname(os.path.abspath(__file__))))}
 
 # Deliberate escape hatch: APOLOGY_INCLUDE_META=1 scores the meta-session too.
 # Only ever for measuring the observer effect as a LABELED control -- the output

@@ -10,6 +10,7 @@ headline denominator drifted once already between a writeup and the live DB.
 Emits results/analysis.json (aggregates only, no message text -- safe to track).
 """
 
+import hashlib
 import json
 import os
 import re
@@ -23,7 +24,7 @@ import paths as P
 import scan as S
 
 WHERE = ("m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 "
-         "AND m.is_visible_only=0 AND f.project != '-Users-zach-GitHub-Dopus'")
+         "AND m.is_visible_only=0 AND f.project != '%s'" % P.PROJECT_SLUG)
 
 # Models with fewer than this many messages can't carry a rate worth printing.
 MIN_MODEL_N = 500
@@ -170,8 +171,11 @@ def main():
                 if (r["side"] == "assistant" and r["construct"] == "concession"
                         and r["model"] in top2 and r.get("project") == proj):
                     pj_msgs[r["model"]].add(r["msg_fingerprint"])
+            # The artifact is public and project names embed usernames and
+            # paths -- emit a stable hash, not the path. Which project it was
+            # is answerable locally (hash the candidates), never from GitHub.
             out["project_control"] = dict(
-                project=proj,
+                project=hashlib.sha256(proj.encode()).hexdigest()[:12],
                 models={m: dict(messages=d_[m],
                                 concession_msgs=len(pj_msgs[m]),
                                 rate=pct(len(pj_msgs[m]), d_[m]))

@@ -16,7 +16,7 @@ import paths as P
 import scan as S
 
 W = ("side='assistant' AND has_text=1 AND is_sidechain=0 AND is_compact=0 "
-     "AND is_meta=0 AND is_visible_only=0 AND f.project!='-Users-zach-GitHub-Dopus'")
+     "AND is_meta=0 AND is_visible_only=0 AND f.project!='%s'" % P.PROJECT_SLUG)
 
 def main():
     a = sys.argv

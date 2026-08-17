@@ -84,11 +84,14 @@ visible `WHERE` clauses in one place, not decisions baked into a scanner:
 ```sql
 m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0
 AND m.is_meta=0 AND m.is_visible_only=0
-AND f.project != '-Users-zach-GitHub-Dopus'
+AND f.project != '<own-project>'
 ```
 
 The last clause excludes this project's own conversations, which quote every
-target phrase and would contaminate the measurement.
+target phrase and would contaminate the measurement. `<own-project>` is the
+slug of the Dopus checkout itself, derived from the repo's location at runtime
+(`paths.PROJECT_SLUG`) — so any contributor's clone excludes *their* Dopus
+conversations automatically, and no filesystem path is baked into the source.
 
 ---
 
@@ -419,7 +422,7 @@ category, construct, bucket, hashed identifiers, denominators, and hand-label
 verdicts keyed by fingerprint.
 
 **Two quasi-identifiers to scrub before any multi-party export.** Project slugs
-embed usernames and paths (`-Users-zach-...`) and must be hashed the way
+embed usernames and paths (`-Users-<name>-...`) and must be hashed the way
 machine IDs already are. Matched-phrase + timestamp + project can be
 identifying in small corpora; coarsen timestamps to the week in anything
 shared.

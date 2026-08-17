@@ -124,7 +124,7 @@ def main():
     # The dataset must be reproducible from the DB with the CURRENT dictionary.
     # This is the check that catches "fixed one path, dataset uses another".
     W_ = ("m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 "
-          "AND m.is_visible_only=0 AND f.project!='-Users-zach-GitHub-Dopus'")
+          "AND m.is_visible_only=0 AND f.project!='%s'" % P.PROJECT_SLUG)
     seen, live_a = set(), 0
     for fp, txt in db.execute(f"""SELECT DISTINCT m.fingerprint, m.text FROM messages m
             JOIN files f ON m.file_id=f.file_id WHERE {W_} AND m.side='assistant'"""):

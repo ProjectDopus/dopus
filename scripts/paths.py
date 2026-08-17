@@ -16,9 +16,17 @@ those two resolve their own paths inline and stay runnable as loose files.
 """
 
 import os
+import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+
+# The slug Claude Code gives THIS repo's project directory (one dash per
+# non-alphanumeric character, leading dash kept -- the same encoding Claude
+# writes under ~/.claude/projects). Derived from the checkout path at runtime
+# so no username is baked into the source, and so any contributor's clone
+# excludes THEIR own Dopus conversations automatically.
+PROJECT_SLUG = re.sub(r"[^A-Za-z0-9]", "-", ROOT)
 
 PHRASES = os.path.join(ROOT, "phrases.json")
 DB      = os.path.join(ROOT, "history.sqlite")

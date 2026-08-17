@@ -33,7 +33,7 @@ MAX_COUNTERPART = 4000   # counterpart is what a human coder must judge.
 # buried in a scanner: no tool-only turns, no subagent sidechains, no compaction
 # replays, and not this research project (which quotes every target phrase).
 WHERE = ("m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 "
-         "AND m.is_visible_only=0 AND f.project != '-Users-zach-GitHub-Dopus'")
+         "AND m.is_visible_only=0 AND f.project != '%s'" % P.PROJECT_SLUG)
 
 
 # Explicit "I already said this" markers. Cheap, high-precision signal that the
@@ -228,7 +228,11 @@ def main():
         json.dump({"per_machine": denom,
                    "totals": {s: sum(v.get(s, 0) for v in denom.values())
                               for s in ("assistant", "user")},
-                   "where_clause": WHERE}, fh, indent=1, sort_keys=True)
+                   # The artifact is public; the checkout path is not. The
+                   # placeholder documents the clause without republishing
+                   # the analyst's filesystem layout every sync.
+                   "where_clause": WHERE.replace(P.PROJECT_SLUG, "<own-project>")},
+                  fh, indent=1, sort_keys=True)
 
     sides = Counter(r["side"] for r in rows)
     trunc = sum(1 for r in rows if r["message_truncated"])
