@@ -342,9 +342,9 @@ REPORT_TEMPLATE = """<!DOCTYPE html>
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dopus — corpus analysis">
 <meta property="og:description" content="The full report behind the findings: every figure, every caveat.">
-<meta property="og:image" content="https://dopus-web.pages.dev/hero.jpg">
+<meta property="og:image" content="https://dopus-web.pages.dev/img/hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/svg+xml" href="dopus-glint.svg">
+<link rel="icon" type="image/svg+xml" href="img/dopus-glint.svg">
 <style>
   :root{--ink:#141412;--gray:#6e6e68;--faint:#9b9b93;--hair:#e9e9e4;--accent:#cd4a00}
   *{box-sizing:border-box;margin:0;padding:0}
@@ -390,14 +390,14 @@ REPORT_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
 <nav><div class="nav-in">
-  <a href="index.html"><img src="dopus-logo.svg" alt="Dopus"></a>
+  <a href="index.html"><img src="img/dopus-logo.svg" alt="Dopus"></a>
   <a class="back" href="index.html">← Back to the findings</a>
 </div></nav>
 <div class="doc">
 __CONTENT__
 </div>
 <footer>
-  <img src="dopus-glint.svg" alt="">
+  <img src="img/dopus-glint.svg" alt="">
   <div>Project Dopus · rendered from <a href="__GH__REPORT.md">REPORT.md</a> at sync time</div>
 </footer>
 <script>
