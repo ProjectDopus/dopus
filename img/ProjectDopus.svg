@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="240" viewBox="0 0 540 240" role="img" aria-labelledby="dopus-title dopus-desc" xml:lang="en">
+  <title id="dopus-title">Dopus logo</title>
+  <desc id="dopus-desc">A burnt-orange 8-bit pixel glint beside the serif wordmark Dopus with an italic capital D, on a transparent background.</desc>
+  <g fill="#cd4a00" shape-rendering="crispEdges">
+    <rect x="93" y="55" width="14" height="14"/>
+    <rect x="93" y="69" width="14" height="14"/>
+    <rect x="79" y="83" width="14" height="14"/>
+    <rect x="93" y="83" width="14" height="14"/>
+    <rect x="107" y="83" width="14" height="14"/>
+    <rect x="65" y="97" width="14" height="14"/>
+    <rect x="79" y="97" width="14" height="14"/>
+    <rect x="93" y="97" width="14" height="14"/>
+    <rect x="107" y="97" width="14" height="14"/>
+    <rect x="121" y="97" width="14" height="14"/>
+    <rect x="51" y="111" width="14" height="14"/>
+    <rect x="65" y="111" width="14" height="14"/>
+    <rect x="79" y="111" width="14" height="14"/>
+    <rect x="93" y="111" width="14" height="14"/>
+    <rect x="107" y="111" width="14" height="14"/>
+    <rect x="121" y="111" width="14" height="14"/>
+    <rect x="135" y="111" width="14" height="14"/>
+    <rect x="65" y="125" width="14" height="14"/>
+    <rect x="79" y="125" width="14" height="14"/>
+    <rect x="93" y="125" width="14" height="14"/>
+    <rect x="107" y="125" width="14" height="14"/>
+    <rect x="121" y="125" width="14" height="14"/>
+    <rect x="79" y="139" width="14" height="14"/>
+    <rect x="93" y="139" width="14" height="14"/>
+    <rect x="107" y="139" width="14" height="14"/>
+    <rect x="93" y="153" width="14" height="14"/>
+    <rect x="93" y="167" width="14" height="14"/>
+  </g>
+  <!-- Wordmark outlined to paths (italic D + roman opus) so it renders identically in every viewer, no fonts required -->
+  <g fill="#141413">
+    <path transform="translate(190.00,150) scale(0.046875,-0.046875)" d="M1238 785Q1238 1251 723 1251H561L357 94Q517 86 621 86Q915 86 1076.5 267.5Q1238 449 1238 785ZM784 1341Q1107 1341 1277.5 1199.5Q1448 1058 1448 792Q1448 553 1347.5 371.0Q1247 189 1061.0 92.5Q875 -4 629 -4L148 0H-23L-14 53L162 80L370 1262L203 1288L212 1341Z"/>
+    <path transform="translate(257.33,150) scale(0.046875,-0.046875)" d="M946 475Q946 -20 506 -20Q294 -20 186.0 107.0Q78 234 78 475Q78 713 186.0 839.0Q294 965 514 965Q728 965 837.0 841.5Q946 718 946 475ZM766 475Q766 691 703.0 788.0Q640 885 506 885Q375 885 316.5 792.0Q258 699 258 475Q258 248 317.5 153.5Q377 59 506 59Q638 59 702.0 157.0Q766 255 766 475Z"/>
+    <path transform="translate(303.33,150) scale(0.046875,-0.046875)" d="M152 870 45 895V940H309L311 885Q353 921 423.5 943.0Q494 965 567 965Q747 965 845.5 840.0Q944 715 944 481Q944 242 836.5 111.0Q729 -20 526 -20Q413 -20 311 2Q317 -70 317 -111V-365L481 -389V-436H33V-389L152 -365ZM764 481Q764 673 701.5 766.5Q639 860 512 860Q395 860 317 827V76Q406 59 512 59Q764 59 764 481Z"/>
+    <path transform="translate(349.33,150) scale(0.046875,-0.046875)" d="M313 268Q313 96 473 96Q597 96 705 127V870L563 895V940H870V70L989 45V0H715L707 76Q636 37 543.0 8.5Q450 -20 387 -20Q147 -20 147 256V870L27 895V940H313Z"/>
+    <path transform="translate(395.33,150) scale(0.046875,-0.046875)" d="M723 264Q723 124 634.5 52.0Q546 -20 373 -20Q303 -20 218.5 -5.5Q134 9 86 27V258H131L180 127Q255 59 375 59Q569 59 569 225Q569 347 416 399L327 428Q226 461 180.0 495.0Q134 529 109.0 578.5Q84 628 84 698Q84 822 168.5 893.5Q253 965 397 965Q500 965 655 934V729H608L566 838Q513 885 399 885Q318 885 275.5 845.0Q233 805 233 737Q233 680 271.5 641.0Q310 602 388 576Q535 526 580.0 503.0Q625 480 656.5 446.5Q688 413 705.5 370.0Q723 327 723 264Z"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+# The corpus is private working history and exceeds GitHub's limits.
+# What ships is the METHOD, not the data.
+#
+# archive/        2.4 GB of raw Claude Code transcripts, 9 machines
+# history.sqlite  187 MB, every message verbatim
+archive/
+history.sqlite
+history.sqlite-journal
+history.sqlite-wal
+history.sqlite-shm
+
+# results/ is DENY-BY-DEFAULT. Every artifact in here carries verbatim message
+# text: all-matches.jsonl has 4,000-char excerpts, counts-*.csv has an
+# example_snippet column, apology-*.json has an examples block, and sweep-*.json
+# has samples containing internal IPs and server hostnames.
+# Only aggregate counts are whitelisted back in.
+results/*
+!results/denominators.json
+!results/analysis.json
+!results/TALLY.md
+!results/followthrough.json
+# Calibration labels are fingerprints + verdicts, no message text. The sample
+# .md they answer DOES carry message text and stays ignored.
+!results/coding/
+results/coding/*
+!results/coding/followthrough-labels-*.json
+
+# Retired outputs are data; retired scripts are provenance and stay.
+superseded/MERGED-*.json
+
+# Machine inventory: hostnames, jump-host chain, and paths for university
+# infrastructure. ACCESS.local.md holds what was scrubbed out of HANDOFF.md.
+hosts.json
+ACCESS.local.md
+.synclist
+.inventory.sh
+
+# Scratch and OS noise
+.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# transcript screenshots and other raw-content exhibits -- IRB: never leaves this machine
+evidence/
+.discover.sh

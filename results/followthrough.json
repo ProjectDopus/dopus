@@ -1,0 +1,25 @@
+{
+ "calibrated": false,
+ "eligible_constructs": [
+  "concession",
+  "acknowledgment"
+ ],
+ "labels": {
+  "honored": 283,
+  "ineligible": 407,
+  "not_honored": 42,
+  "unobserved": 244
+ },
+ "note": "v2: rare-word anchors instead of overlap ratios; complaint-shape gate; quote-back exclusion; tone words removed from matching. NOT calibrated -- do not quote.",
+ "parameters": {
+  "AMBIENT_DF": 0.3,
+  "MIN_DOWNSTREAM": 20,
+  "MIN_TRIGGER_WORDS": 4,
+  "RARE_DF": 0.005,
+  "WINDOW_DAYS": 14,
+  "WINDOW_TURNS": 5000
+ },
+ "rules": "explicit marker+1 rare | 2 rare+complaint shape | 3 rare",
+ "total_eligible_construct_messages": 976,
+ "version": 2
+}

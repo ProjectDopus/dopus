@@ -1,0 +1,49 @@
+{
+ "per_machine": {
+  "315ca601": {
+   "assistant": 16,
+   "user": 10
+  },
+  "3d7c4125": {
+   "assistant": 19,
+   "user": 9
+  },
+  "4b0743e2": {
+   "assistant": 17805,
+   "user": 3418
+  },
+  "4f0a8fe4": {
+   "assistant": 5537,
+   "user": 868
+  },
+  "5c1dd88a": {
+   "assistant": 15,
+   "user": 4
+  },
+  "7224693b": {
+   "assistant": 41,
+   "user": 32
+  },
+  "9096d07d": {
+   "assistant": 325,
+   "user": 71
+  },
+  "c95c9267": {
+   "assistant": 128,
+   "user": 58
+  },
+  "d4b4df10": {
+   "assistant": 1125,
+   "user": 255
+  },
+  "d6fe6c1b": {
+   "assistant": 1510,
+   "user": 309
+  }
+ },
+ "totals": {
+  "assistant": 26521,
+  "user": 5034
+ },
+ "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '-Users-zach-GitHub-Dopus'"
+}

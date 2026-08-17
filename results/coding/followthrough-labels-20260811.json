@@ -1,0 +1,365 @@
+{
+ "instructions": "did_it: yes | no | cant_tell",
+ "records": [
+  {
+   "n": 1,
+   "msg_fingerprint": "00eb60a2047d76c1",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 2,
+   "msg_fingerprint": "0d64c725128b24ae",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 3,
+   "msg_fingerprint": "14cc7e33712253a1",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 4,
+   "msg_fingerprint": "28f4371eeeb6a2ae",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 5,
+   "msg_fingerprint": "304834a5a78588a9",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 6,
+   "msg_fingerprint": "3a057d678f7fecb4",
+   "detector": "honored",
+   "did_it": "no"
+  },
+  {
+   "n": 7,
+   "msg_fingerprint": "4920d6b7e369d4d0",
+   "detector": "honored",
+   "did_it": "no"
+  },
+  {
+   "n": 8,
+   "msg_fingerprint": "50a3f91c3e24a1ef",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 9,
+   "msg_fingerprint": "5c164d28d0eb7ab8",
+   "detector": "honored",
+   "did_it": "no"
+  },
+  {
+   "n": 10,
+   "msg_fingerprint": "63989f94177b3b2f",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 11,
+   "msg_fingerprint": "6bf01ff56113dce4",
+   "detector": "honored",
+   "did_it": "no"
+  },
+  {
+   "n": 12,
+   "msg_fingerprint": "737dc2bac620feff",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 13,
+   "msg_fingerprint": "7a9689ac9871d049",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 14,
+   "msg_fingerprint": "86e32e4f3fcbd40f",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 15,
+   "msg_fingerprint": "93e04951e5f2397f",
+   "detector": "honored",
+   "did_it": "no"
+  },
+  {
+   "n": 16,
+   "msg_fingerprint": "9e90eda0500e1524",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 17,
+   "msg_fingerprint": "ab51828958ac4624",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 18,
+   "msg_fingerprint": "b48a03f8e3d00ce1",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 19,
+   "msg_fingerprint": "bff0931411eb10b3",
+   "detector": "honored",
+   "did_it": "no"
+  },
+  {
+   "n": 20,
+   "msg_fingerprint": "c83242442c60cbc9",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 21,
+   "msg_fingerprint": "d07855e6537892cf",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 22,
+   "msg_fingerprint": "d738d6e7496fd326",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 23,
+   "msg_fingerprint": "e4abac9e5d6afb4f",
+   "detector": "honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 24,
+   "msg_fingerprint": "eeb83f195fb50f3e",
+   "detector": "honored",
+   "did_it": "no"
+  },
+  {
+   "n": 25,
+   "msg_fingerprint": "00481969a654d39b",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 26,
+   "msg_fingerprint": "0148ed50e1f0cf10",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 27,
+   "msg_fingerprint": "0bc7b6d3abe51732",
+   "detector": "not_honored",
+   "did_it": "cant_tell"
+  },
+  {
+   "n": 28,
+   "msg_fingerprint": "0e1cb7aa81ada417",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 29,
+   "msg_fingerprint": "0ff3ea103661f9d6",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 30,
+   "msg_fingerprint": "15293c60ae49f3ae",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 31,
+   "msg_fingerprint": "1fabe968c7037bb1",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 32,
+   "msg_fingerprint": "29caa4f290bb3dd7",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 33,
+   "msg_fingerprint": "366a6e77ed74b1c5",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 34,
+   "msg_fingerprint": "413bed6b08520a2f",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 35,
+   "msg_fingerprint": "42da7f7fa58b734b",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 36,
+   "msg_fingerprint": "4d44dd5f05b6eb05",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 37,
+   "msg_fingerprint": "5122656ab5287dd2",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 38,
+   "msg_fingerprint": "5c829a9e1ab22438",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 39,
+   "msg_fingerprint": "5ff91716617e8924",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 40,
+   "msg_fingerprint": "6a7f1b0497dd76b4",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 41,
+   "msg_fingerprint": "6dfcd53d4a87aca9",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 42,
+   "msg_fingerprint": "6dfdadbcf6122bcd",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 43,
+   "msg_fingerprint": "70a1e993ed2e58a0",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 44,
+   "msg_fingerprint": "7c6969b5197e2bd8",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 45,
+   "msg_fingerprint": "7f0a4be5cf6b32f1",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 46,
+   "msg_fingerprint": "8ed07ac4777752ec",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 47,
+   "msg_fingerprint": "90dd42c9060d202f",
+   "detector": "not_honored",
+   "did_it": "yes"
+  },
+  {
+   "n": 48,
+   "msg_fingerprint": "9a40f6d6015d81c0",
+   "detector": "not_honored",
+   "did_it": "no"
+  },
+  {
+   "n": 49,
+   "msg_fingerprint": "00c9c5fe026c23ca",
+   "detector": "unobserved",
+   "did_it": "no"
+  },
+  {
+   "n": 50,
+   "msg_fingerprint": "186f29985b247139",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 51,
+   "msg_fingerprint": "2d1324d5e4005dd7",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 52,
+   "msg_fingerprint": "41dc6abb16b1e652",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 53,
+   "msg_fingerprint": "5eabb9dbeb13b042",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 54,
+   "msg_fingerprint": "72a15966f269726c",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 55,
+   "msg_fingerprint": "88f4542864822977",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 56,
+   "msg_fingerprint": "9b1aa1eb0dac9973",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 57,
+   "msg_fingerprint": "b3f53ca3de749ce6",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 58,
+   "msg_fingerprint": "c373b34bfa4f29d6",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 59,
+   "msg_fingerprint": "da8c7ee7ef3aa36d",
+   "detector": "unobserved",
+   "did_it": "yes"
+  },
+  {
+   "n": 60,
+   "msg_fingerprint": "e9c7c96f9344475e",
+   "detector": "unobserved",
+   "did_it": "yes"
+  }
+ ]
+}

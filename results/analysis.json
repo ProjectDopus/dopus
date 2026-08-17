@@ -1,0 +1,552 @@
+{
+ "absolutely_right": {
+  "denom": 26518,
+  "messages": 2,
+  "occurrences": 2,
+  "rate": 0.0075420469115317895
+ },
+ "categories": {
+  "agreement": 682,
+  "apology": 38,
+  "compliance": 65,
+  "fabrication": 5,
+  "recovery": 3,
+  "restart": 1,
+  "reversal": 39,
+  "validation": 189,
+  "wrong_approach": 274
+ },
+ "constructs": {
+  "acknowledgment": {
+   "ci": [
+    0.19237615528309085,
+    0.3122705506982916
+   ],
+   "denom": 26518,
+   "hits": 65,
+   "messages": 65,
+   "rate": 0.24511652462478317,
+   "side": "assistant"
+  },
+  "concession": {
+   "ci": [
+    3.299597882355336,
+    3.74305635022254
+   ],
+   "denom": 26518,
+   "hits": 1039,
+   "messages": 932,
+   "rate": 3.514593860773814,
+   "side": "assistant"
+  },
+  "flattery": {
+   "ci": [
+    0.611359854092215,
+    0.8132832973848678
+   ],
+   "denom": 26518,
+   "hits": 189,
+   "messages": 187,
+   "rate": 0.7051813862282224,
+   "side": "assistant"
+  },
+  "frustration": {
+   "ci": [
+    4.065673779526388,
+    5.2264080210212205
+   ],
+   "denom": 5031,
+   "hits": 373,
+   "messages": 232,
+   "rate": 4.611409262572053,
+   "side": "user"
+  },
+  "status": {
+   "ci": [
+    0.0038474681154052745,
+    0.03326006064685081
+   ],
+   "denom": 26518,
+   "hits": 3,
+   "messages": 3,
+   "rate": 0.011313070367297685,
+   "side": "assistant"
+  }
+ },
+ "corpus": {
+  "files": 3961,
+  "first": "2026-02-15T18:23:20.670Z",
+  "last": "2026-08-17T01:09:33.269Z",
+  "machines": 10,
+  "messages": 428498,
+  "population": {
+   "assistant": 26518,
+   "user": 5031
+  }
+ },
+ "depth_in_turn": {
+  "1": 722,
+  "2": 124,
+  "3": 89,
+  "4": 68,
+  "5": 50,
+  "6": 243
+ },
+ "hits_per_message": {
+  "1": 1081,
+  "2": 79,
+  "3": 15,
+  "4": 3
+ },
+ "leaderboard": [
+  {
+   "acknowledgment_rate": 0.34001431639226914,
+   "concession_ci": [
+    5.02831291592825,
+    6.235267940868551
+   ],
+   "concession_hits": 343,
+   "concession_msgs": 313,
+   "concession_rate": 5.601288475304223,
+   "flattery_rate": 0.6442376521116678,
+   "messages": 5588,
+   "model": "claude-opus-5"
+  },
+  {
+   "acknowledgment_rate": 0.22044640396803528,
+   "concession_ci": [
+    2.5461789663551544,
+    3.6704862469038
+   ],
+   "concession_hits": 132,
+   "concession_msgs": 111,
+   "concession_rate": 3.0586938550564895,
+   "flattery_rate": 0.5511160099200881,
+   "messages": 3629,
+   "model": "claude-sonnet-5"
+  },
+  {
+   "acknowledgment_rate": 0.1626737651582372,
+   "concession_ci": [
+    2.692302446460891,
+    3.2646094085685182
+   ],
+   "concession_hits": 448,
+   "concession_msgs": 401,
+   "concession_rate": 2.9650990831115056,
+   "flattery_rate": 0.8207630878438332,
+   "messages": 13524,
+   "model": "claude-opus-4-8"
+  },
+  {
+   "acknowledgment_rate": 0.45385779122541603,
+   "concession_ci": [
+    2.357197081301161,
+    3.501094835725027
+   ],
+   "concession_hits": 104,
+   "concession_msgs": 95,
+   "concession_rate": 2.8744326777609683,
+   "flattery_rate": 0.6051437216338881,
+   "messages": 3305,
+   "model": "claude-fable-5"
+  }
+ ],
+ "model_monthly": {
+  "claude-fable-5": {
+   "2026-06": {
+    "concession_msgs": 1,
+    "messages": 128,
+    "rate": 0.78125
+   },
+   "2026-07": {
+    "concession_msgs": 48,
+    "messages": 1903,
+    "rate": 2.5223331581713087
+   },
+   "2026-08": {
+    "concession_msgs": 46,
+    "messages": 1274,
+    "rate": 3.610675039246468
+   }
+  },
+  "claude-opus-4-8": {
+   "2026-05": {
+    "concession_msgs": 7,
+    "messages": 99,
+    "rate": 7.070707070707071
+   },
+   "2026-06": {
+    "concession_msgs": 168,
+    "messages": 5877,
+    "rate": 2.8586013272077593
+   },
+   "2026-07": {
+    "concession_msgs": 204,
+    "messages": 6807,
+    "rate": 2.996914940502424
+   },
+   "2026-08": {
+    "concession_msgs": 22,
+    "messages": 741,
+    "rate": 2.968960863697706
+   }
+  },
+  "claude-opus-5": {
+   "2026-07": {
+    "concession_msgs": 82,
+    "messages": 1722,
+    "rate": 4.761904761904762
+   },
+   "2026-08": {
+    "concession_msgs": 231,
+    "messages": 3866,
+    "rate": 5.975168132436627
+   }
+  },
+  "claude-sonnet-5": {
+   "2026-07": {
+    "concession_msgs": 97,
+    "messages": 3405,
+    "rate": 2.8487518355359764
+   },
+   "2026-08": {
+    "concession_msgs": 14,
+    "messages": 224,
+    "rate": 6.25
+   }
+  }
+ },
+ "models_excluded_small": {
+  "<synthetic>": 96,
+  "claude-opus-4-5-20251101": 3,
+  "claude-opus-4-6": 26,
+  "claude-opus-4-7": 274,
+  "claude-sonnet-4-6": 73
+ },
+ "monthly": [
+  {
+   "ci": [
+    2.4448065140738544,
+    7.616491967169059
+   ],
+   "concession_msgs": 11,
+   "messages": 253,
+   "month": "2026-05",
+   "rate": 4.3478260869565215
+  },
+  {
+   "ci": [
+    2.405370746538456,
+    3.2287485350446685
+   ],
+   "concession_msgs": 172,
+   "messages": 6170,
+   "month": "2026-06",
+   "rate": 2.787682333873582
+  },
+  {
+   "ci": [
+    2.829746650184578,
+    3.4074776673728278
+   ],
+   "concession_msgs": 431,
+   "messages": 13878,
+   "month": "2026-07",
+   "rate": 3.1056348176970747
+  },
+  {
+   "ci": [
+    4.583312933336444,
+    5.686666972878643
+   ],
+   "concession_msgs": 313,
+   "messages": 6129,
+   "month": "2026-08",
+   "rate": 5.1068689835209655
+  }
+ ],
+ "project_control": {
+  "models": {
+   "claude-opus-4-8": {
+    "concession_msgs": 44,
+    "messages": 956,
+    "rate": 4.602510460251046
+   },
+   "claude-opus-5": {
+    "concession_msgs": 76,
+    "messages": 955,
+    "rate": 7.958115183246074
+   }
+  },
+  "project": "-home-zach"
+ },
+ "pushback_control": {
+  "correction": {
+   "assistant_messages": 1421,
+   "ci": [
+    4.86329937150526,
+    7.337467366355285
+   ],
+   "rate": 5.9817030260380015,
+   "with_concession": 85
+  },
+  "hot": {
+   "assistant_messages": 1162,
+   "ci": [
+    10.060451397019904,
+    13.77139677171931
+   ],
+   "rate": 11.790017211703958,
+   "with_concession": 137
+  },
+  "neutral": {
+   "assistant_messages": 24440,
+   "ci": [
+    2.7926148224359433,
+    3.220521836083395
+   ],
+   "rate": 2.9991816693944355,
+   "with_concession": 733
+  }
+ },
+ "pushback_per_turn": {
+  "correction": {
+   "ci": [
+    23.697241062175816,
+    34.7389754635845
+   ],
+   "folded": 74,
+   "rate": 28.90625,
+   "turns": 256
+  },
+  "hot": {
+   "ci": [
+    39.048252865083946,
+    51.70189345078342
+   ],
+   "folded": 106,
+   "rate": 45.2991452991453,
+   "turns": 234
+  },
+  "neutral": {
+   "ci": [
+    12.54136312797209,
+    14.502881151559386
+   ],
+   "folded": 629,
+   "rate": 13.492063492063492,
+   "turns": 4662
+  }
+ },
+ "top_phrases": {
+  "assistant": [
+   [
+    "you're right",
+    197
+   ],
+   [
+    "good catch",
+    112
+   ],
+   [
+    "right -",
+    74
+   ],
+   [
+    "good question",
+    74
+   ],
+   [
+    "fair -",
+    56
+   ],
+   [
+    "i should have",
+    52
+   ],
+   [
+    "good instinct",
+    52
+   ],
+   [
+    "good call",
+    48
+   ],
+   [
+    "understood -",
+    46
+   ],
+   [
+    "i was wrong",
+    44
+   ],
+   [
+    "you were right",
+    36
+   ],
+   [
+    "my mistake",
+    24
+   ],
+   [
+    "correct -",
+    23
+   ],
+   [
+    "i introduced",
+    22
+   ],
+   [
+    "that reframes",
+    20
+   ],
+   [
+    "agreed -",
+    20
+   ],
+   [
+    "noted -",
+    19
+   ],
+   [
+    "i assumed",
+    17
+   ],
+   [
+    "my error",
+    17
+   ],
+   [
+    "that was wrong",
+    16
+   ]
+  ],
+  "user": [
+   [
+    "fucking",
+    104
+   ],
+   [
+    "fuck",
+    69
+   ],
+   [
+    "shit",
+    50
+   ],
+   [
+    "wtf",
+    33
+   ],
+   [
+    "stupid",
+    14
+   ],
+   [
+    "hell",
+    8
+   ],
+   [
+    "jesus christ",
+    8
+   ],
+   [
+    "lazy",
+    6
+   ],
+   [
+    "fucked",
+    6
+   ],
+   [
+    "i told you",
+    6
+   ],
+   [
+    "NO",
+    5
+   ],
+   [
+    "jesus",
+    4
+   ],
+   [
+    "did you even look",
+    4
+   ],
+   [
+    "dumb",
+    4
+   ],
+   [
+    "damn",
+    4
+   ],
+   [
+    "you keep",
+    3
+   ],
+   [
+    "shitty",
+    3
+   ],
+   [
+    "useless",
+    3
+   ],
+   [
+    "crap",
+    3
+   ],
+   [
+    "just stop",
+    3
+   ]
+  ]
+ },
+ "turn_bucket": {
+  "all_assistant_hits_by_bucket": {
+   "correction": 99,
+   "hot": 188,
+   "neutral": 1009
+  },
+  "concession_hits_by_preceding_bucket": {
+   "correction": 85,
+   "hot": 172,
+   "neutral": 782
+  }
+ },
+ "unexplained_concessions": {
+  "neutral_preceding": 782,
+  "share": 75.26467757459095,
+  "total": 1039
+ },
+ "user": {
+  "blasphemy": {
+   "hits": 16,
+   "messages": 15,
+   "rate": 0.2981514609421586
+  },
+  "insult": {
+   "hits": 34,
+   "messages": 33,
+   "rate": 0.655933214072749
+  },
+  "not_listening": {
+   "hits": 26,
+   "messages": 24,
+   "rate": 0.4770423375074538
+  },
+  "profanity": {
+   "hits": 290,
+   "messages": 194,
+   "rate": 3.8560922281852514
+  },
+  "shouting": {
+   "hits": 7,
+   "messages": 6,
+   "rate": 0.11926058437686345
+  }
+ }
+}
