@@ -338,6 +338,12 @@ REPORT_TEMPLATE = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dopus — corpus analysis</title>
+<meta name="description" content="The full Dopus report: capitulation language, tone effects, model leaderboard, and follow-through across one complete Claude Code history.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dopus — corpus analysis">
+<meta property="og:description" content="The full report behind the findings: every figure, every caveat.">
+<meta property="og:image" content="https://dopus-web.pages.dev/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="dopus-glint.svg">
 <style>
   :root{--ink:#141412;--gray:#6e6e68;--faint:#9b9b93;--hair:#e9e9e4;--accent:#cd4a00}
