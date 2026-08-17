@@ -386,6 +386,10 @@ REPORT_TEMPLATE = """<!DOCTYPE html>
     font-size:12.5px;color:var(--faint)}
   footer img{height:22px;width:auto;display:block;margin:0 auto 10px;opacity:.9}
   footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair)}
+  @media(max-width:640px){
+    .doc{padding:40px 16px 70px;font-size:15px}
+    table.data{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  }
 </style>
 </head>
 <body>
