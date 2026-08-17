@@ -38,6 +38,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import paths as P
 import stats as ST
+from analyze import MIN_MODEL_N
 from export import dictionary_vocab, guard, git_stamp
 
 WEB_DIR = os.path.normpath(os.path.join(P.ROOT, "..", "Dopus-web"))
@@ -180,6 +181,7 @@ def build():
                           for d in a["leaderboard"]]
     out["leaderboard_excluded"] = sorted(a["models_excluded_small"].items(),
                                          key=lambda kv: -kv[1])
+    out["leaderboard_min_n"] = MIN_MODEL_N
 
     # Same-month head-to-head: the month where the most leaderboard models
     # carry >=500 messages (ties -> latest month). Controls for the calendar.
@@ -227,10 +229,24 @@ def build():
     scoreable = sum(strata_n[n_] for n_ in scoreable_s)
     est_rate = wsum(all_s, lambda st: st["rate"])
     sc_rate = wsum(scoreable_s, lambda st: st["rate"])
+    # Detector-as-classifier accuracy on the labelled records the detector
+    # actually scored (honored/not_honored) and the coder decided; the
+    # "say honored always" baseline is the majority-class rate on the same
+    # records. These are the two figures the page quotes when it says the
+    # detector failed as a classifier and was used as a sampling frame.
+    scored = [r for r in labels if r["detector"] in ("honored", "not_honored")
+              and r["did_it"] in ("yes", "no")]
+    truth = {"yes": "honored", "no": "not_honored"}
+    agree = sum(1 for r in scored if truth[r["did_it"]] == r["detector"])
+    n_yes = sum(1 for r in scored if r["did_it"] == "yes")
+    acc = 100.0 * agree / len(scored) if scored else 0.0
+    base = 100.0 * max(n_yes, len(scored) - n_yes) / len(scored) if scored else 0.0
     out["followthrough"] = dict(
         eligible=ft["total_eligible_construct_messages"],
         action=action, scoreable=scoreable, strata=strata,
         labels_total=len(labels),
+        detector=dict(accuracy=acc, baseline=base, n=len(scored),
+                      min_downstream=ft["parameters"]["MIN_DOWNSTREAM"]),
         labels_decided=sum(v["decided"] for v in strata.values()),
         est=dict(rate=est_rate, lo=wsum(all_s, lambda st: st["ci"][0]),
                  hi=wsum(all_s, lambda st: st["ci"][1]),
@@ -249,6 +265,24 @@ def build():
 
     out["version"] = dict(corpus_last=last, commit=commit, dirty=dirty)
     return out
+
+
+META_RX = re.compile(r'(<meta name="description" content="[^"]*?)\d[\d,]*k?\+? messages')
+
+
+def stamp_meta(payload):
+    """The <meta name=description> on index.html can't be populated by JS
+    (crawlers read the raw file), so it is the one number the page carries
+    literally. Stamp it here at sync time, rounded down to the nearest 10k
+    so it reads as a scale, not a count that is wrong by Tuesday."""
+    ip = os.path.join(WEB_DIR, "index.html")
+    if not os.path.exists(ip):
+        return
+    html = open(ip, encoding="utf-8").read()
+    n = payload["corpus"]["messages"] // 10000 * 10
+    new = META_RX.sub(lambda m: m.group(1) + "%dk+ messages" % n, html, count=1)
+    if new != html:
+        open(ip, "w", encoding="utf-8").write(new)
 
 
 def render(payload):
@@ -402,7 +436,7 @@ __CONTENT__
 </div>
 <footer>
   <img src="img/dopus-glint.svg" alt="">
-  <div>Project Dopus · rendered from <a href="__GH__REPORT.md">REPORT.md</a> at sync time</div>
+  <div>Project Dopus · generated from <a href="__GH__REPORT.md">REPORT.md</a></div>
 </footer>
 <script>
 const nav = document.querySelector("nav");
@@ -429,6 +463,7 @@ def main():
             print("  GUARD %s: %r" % (path, sample))
         sys.exit("text guard rejected the payload -- data.js NOT written")
     open(OUT, "w", encoding="utf-8").write(render(payload))
+    stamp_meta(payload)
     print("wrote %s (%d bytes, corpus through %s)"
           % (OUT, os.path.getsize(OUT), payload["corpus"]["last"]))
     rp = os.path.join(WEB_DIR, "report.html")
