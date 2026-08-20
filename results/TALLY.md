@@ -1,13 +1,13 @@
 # Phrase tally
 
-## USER  —  382 hits over 5070 messages (4.69%)
+## USER  —  383 hits over 5121 messages (4.67%)
 
-**profanity** (298)
+**profanity** (299)
 
 | phrase | n |
 |---|---|
 | `fucking` | 105 |
-| `fuck` | 70 |
+| `fuck` | 71 |
 | `shit` | 55 |
 | `wtf` | 34 |
 | `hell` | 8 |
@@ -70,17 +70,17 @@
 | `DO NOT` | 1 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1311 hits over 26867 messages (4.43%)
+## CLAUDE  —  1317 hits over 27211 messages (4.40%)
 
-**agreement** (690)
+**agreement** (694)
 
 | phrase | n |
 |---|---|
-| `you're right` | 200 |
-| `good catch` | 112 |
+| `you're right` | 202 |
+| `good catch` | 113 |
 | `right -` | 74 |
 | `fair -` | 58 |
-| `good call` | 49 |
+| `good call` | 50 |
 | `you were right` | 36 |
 | `correct -` | 24 |
 | `agreed -` | 20 |
@@ -151,7 +151,7 @@
 | `my doing` | 1 |
 | `my failure` | 1 |
 
-**validation** (189)
+**validation** (190)
 
 | phrase | n |
 |---|---|
@@ -163,16 +163,16 @@
 | `right instinct` | 9 |
 | `good eye` | 5 |
 | `good find` | 5 |
-| `fair challenge` | 4 |
+| `fair challenge` | 5 |
 | `nice find` | 1 |
 | `good work` | 1 |
 | `well done` | 1 |
 
-**compliance** (66)
+**compliance** (67)
 
 | phrase | n |
 |---|---|
-| `understood -` | 46 |
+| `understood -` | 47 |
 | `noted -` | 20 |
 
 **apology** (40)
@@ -229,7 +229,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1053 | 944 | 3.51% |
-| flattery | 189 | 187 | 0.70% |
-| acknowledgment | 66 | 66 | 0.25% |
+| concession | 1057 | 948 | 3.48% |
+| flattery | 190 | 188 | 0.69% |
+| acknowledgment | 67 | 67 | 0.25% |
 | status | 3 | 3 | 0.01% |
