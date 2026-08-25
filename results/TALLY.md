@@ -1,26 +1,27 @@
 # Phrase tally
 
-## USER  —  383 hits over 5121 messages (4.67%)
+## USER  —  396 hits over 5349 messages (4.66%)
 
-**profanity** (299)
+**profanity** (309)
 
 | phrase | n |
 |---|---|
 | `fucking` | 105 |
-| `fuck` | 71 |
-| `shit` | 55 |
+| `fuck` | 74 |
+| `shit` | 60 |
 | `wtf` | 34 |
 | `hell` | 8 |
 | `fucked` | 6 |
 | `damn` | 4 |
+| `crap` | 4 |
 | `shitty` | 3 |
-| `crap` | 3 |
 | `god damnit` | 2 |
 | `bullshit` | 2 |
 | `fuckin` | 2 |
 | `piss` | 1 |
 | `pissed` | 1 |
 | `damnit` | 1 |
+| `ass` | 1 |
 | `god damn` | 1 |
 
 **insult** (34)
@@ -36,12 +37,12 @@
 | `idiot` | 2 |
 | `pathetic` | 1 |
 
-**not_listening** (27)
+**not_listening** (29)
 
 | phrase | n |
 |---|---|
+| `you keep` | 6 |
 | `i told you` | 6 |
-| `you keep` | 4 |
 | `did you even look` | 4 |
 | `just stop` | 3 |
 | `pay attention` | 2 |
@@ -53,12 +54,12 @@
 | `stop it` | 1 |
 | `you are not listening` | 1 |
 
-**blasphemy** (16)
+**blasphemy** (17)
 
 | phrase | n |
 |---|---|
 | `jesus christ` | 8 |
-| `jesus` | 4 |
+| `jesus` | 5 |
 | `jesus fucking christ` | 2 |
 | `for the love of god` | 2 |
 
@@ -70,25 +71,25 @@
 | `DO NOT` | 1 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1317 hits over 27211 messages (4.40%)
+## CLAUDE  —  1393 hits over 28602 messages (4.41%)
 
-**agreement** (694)
+**agreement** (724)
 
 | phrase | n |
 |---|---|
-| `you're right` | 202 |
-| `good catch` | 113 |
-| `right -` | 74 |
-| `fair -` | 58 |
-| `good call` | 50 |
+| `you're right` | 210 |
+| `good catch` | 116 |
+| `right -` | 81 |
+| `fair -` | 63 |
+| `good call` | 53 |
 | `you were right` | 36 |
-| `correct -` | 24 |
-| `agreed -` | 20 |
+| `correct -` | 26 |
+| `agreed -` | 21 |
 | `you caught` | 13 |
 | `exactly right -` | 11 |
+| `fair hit` | 10 |
 | `fair enough` | 10 |
 | `as you said` | 9 |
-| `fair hit` | 9 |
 | `nice catch` | 8 |
 | `you're right to push back` | 6 |
 | `thats exactly right` | 4 |
@@ -122,26 +123,26 @@
 | `like you said` | 1 |
 | `fair callout` | 1 |
 
-**wrong_approach** (277)
+**wrong_approach** (303)
 
 | phrase | n |
 |---|---|
-| `i should have` | 55 |
-| `i was wrong` | 44 |
-| `my mistake` | 24 |
-| `i introduced` | 22 |
+| `i should have` | 64 |
+| `i was wrong` | 48 |
+| `my mistake` | 27 |
+| `i introduced` | 24 |
+| `my error` | 19 |
+| `i shouldn't have` | 18 |
 | `i assumed` | 17 |
-| `my error` | 17 |
 | `that was wrong` | 16 |
-| `i shouldn't have` | 16 |
-| `was mine` | 11 |
+| `was mine` | 12 |
 | `is mine` | 10 |
 | `i should've` | 9 |
 | `on my part` | 8 |
+| `my bug` | 7 |
 | `i broke` | 7 |
 | `i misread` | 5 |
-| `my bug` | 5 |
-| `were mine` | 2 |
+| `were mine` | 3 |
 | `i got that wrong` | 2 |
 | `error was mine` | 1 |
 | `i was partly wrong` | 1 |
@@ -151,16 +152,16 @@
 | `my doing` | 1 |
 | `my failure` | 1 |
 
-**validation** (190)
+**validation** (196)
 
 | phrase | n |
 |---|---|
-| `good question` | 74 |
-| `good instinct` | 52 |
+| `good question` | 77 |
+| `good instinct` | 53 |
 | `nice work` | 15 |
 | `great question` | 12 |
-| `fair question` | 10 |
-| `right instinct` | 9 |
+| `fair question` | 11 |
+| `right instinct` | 10 |
 | `good eye` | 5 |
 | `good find` | 5 |
 | `fair challenge` | 5 |
@@ -168,48 +169,48 @@
 | `good work` | 1 |
 | `well done` | 1 |
 
-**compliance** (67)
+**compliance** (74)
 
 | phrase | n |
 |---|---|
-| `understood -` | 47 |
-| `noted -` | 20 |
+| `understood -` | 50 |
+| `noted -` | 24 |
 
-**apology** (40)
+**apology** (43)
 
 | phrase | n |
 |---|---|
 | `that's on me` | 17 |
 | `that's my fault` | 5 |
 | `i'm sorry` | 4 |
+| `my fault` | 4 |
 | `my apologies` | 3 |
-| `my fault` | 3 |
+| `my bad` | 3 |
+| `i apologize` | 3 |
 | `sorry about that` | 2 |
-| `my bad` | 2 |
-| `i apologize` | 2 |
 | `i apologize for` | 1 |
 | `this is on me` | 1 |
 
-**reversal** (39)
+**reversal** (41)
 
 | phrase | n |
 |---|---|
-| `that reframes` | 20 |
+| `that reframes` | 21 |
 | `changes the calculus` | 5 |
 | `that changes the picture` | 4 |
 | `that changes things` | 3 |
+| `in that case` | 2 |
 | `that changes the calculus` | 2 |
 | `different story` | 2 |
-| `in that case` | 1 |
 | `that changes the math` | 1 |
 | `given that, ` | 1 |
 
-**fabrication** (6)
+**fabrication** (7)
 
 | phrase | n |
 |---|---|
+| `i guessed` | 4 |
 | `i was guessing` | 3 |
-| `i guessed` | 3 |
 
 **recovery** (3)
 
@@ -219,17 +220,18 @@
 | `found the problem` | 1 |
 | `i see the issue now` | 1 |
 
-**restart** (1)
+**restart** (2)
 
 | phrase | n |
 |---|---|
 | `let me back up` | 1 |
+| `let me start over` | 1 |
 
 ## By construct (assistant)
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1057 | 948 | 3.48% |
-| flattery | 190 | 188 | 0.69% |
-| acknowledgment | 67 | 67 | 0.25% |
+| concession | 1120 | 1000 | 3.50% |
+| flattery | 196 | 194 | 0.68% |
+| acknowledgment | 74 | 74 | 0.26% |
 | status | 3 | 3 | 0.01% |
