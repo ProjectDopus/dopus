@@ -9,12 +9,12 @@
    "user": 9
   },
   "4b0743e2": {
-   "assistant": 19021,
-   "user": 3578
+   "assistant": 19324,
+   "user": 3645
   },
   "4f0a8fe4": {
-   "assistant": 6265,
-   "user": 1008
+   "assistant": 6493,
+   "user": 1046
   },
   "5c1dd88a": {
    "assistant": 15,
@@ -30,20 +30,20 @@
   },
   "c95c9267": {
    "assistant": 128,
-   "user": 59
+   "user": 60
   },
   "d4b4df10": {
    "assistant": 1199,
    "user": 260
   },
   "d6fe6c1b": {
-   "assistant": 1567,
-   "user": 314
+   "assistant": 1905,
+   "user": 342
   }
  },
  "totals": {
-  "assistant": 28602,
-  "user": 5349
+  "assistant": 29471,
+  "user": 5483
  },
  "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '<own-project>'"
 }

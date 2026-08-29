@@ -1,15 +1,15 @@
 # Phrase tally
 
-## USER  —  396 hits over 5349 messages (4.66%)
+## USER  —  405 hits over 5483 messages (4.67%)
 
-**profanity** (309)
+**profanity** (316)
 
 | phrase | n |
 |---|---|
-| `fucking` | 105 |
-| `fuck` | 74 |
-| `shit` | 60 |
-| `wtf` | 34 |
+| `fucking` | 106 |
+| `fuck` | 75 |
+| `shit` | 62 |
+| `wtf` | 37 |
 | `hell` | 8 |
 | `fucked` | 6 |
 | `damn` | 4 |
@@ -37,12 +37,12 @@
 | `idiot` | 2 |
 | `pathetic` | 1 |
 
-**not_listening** (29)
+**not_listening** (30)
 
 | phrase | n |
 |---|---|
+| `i told you` | 7 |
 | `you keep` | 6 |
-| `i told you` | 6 |
 | `did you even look` | 4 |
 | `just stop` | 3 |
 | `pay attention` | 2 |
@@ -63,48 +63,50 @@
 | `jesus fucking christ` | 2 |
 | `for the love of god` | 2 |
 
-**shouting** (7)
+**shouting** (8)
 
 | phrase | n |
 |---|---|
-| `NO` | 5 |
+| `NO` | 6 |
 | `DO NOT` | 1 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1393 hits over 28602 messages (4.41%)
+## CLAUDE  —  1434 hits over 29471 messages (4.40%)
 
-**agreement** (724)
+**agreement** (743)
 
 | phrase | n |
 |---|---|
-| `you're right` | 210 |
-| `good catch` | 116 |
-| `right -` | 81 |
-| `fair -` | 63 |
-| `good call` | 53 |
-| `you were right` | 36 |
+| `you're right` | 214 |
+| `good catch` | 119 |
+| `right -` | 82 |
+| `fair -` | 66 |
+| `good call` | 54 |
+| `you were right` | 39 |
 | `correct -` | 26 |
 | `agreed -` | 21 |
 | `you caught` | 13 |
 | `exactly right -` | 11 |
+| `as you said` | 10 |
 | `fair hit` | 10 |
 | `fair enough` | 10 |
-| `as you said` | 9 |
 | `nice catch` | 8 |
 | `you're right to push back` | 6 |
 | `thats exactly right` | 4 |
 | `exactly -` | 4 |
 | `you were right about` | 4 |
+| `fair correction` | 3 |
 | `you're right to call me out` | 3 |
 | `you're absolutely right` | 2 |
 | `you're exactly right` | 2 |
-| `fair correction` | 2 |
 | `youve got it exactly right` | 2 |
 | `fair complaint` | 2 |
+| `spot on` | 2 |
 | `you called it` | 2 |
 | `you were right to push back` | 2 |
 | `fair point` | 2 |
 | `true -` | 2 |
+| `fair callout` | 2 |
 | `fair catch` | 2 |
 | `that's a fair point` | 1 |
 | `point taken` | 1 |
@@ -114,36 +116,34 @@
 | `you were right to call that out` | 1 |
 | `great call` | 1 |
 | `you had it right` | 1 |
-| `spot on` | 1 |
 | `legitimate hit` | 1 |
 | `you're completely right` | 1 |
 | `fair criticism` | 1 |
 | `legitimate catch` | 1 |
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
-| `fair callout` | 1 |
 
-**wrong_approach** (303)
+**wrong_approach** (313)
 
 | phrase | n |
 |---|---|
 | `i should have` | 64 |
 | `i was wrong` | 48 |
 | `my mistake` | 27 |
-| `i introduced` | 24 |
+| `i introduced` | 25 |
 | `my error` | 19 |
 | `i shouldn't have` | 18 |
+| `that was wrong` | 17 |
 | `i assumed` | 17 |
-| `that was wrong` | 16 |
 | `was mine` | 12 |
+| `my bug` | 11 |
 | `is mine` | 10 |
 | `i should've` | 9 |
-| `on my part` | 8 |
-| `my bug` | 7 |
+| `on my part` | 9 |
+| `i misread` | 7 |
 | `i broke` | 7 |
-| `i misread` | 5 |
 | `were mine` | 3 |
-| `i got that wrong` | 2 |
+| `i got that wrong` | 3 |
 | `error was mine` | 1 |
 | `i was partly wrong` | 1 |
 | `were both mine` | 1 |
@@ -152,53 +152,53 @@
 | `my doing` | 1 |
 | `my failure` | 1 |
 
-**validation** (196)
+**validation** (201)
 
 | phrase | n |
 |---|---|
-| `good question` | 77 |
+| `good question` | 79 |
 | `good instinct` | 53 |
-| `nice work` | 15 |
-| `great question` | 12 |
+| `nice work` | 16 |
+| `great question` | 13 |
 | `fair question` | 11 |
 | `right instinct` | 10 |
+| `fair challenge` | 6 |
 | `good eye` | 5 |
 | `good find` | 5 |
-| `fair challenge` | 5 |
 | `nice find` | 1 |
 | `good work` | 1 |
 | `well done` | 1 |
 
-**compliance** (74)
+**compliance** (77)
 
 | phrase | n |
 |---|---|
-| `understood -` | 50 |
-| `noted -` | 24 |
+| `understood -` | 52 |
+| `noted -` | 25 |
 
-**apology** (43)
+**apology** (46)
 
 | phrase | n |
 |---|---|
-| `that's on me` | 17 |
+| `that's on me` | 18 |
 | `that's my fault` | 5 |
+| `my fault` | 5 |
 | `i'm sorry` | 4 |
-| `my fault` | 4 |
+| `my bad` | 4 |
 | `my apologies` | 3 |
-| `my bad` | 3 |
 | `i apologize` | 3 |
 | `sorry about that` | 2 |
 | `i apologize for` | 1 |
 | `this is on me` | 1 |
 
-**reversal** (41)
+**reversal** (42)
 
 | phrase | n |
 |---|---|
 | `that reframes` | 21 |
 | `changes the calculus` | 5 |
+| `that changes things` | 4 |
 | `that changes the picture` | 4 |
-| `that changes things` | 3 |
 | `in that case` | 2 |
 | `that changes the calculus` | 2 |
 | `different story` | 2 |
@@ -231,7 +231,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1120 | 1000 | 3.50% |
-| flattery | 196 | 194 | 0.68% |
-| acknowledgment | 74 | 74 | 0.26% |
+| concession | 1153 | 1027 | 3.48% |
+| flattery | 201 | 199 | 0.68% |
+| acknowledgment | 77 | 77 | 0.26% |
 | status | 3 | 3 | 0.01% |
