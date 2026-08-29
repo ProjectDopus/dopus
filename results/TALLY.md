@@ -1,15 +1,15 @@
 # Phrase tally
 
-## USER  —  413 hits over 5483 messages (4.72%)
+## USER  —  424 hits over 5515 messages (4.77%)
 
-**profanity** (316)
+**profanity** (323)
 
 | phrase | n |
 |---|---|
-| `fucking` | 106 |
-| `fuck` | 75 |
+| `fucking` | 110 |
+| `fuck` | 76 |
 | `shit` | 62 |
-| `wtf` | 37 |
+| `wtf` | 39 |
 | `hell` | 8 |
 | `fucked` | 6 |
 | `damn` | 4 |
@@ -37,7 +37,7 @@
 | `idiot` | 2 |
 | `pathetic` | 1 |
 
-**not_listening** (30)
+**not_listening** (31)
 
 | phrase | n |
 |---|---|
@@ -53,40 +53,42 @@
 | `did you even read` | 1 |
 | `stop it` | 1 |
 | `you are not listening` | 1 |
+| `stop doing that` | 1 |
 
-**blasphemy** (25)
+**blasphemy** (27)
 
 | phrase | n |
 |---|---|
 | `jesus christ` | 8 |
 | `jesus` | 5 |
 | `my god` | 5 |
-| `jesus fucking christ` | 2 |
+| `jesus fucking christ` | 3 |
 | `for the love of god` | 2 |
 | `god this is` | 2 |
 | `holy god` | 1 |
+| `oh my god` | 1 |
 
-**shouting** (8)
+**shouting** (9)
 
 | phrase | n |
 |---|---|
 | `NO` | 6 |
-| `DO NOT` | 1 |
+| `DO NOT` | 2 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1497 hits over 29471 messages (4.51%)
+## CLAUDE  —  1524 hits over 29730 messages (4.53%)
 
-**agreement** (743)
+**agreement** (750)
 
 | phrase | n |
 |---|---|
-| `you're right` | 214 |
-| `good catch` | 119 |
+| `you're right` | 219 |
+| `good catch` | 120 |
 | `right -` | 82 |
 | `fair -` | 66 |
 | `good call` | 54 |
 | `you were right` | 39 |
-| `correct -` | 26 |
+| `correct -` | 27 |
 | `agreed -` | 21 |
 | `you caught` | 13 |
 | `exactly right -` | 11 |
@@ -126,49 +128,49 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (353)
+**wrong_approach** (365)
 
 | phrase | n |
 |---|---|
 | `i should have` | 64 |
 | `i was wrong` | 48 |
-| `my mistake` | 27 |
-| `i introduced` | 25 |
+| `my mistake` | 28 |
+| `i introduced` | 27 |
+| `that was wrong` | 19 |
 | `my error` | 19 |
 | `i shouldn't have` | 18 |
-| `that was wrong` | 17 |
 | `i assumed` | 17 |
 | `i claimed` | 14 |
+| `without checking` | 12 |
 | `was mine` | 12 |
-| `without checking` | 11 |
 | `my bug` | 11 |
-| `is mine` | 10 |
+| `is mine` | 11 |
 | `i should've` | 9 |
 | `on my part` | 9 |
-| `i asserted` | 8 |
+| `i asserted` | 9 |
 | `i misread` | 7 |
 | `i broke` | 7 |
-| `instead of checking` | 4 |
+| `instead of checking` | 6 |
+| `i stated` | 4 |
 | `were mine` | 3 |
 | `i got that wrong` | 3 |
-| `i stated` | 3 |
+| `my regression` | 2 |
 | `error was mine` | 1 |
 | `i was partly wrong` | 1 |
 | `were both mine` | 1 |
 | `i was solving the wrong problem` | 1 |
-| `my regression` | 1 |
 | `my doing` | 1 |
 | `my failure` | 1 |
 
-**validation** (201)
+**validation** (204)
 
 | phrase | n |
 |---|---|
-| `good question` | 79 |
+| `good question` | 80 |
 | `good instinct` | 53 |
 | `nice work` | 16 |
+| `fair question` | 13 |
 | `great question` | 13 |
-| `fair question` | 11 |
 | `right instinct` | 10 |
 | `fair challenge` | 6 |
 | `good eye` | 5 |
@@ -177,26 +179,26 @@
 | `good work` | 1 |
 | `well done` | 1 |
 
-**compliance** (77)
+**compliance** (80)
 
 | phrase | n |
 |---|---|
-| `understood -` | 52 |
+| `understood -` | 55 |
 | `noted -` | 25 |
 
-**apology** (69)
+**apology** (71)
 
 | phrase | n |
 |---|---|
-| `i owe you` | 23 |
+| `i owe you` | 24 |
 | `that's on me` | 18 |
 | `that's my fault` | 5 |
 | `my fault` | 5 |
 | `i'm sorry` | 4 |
 | `my bad` | 4 |
+| `sorry about that` | 3 |
 | `my apologies` | 3 |
 | `i apologize` | 3 |
-| `sorry about that` | 2 |
 | `i apologize for` | 1 |
 | `this is on me` | 1 |
 
@@ -240,7 +242,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1216 | 1059 | 3.59% |
-| flattery | 201 | 199 | 0.68% |
-| acknowledgment | 77 | 77 | 0.26% |
+| concession | 1237 | 1073 | 3.61% |
+| flattery | 204 | 202 | 0.68% |
+| acknowledgment | 80 | 80 | 0.27% |
 | status | 3 | 3 | 0.01% |
