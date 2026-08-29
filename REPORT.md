@@ -145,6 +145,34 @@ That is consistent with the pooled result, but it is a single comparison, and
 n. **Treat the leaderboard as robust for opus-5 versus the field, and unresolved
 among opus-4-8, sonnet-5, and fable-5**, whose intervals overlap everywhere.
 
+**Confound 3 — or rather, a second finding: the vocabulary is a fingerprint.**
+*(Corpus as of 2026-08-29, 479k messages; the tables above are the 08-15 snapshot.)*
+The leaderboard counts *how often* each model concedes. Looking at *which
+phrases* carry those concessions separates the models more sharply than the
+rate does:
+
+| phrase (share of the model's concession hits) | opus-4-8 | opus-5 | fable-5 | sonnet-5 |
+|---|---|---|---|---|
+| `you're right` | 21.6% | 15.0% | 16.3% | 17.3% |
+| `good catch` | 13.1% | 2.6% | 10.9% | 24.1% |
+| `right -` | 7.6% | 6.2% | 7.5% | 7.5% |
+| `fair -` | 2.4% | 6.9% | 8.2% | 10.5% |
+| `i should have` | 2.7% | 10.7% | 2.0% | 3.0% |
+| `good call` | 7.6% | 1.4% | 4.1% | 5.3% |
+| `i was wrong` | 4.2% | 6.0% | 0.0% | 3.0% |
+| `you were right` | 3.1% | 3.1% | 6.8% | 1.5% |
+| *concession hits* | 449 | 420 | 147 | 133 |
+
+χ²(24, N=1,149) = 153.1, Cramér's V = 0.21, p = 9e-21 — phrase choice is not
+independent of model. The register differs, not just the rate: opus-5's
+concessions are dominated by first-person fault language (`i should have` is
+11% of its hits against ~3% for the others; `i was wrong`, `my error`,
+and the whole "i asserted / i claimed … without checking" family are likewise
+mostly opus-5), while every other model concedes by crediting the user
+(`good catch` is 24% of sonnet-5's hits and 3% of opus-5's). Capability and
+candor are different axes: fable-5, the most capable model in the set,
+concedes least often *and* in the most generic vocabulary.
+
 ## 5. Trend
 
 | month | assistant messages | concession msgs | rate | 95% CI |

@@ -81,6 +81,61 @@ def sf_df3(x):
     return math.erfc(math.sqrt(x / 2)) + math.sqrt(2 * x / math.pi) * math.exp(-x / 2)
 
 
+def chi2_sf(x, df):
+    """Upper tail of chi-square with integer df, via the regularized upper
+    incomplete gamma Q(df/2, x/2). Series for small x, continued fraction
+    otherwise (Numerical Recipes gammq). Exact enough for reporting p."""
+    if x <= 0:
+        return 1.0
+    a, z = df / 2.0, x / 2.0
+    lg = math.lgamma(a)
+    if z < a + 1:
+        term = total = 1.0 / a
+        n = a
+        for _ in range(500):
+            n += 1
+            term *= z / n
+            total += term
+            if abs(term) < abs(total) * 1e-15:
+                break
+        return max(0.0, 1.0 - total * math.exp(-z + a * math.log(z) - lg))
+    b = z + 1 - a
+    c = 1e300
+    d = 1.0 / b
+    h = d
+    for i in range(1, 500):
+        an = -i * (i - a)
+        b += 2
+        d = an * d + b
+        d = 1e-300 if abs(d) < 1e-300 else d
+        c = b + an / c
+        c = 1e-300 if abs(c) < 1e-300 else c
+        d = 1.0 / d
+        de = d * c
+        h *= de
+        if abs(de - 1) < 1e-15:
+            break
+    return min(1.0, math.exp(-z + a * math.log(z) - lg) * h)
+
+
+def contingency(table):
+    """chi-square test of independence on a rows x cols count table.
+    Returns (chi2, df, N, cramers_v, p)."""
+    R, C = len(table), len(table[0])
+    rs = [sum(r) for r in table]
+    cs = [sum(table[i][j] for i in range(R)) for j in range(C)]
+    N = sum(rs)
+    x = 0.0
+    for i in range(R):
+        for j in range(C):
+            e = rs[i] * cs[j] / N
+            if e > 0:
+                x += (table[i][j] - e) ** 2 / e
+    df = (R - 1) * (C - 1)
+    v = math.sqrt(x / (N * (min(R, C) - 1))) if N and min(R, C) > 1 else 0.0
+    return x, df, N, v, chi2_sf(x, df)
+
+
 def omnibus(groups):
     """chi-square for k x 2 table of (k, n) rows."""
     K = sum(k for k, _ in groups)

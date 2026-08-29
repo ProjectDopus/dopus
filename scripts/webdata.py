@@ -212,6 +212,34 @@ def build():
     out["monthly"] = [[d["month"], d["rate"], d["ci"][0], d["ci"][1], d["messages"]]
                       for d in a["monthly"]]
 
+    # Concession vocabulary by model: shares per phrase, plus for each model
+    # the phrase whose share most exceeds the pooled share of the other models
+    # (min 10 hits, so a fingerprint is a habit, not a fluke).
+    pb = a["phrase_by_model"]
+    ms = [short(m) for m in pb["models"]]
+    phrases = [p for p in pb["phrases"] if p != "other"]
+    shares = {short(m): pb["shares"][m] for m in pb["models"]}
+    counts = {short(m): pb["counts"][m] for m in pb["models"]}
+    totals = {short(m): pb["totals"][m] for m in pb["models"]}
+    fp = {}
+    for m in ms:
+        best = None
+        for p in phrases:
+            if counts[m][p] < 10:
+                continue
+            others_k = sum(counts[o][p] for o in ms if o != m)
+            others_n = sum(totals[o] for o in ms if o != m)
+            other_share = 100.0 * others_k / others_n if others_n else 0.0
+            ratio = shares[m][p] / other_share if other_share else float("inf")
+            if best is None or ratio > best[1]:
+                best = (p, ratio, shares[m][p], other_share)
+        if best:
+            fp[m] = dict(phrase=best[0], ratio=best[1], share=best[2], others=best[3])
+    out["phrase_by_model"] = dict(
+        models=ms, phrases=phrases, shares=shares, counts=counts, totals=totals,
+        chi2=pb["chi2"], df=pb["df"], n=pb["n"], v=pb["v"], p=pb["p"],
+        fingerprint=fp)
+
     # ------------------------------------------------------- follow-through
     strata_n = {k: v for k, v in ft["labels"].items() if k != "ineligible"}
     per = defaultdict(Counter)

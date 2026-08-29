@@ -123,6 +123,35 @@ def main():
     for r in rows:
         if r["side"] == "assistant" and r["construct"] == "concession" and r["timestamp"]:
             mon_msgs[r["timestamp"][:7]].add(r["msg_fingerprint"])
+    # ------------------------------------------ concession vocabulary by model
+    # Which phrases each model reaches for when it folds. Top phrases pooled
+    # across leaderboard models, plus an "other" bucket, then a chi-square test
+    # of independence: is the concession vocabulary a model fingerprint?
+    import stats as ST
+    TOP_K = 8
+    lead_models = [d["model"] for d in lead]
+    pm_counts = defaultdict(Counter)
+    for r in rows:
+        if (r["side"] == "assistant" and r["construct"] == "concession"
+                and r["model"] in lead_models):
+            pm_counts[r["model"]][r["phrase"]] += 1
+    pooled = Counter()
+    for m in lead_models:
+        pooled.update(pm_counts[m])
+    top_ph = [p for p, _ in pooled.most_common(TOP_K)]
+    table = [[pm_counts[m][p] for m in lead_models] for p in top_ph]
+    table.append([sum(v for p, v in pm_counts[m].items() if p not in top_ph)
+                  for m in lead_models])
+    x, df, N, V, pval = ST.contingency(table)
+    totals = {m: sum(pm_counts[m].values()) for m in lead_models}
+    out["phrase_by_model"] = dict(
+        models=lead_models, phrases=top_ph + ["other"],
+        counts={m: {p: pm_counts[m][p] for p in top_ph} for m in lead_models},
+        totals=totals,
+        shares={m: {p: pct(pm_counts[m][p], totals[m]) for p in top_ph}
+                for m in lead_models},
+        chi2=x, df=df, n=N, v=V, p=pval)
+
     out["monthly"] = [dict(month=m, messages=n, concession_msgs=len(mon_msgs[m]),
                            rate=pct(len(mon_msgs[m]), n), ci=wilson(len(mon_msgs[m]), n))
                       for m, n in sorted(mon_denom.items()) if n >= 200]

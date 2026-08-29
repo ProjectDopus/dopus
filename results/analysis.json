@@ -267,6 +267,120 @@
    "rate": 4.51591584976319
   }
  ],
+ "phrase_by_model": {
+  "chi2": 153.0581355505947,
+  "counts": {
+   "claude-fable-5": {
+    "fair -": 12,
+    "good call": 6,
+    "good catch": 16,
+    "i should have": 3,
+    "i was wrong": 0,
+    "right -": 11,
+    "you were right": 10,
+    "you're right": 24
+   },
+   "claude-opus-4-8": {
+    "fair -": 11,
+    "good call": 34,
+    "good catch": 59,
+    "i should have": 12,
+    "i was wrong": 19,
+    "right -": 34,
+    "you were right": 14,
+    "you're right": 97
+   },
+   "claude-opus-5": {
+    "fair -": 29,
+    "good call": 6,
+    "good catch": 11,
+    "i should have": 45,
+    "i was wrong": 25,
+    "right -": 26,
+    "you were right": 13,
+    "you're right": 63
+   },
+   "claude-sonnet-5": {
+    "fair -": 14,
+    "good call": 7,
+    "good catch": 32,
+    "i should have": 4,
+    "i was wrong": 4,
+    "right -": 10,
+    "you were right": 2,
+    "you're right": 23
+   }
+  },
+  "df": 24,
+  "models": [
+   "claude-opus-4-8",
+   "claude-opus-5",
+   "claude-fable-5",
+   "claude-sonnet-5"
+  ],
+  "n": 1149,
+  "p": 8.935149813760479e-21,
+  "phrases": [
+   "you're right",
+   "good catch",
+   "right -",
+   "fair -",
+   "i should have",
+   "good call",
+   "i was wrong",
+   "you were right",
+   "other"
+  ],
+  "shares": {
+   "claude-fable-5": {
+    "fair -": 8.16326530612245,
+    "good call": 4.081632653061225,
+    "good catch": 10.884353741496598,
+    "i should have": 2.0408163265306123,
+    "i was wrong": 0.0,
+    "right -": 7.482993197278912,
+    "you were right": 6.802721088435374,
+    "you're right": 16.3265306122449
+   },
+   "claude-opus-4-8": {
+    "fair -": 2.4498886414253898,
+    "good call": 7.572383073496659,
+    "good catch": 13.140311804008908,
+    "i should have": 2.6726057906458798,
+    "i was wrong": 4.23162583518931,
+    "right -": 7.572383073496659,
+    "you were right": 3.11804008908686,
+    "you're right": 21.603563474387528
+   },
+   "claude-opus-5": {
+    "fair -": 6.904761904761905,
+    "good call": 1.4285714285714286,
+    "good catch": 2.619047619047619,
+    "i should have": 10.714285714285714,
+    "i was wrong": 5.9523809523809526,
+    "right -": 6.190476190476191,
+    "you were right": 3.0952380952380953,
+    "you're right": 15.0
+   },
+   "claude-sonnet-5": {
+    "fair -": 10.526315789473685,
+    "good call": 5.2631578947368425,
+    "good catch": 24.06015037593985,
+    "i should have": 3.007518796992481,
+    "i was wrong": 3.007518796992481,
+    "right -": 7.518796992481203,
+    "you were right": 1.5037593984962405,
+    "you're right": 17.293233082706767
+   }
+  },
+  "totals": {
+   "claude-fable-5": 147,
+   "claude-opus-4-8": 449,
+   "claude-opus-5": 420,
+   "claude-sonnet-5": 133
+  },
+  "v": 0.21072087824045163
+ },
  "project_control": {
   "models": {
    "claude-opus-4-8": {
