@@ -74,7 +74,7 @@
 | `DO NOT` | 1 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1442 hits over 29471 messages (4.41%)
+## CLAUDE  —  1474 hits over 29471 messages (4.46%)
 
 **agreement** (743)
 
@@ -126,7 +126,7 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (321)
+**wrong_approach** (353)
 
 | phrase | n |
 |---|---|
@@ -138,7 +138,9 @@
 | `i shouldn't have` | 18 |
 | `that was wrong` | 17 |
 | `i assumed` | 17 |
+| `i claimed` | 14 |
 | `was mine` | 12 |
+| `without checking` | 11 |
 | `my bug` | 11 |
 | `is mine` | 10 |
 | `i should've` | 9 |
@@ -146,8 +148,10 @@
 | `i asserted` | 8 |
 | `i misread` | 7 |
 | `i broke` | 7 |
+| `instead of checking` | 4 |
 | `were mine` | 3 |
 | `i got that wrong` | 3 |
+| `i stated` | 3 |
 | `error was mine` | 1 |
 | `i was partly wrong` | 1 |
 | `were both mine` | 1 |
@@ -235,7 +239,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1161 | 1031 | 3.50% |
+| concession | 1193 | 1045 | 3.55% |
 | flattery | 201 | 199 | 0.68% |
 | acknowledgment | 77 | 77 | 0.26% |
 | status | 3 | 3 | 0.01% |

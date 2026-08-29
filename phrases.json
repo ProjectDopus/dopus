@@ -90,6 +90,10 @@
       "i should've",
       "i introduced",
       "i asserted",
+      "i claimed",
+      "i stated",
+      "instead of checking",
+      "without checking",
       "my mistake",
       "my error",
       "my bug",
@@ -286,6 +290,26 @@
       "rather than assuming",
       "verified the",
       "checked the"
+    ],
+    "i claimed": [
+      "rather than trusting",
+      "rather than assuming",
+      "verified the",
+      "checked the",
+      "cleaner than i claimed",
+      "better than i claimed"
+    ],
+    "i stated": [
+      "rather than trusting",
+      "rather than assuming",
+      "verified the",
+      "checked the"
+    ],
+    "without checking": [
+      "checking in",
+      "trusting output",
+      "trusting factual",
+      "beginners"
     ]
   },
   "_precision_audit": {
@@ -422,6 +446,34 @@
       "precision": "8/8 on the untracked forms",
       "date": "2026-08-28",
       "note": "bare 'god' in 15 user messages: 5 already tracked (god damn/damnit, for the love of god), 8 untracked and all exasperation ('my god.', 'god this is painful', 'holy god what is going on'); 1 positive use ('god damn this is so much better') is a pre-existing tracked-phrase false positive, noted"
+    },
+    "i claimed": {
+      "n": 14,
+      "sampled": 14,
+      "precision": "13/14",
+      "date": "2026-08-28",
+      "note": "opus-5 9, opus-4-8 4, fable-5 1; all but one are 'i claimed X but hadn't tested / it didn't work and i claimed it did'; the borderline ('the paste was cleaner than i claimed') is still a self-correction"
+    },
+    "i stated": {
+      "n": 3,
+      "sampled": 3,
+      "precision": "3/3",
+      "date": "2026-08-28",
+      "note": "'i stated that as fact and i dont have it'; shares the i-asserted guard"
+    },
+    "instead of checking": {
+      "n": 4,
+      "sampled": 4,
+      "precision": "4/4",
+      "date": "2026-08-28",
+      "note": "'i was guessing instead of checking', 'defending math instead of checking reality'"
+    },
+    "without checking": {
+      "n": 19,
+      "sampled": 19,
+      "precision": "11/19 kept after guard; 11/11 genuine",
+      "date": "2026-08-28",
+      "note": "8 guarded out, confirmed specimen-by-specimen: six 'keep going without checking in' progress idioms and two 'trusting output without checking' lines that describe the failure mode rather than commit it"
     }
   },
   "assistant_patterns": {
