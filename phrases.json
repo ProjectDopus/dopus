@@ -89,6 +89,7 @@
       "i should have",
       "i should've",
       "i introduced",
+      "i asserted",
       "my mistake",
       "my error",
       "my bug",
@@ -279,6 +280,12 @@
       "mine to do",
       "if it were mine",
       "were mine to"
+    ],
+    "i asserted": [
+      "rather than trusting",
+      "rather than assuming",
+      "verified the",
+      "checked the"
     ]
   },
   "_precision_audit": {
@@ -401,6 +408,20 @@
       "sampled": 2,
       "precision": "100%",
       "why": "THE headline negative result: the phrase the whole project was built around occurs twice in 25,208 messages. Both genuine. Audit-verified, not an artifact of a narrow pattern."
+    },
+    "i asserted": {
+      "n": 10,
+      "sampled": 10,
+      "precision": "8/10 raw; 8/8 after negation guard",
+      "date": "2026-08-28",
+      "note": "every occurrence is opus-5 (Jul-Aug 2026); 8/10 are fault admissions ('i asserted that without testing it'), 2/10 use assert-as-verify ('i asserted the value was unchanged rather than trusting it') -- both carry 'rather than'/'verified the' and are guarded out; confirmed specimen-by-specimen against the live matcher"
+    },
+    "my god / holy god / god this is (user, swear.py)": {
+      "n": 15,
+      "sampled": 15,
+      "precision": "8/8 on the untracked forms",
+      "date": "2026-08-28",
+      "note": "bare 'god' in 15 user messages: 5 already tracked (god damn/damnit, for the love of god), 8 untracked and all exasperation ('my god.', 'god this is painful', 'holy god what is going on'); 1 positive use ('god damn this is so much better') is a pre-existing tracked-phrase false positive, noted"
     }
   },
   "assistant_patterns": {

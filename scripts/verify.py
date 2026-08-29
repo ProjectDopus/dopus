@@ -49,6 +49,8 @@ ASSISTANT_FIXTURES = [
     ("that's a different repo, and I haven't checked it", False, "removed phrase"),
     ("Good news: the backend is already multi-site.",     False, "rejected phrase"),
     ("whenever you're ready — say the word",              False, "deference, not concession"),
+    ("I asserted that without testing it.",               True,  "asserted = claimed unverified"),
+    ("I asserted the value was unchanged rather than trusting it.", False, "asserted = verified (guarded)"),
 ]
 
 USER_FIXTURES = [
@@ -60,6 +62,7 @@ USER_FIXTURES = [
     ("tools.ts has NO emit path today",                   False, "NO inside prose"),
     ("hell yes",                                          False, "positive idiom"),
     ("nothing in the workflow to stop it",                False, "technical 'stop it'"),
+    ("stop overcomplicating your responses. my god.",     True,  "bare 'my god' exasperation"),
 ]
 
 

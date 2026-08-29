@@ -1,6 +1,6 @@
 # Phrase tally
 
-## USER  —  405 hits over 5483 messages (4.67%)
+## USER  —  413 hits over 5483 messages (4.72%)
 
 **profanity** (316)
 
@@ -54,14 +54,17 @@
 | `stop it` | 1 |
 | `you are not listening` | 1 |
 
-**blasphemy** (17)
+**blasphemy** (25)
 
 | phrase | n |
 |---|---|
 | `jesus christ` | 8 |
 | `jesus` | 5 |
+| `my god` | 5 |
 | `jesus fucking christ` | 2 |
 | `for the love of god` | 2 |
+| `god this is` | 2 |
+| `holy god` | 1 |
 
 **shouting** (8)
 
@@ -71,7 +74,7 @@
 | `DO NOT` | 1 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1434 hits over 29471 messages (4.40%)
+## CLAUDE  —  1442 hits over 29471 messages (4.41%)
 
 **agreement** (743)
 
@@ -123,7 +126,7 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (313)
+**wrong_approach** (321)
 
 | phrase | n |
 |---|---|
@@ -140,6 +143,7 @@
 | `is mine` | 10 |
 | `i should've` | 9 |
 | `on my part` | 9 |
+| `i asserted` | 8 |
 | `i misread` | 7 |
 | `i broke` | 7 |
 | `were mine` | 3 |
@@ -231,7 +235,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1153 | 1027 | 3.48% |
+| concession | 1161 | 1031 | 3.50% |
 | flattery | 201 | 199 | 0.68% |
 | acknowledgment | 77 | 77 | 0.26% |
 | status | 3 | 3 | 0.01% |

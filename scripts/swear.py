@@ -42,7 +42,7 @@ PROFANITY = [
 BLASPHEMY = [
     "jesus christ", "jesus fucking christ", "jesus", "christ",
     "for fuck's sake", "for christ's sake", "for god's sake", "for the love of god",
-    "oh my god", "omfg", "good lord",
+    "oh my god", "my god", "holy god", "god this is", "omfg", "good lord",
 ]
 
 INSULT = [
