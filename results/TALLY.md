@@ -74,7 +74,7 @@
 | `DO NOT` | 1 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1474 hits over 29471 messages (4.46%)
+## CLAUDE  —  1497 hits over 29471 messages (4.51%)
 
 **agreement** (743)
 
@@ -184,10 +184,11 @@
 | `understood -` | 52 |
 | `noted -` | 25 |
 
-**apology** (46)
+**apology** (69)
 
 | phrase | n |
 |---|---|
+| `i owe you` | 23 |
 | `that's on me` | 18 |
 | `that's my fault` | 5 |
 | `my fault` | 5 |
@@ -239,7 +240,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1193 | 1045 | 3.55% |
+| concession | 1216 | 1059 | 3.59% |
 | flattery | 201 | 199 | 0.68% |
 | acknowledgment | 77 | 77 | 0.26% |
 | status | 3 | 3 | 0.01% |

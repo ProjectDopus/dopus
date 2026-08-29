@@ -59,6 +59,7 @@
       "my bad",
       "this is on me",
       "that's on me",
+      "i owe you",
       "i take full responsibility",
       "there's no good excuse",
       "no good excuse"
@@ -474,6 +475,13 @@
       "precision": "11/19 kept after guard; 11/11 genuine",
       "date": "2026-08-28",
       "note": "8 guarded out, confirmed specimen-by-specimen: six 'keep going without checking in' progress idioms and two 'trusting output without checking' lines that describe the failure mode rather than commit it"
+    },
+    "i owe you": {
+      "n": 23,
+      "sampled": 10,
+      "precision": "10/10",
+      "date": "2026-08-28",
+      "note": "the debt formula -- 'i owe you a correction / a straight answer / a real fix, not another guess / a straight admission'; opus-4-8 15, opus-5 7, fable-5 1: the older Opus's confession dialect"
     }
   },
   "assistant_patterns": {

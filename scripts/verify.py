@@ -54,6 +54,7 @@ ASSISTANT_FIXTURES = [
     ("my fix didn't work, and worse, I claimed it did.",   True,  "claimed = unverified assertion"),
     ("I'll keep going through each notification without checking in.", False, "'checking in' idiom (guarded)"),
     ("I was guessing instead of checking the actual docs.", True,  "instead-of-checking admission"),
+    ("I owe you a correction: I only checked the user database.", True, "the owing formula"),
 ]
 
 USER_FIXTURES = [
