@@ -55,6 +55,8 @@ ASSISTANT_FIXTURES = [
     ("I'll keep going through each notification without checking in.", False, "'checking in' idiom (guarded)"),
     ("I was guessing instead of checking the actual docs.", True,  "instead-of-checking admission"),
     ("I owe you a correction: I only checked the user database.", True, "the owing formula"),
+    ("One correction to my audit: I listed the wrong file.", True,  "self-directed correction"),
+    ("One correction: that standard is not an agentic profile.", False, "correcting the user, not self"),
 ]
 
 USER_FIXTURES = [

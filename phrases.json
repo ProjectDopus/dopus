@@ -138,7 +138,11 @@
       "that reframes",
       "in that case",
       "given that, ",
-      "different story"
+      "different story",
+      "correction to my",
+      "correction to what i",
+      "correction to something i",
+      "i made a mistake"
     ],
     "restart": [
       "let me start over completely",
@@ -482,6 +486,20 @@
       "precision": "10/10",
       "date": "2026-08-28",
       "note": "the debt formula -- 'i owe you a correction / a straight answer / a real fix, not another guess / a straight admission'; opus-4-8 15, opus-5 7, fable-5 1: the older Opus's confession dialect"
+    },
+    "correction to my / what i / something i": {
+      "n": 31,
+      "sampled": 31,
+      "precision": "31/31",
+      "date": "2026-08-30",
+      "note": "self-directed correction formulas ('one correction to my audit', 'correction to what i said earlier'); opus-5 25 of 31. Bare 'one correction' REJECTED (~10/16): the remainder are corrections of the user's claim, not the model's"
+    },
+    "i made a mistake": {
+      "n": 4,
+      "sampled": 4,
+      "precision": "4/4",
+      "date": "2026-08-30",
+      "note": "all opus-5"
     }
   },
   "assistant_patterns": {

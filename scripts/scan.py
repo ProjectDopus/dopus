@@ -359,6 +359,29 @@ def is_synthetic(entry):
     )
 
 
+COMMAND_RX = re.compile(r"<command-name>\s*([^<]+?)\s*</command-name>")
+
+
+def command_name(entry):
+    """The slash-command / skill a user entry invoked, or None. Read from the
+    raw content before message_text() strips the wrapper -- the invocation is
+    machine text and rightly leaves the analysis population, but WHICH command
+    ran is a fact worth keeping (does concession differ inside skill runs?)."""
+    msg = entry.get("message")
+    if not isinstance(msg, dict):
+        return None
+    content = msg.get("content")
+    if isinstance(content, str):
+        parts = [content]
+    elif isinstance(content, list):
+        parts = [b.get("text", "") for b in content
+                 if isinstance(b, dict) and b.get("type") == "text"]
+    else:
+        return None
+    m = COMMAND_RX.search("\n".join(p for p in parts if p))
+    return m.group(1).lower().lstrip("/") if m else None
+
+
 def message_text(entry):
     """Pull only genuine prose out of a transcript entry.
 

@@ -1,14 +1,14 @@
 # Phrase tally
 
-## USER  —  424 hits over 5515 messages (4.77%)
+## USER  —  471 hits over 5644 messages (4.87%)
 
-**profanity** (323)
+**profanity** (357)
 
 | phrase | n |
 |---|---|
-| `fucking` | 110 |
-| `fuck` | 76 |
-| `shit` | 62 |
+| `fucking` | 135 |
+| `fuck` | 78 |
+| `shit` | 69 |
 | `wtf` | 39 |
 | `hell` | 8 |
 | `fucked` | 6 |
@@ -24,18 +24,19 @@
 | `ass` | 1 |
 | `god damn` | 1 |
 
-**insult** (34)
+**insult** (45)
 
 | phrase | n |
 |---|---|
-| `stupid` | 14 |
-| `lazy` | 6 |
+| `stupid` | 21 |
+| `lazy` | 7 |
 | `dumb` | 4 |
+| `idiot` | 4 |
 | `useless` | 3 |
 | `sloppy` | 2 |
 | `moron` | 2 |
-| `idiot` | 2 |
 | `pathetic` | 1 |
+| `dumbass` | 1 |
 
 **not_listening** (31)
 
@@ -55,47 +56,47 @@
 | `you are not listening` | 1 |
 | `stop doing that` | 1 |
 
-**blasphemy** (27)
+**blasphemy** (28)
 
 | phrase | n |
 |---|---|
 | `jesus christ` | 8 |
+| `my god` | 6 |
 | `jesus` | 5 |
-| `my god` | 5 |
 | `jesus fucking christ` | 3 |
 | `for the love of god` | 2 |
 | `god this is` | 2 |
 | `holy god` | 1 |
 | `oh my god` | 1 |
 
-**shouting** (9)
+**shouting** (10)
 
 | phrase | n |
 |---|---|
-| `NO` | 6 |
+| `NO` | 7 |
 | `DO NOT` | 2 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1524 hits over 29730 messages (4.53%)
+## CLAUDE  —  1630 hits over 30653 messages (4.68%)
 
-**agreement** (750)
+**agreement** (777)
 
 | phrase | n |
 |---|---|
-| `you're right` | 219 |
-| `good catch` | 120 |
-| `right -` | 82 |
-| `fair -` | 66 |
-| `good call` | 54 |
-| `you were right` | 39 |
-| `correct -` | 27 |
-| `agreed -` | 21 |
+| `you're right` | 231 |
+| `good catch` | 122 |
+| `right -` | 83 |
+| `fair -` | 69 |
+| `good call` | 55 |
+| `you were right` | 42 |
+| `correct -` | 30 |
+| `agreed -` | 22 |
 | `you caught` | 13 |
 | `exactly right -` | 11 |
 | `as you said` | 10 |
 | `fair hit` | 10 |
 | `fair enough` | 10 |
-| `nice catch` | 8 |
+| `nice catch` | 9 |
 | `you're right to push back` | 6 |
 | `thats exactly right` | 4 |
 | `exactly -` | 4 |
@@ -128,72 +129,90 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (365)
+**wrong_approach** (396)
 
 | phrase | n |
 |---|---|
-| `i should have` | 64 |
-| `i was wrong` | 48 |
+| `i should have` | 69 |
+| `i was wrong` | 52 |
+| `i introduced` | 31 |
 | `my mistake` | 28 |
-| `i introduced` | 27 |
+| `my error` | 21 |
+| `i shouldn't have` | 20 |
 | `that was wrong` | 19 |
-| `my error` | 19 |
-| `i shouldn't have` | 18 |
 | `i assumed` | 17 |
-| `i claimed` | 14 |
-| `without checking` | 12 |
+| `i claimed` | 15 |
+| `without checking` | 15 |
+| `my bug` | 13 |
+| `is mine` | 12 |
 | `was mine` | 12 |
-| `my bug` | 11 |
-| `is mine` | 11 |
+| `on my part` | 10 |
+| `i asserted` | 10 |
 | `i should've` | 9 |
-| `on my part` | 9 |
-| `i asserted` | 9 |
+| `i broke` | 9 |
 | `i misread` | 7 |
-| `i broke` | 7 |
-| `instead of checking` | 6 |
+| `instead of checking` | 7 |
 | `i stated` | 4 |
 | `were mine` | 3 |
 | `i got that wrong` | 3 |
+| `my doing` | 3 |
 | `my regression` | 2 |
 | `error was mine` | 1 |
 | `i was partly wrong` | 1 |
 | `were both mine` | 1 |
 | `i was solving the wrong problem` | 1 |
-| `my doing` | 1 |
 | `my failure` | 1 |
 
-**validation** (204)
+**validation** (209)
 
 | phrase | n |
 |---|---|
-| `good question` | 80 |
+| `good question` | 82 |
 | `good instinct` | 53 |
 | `nice work` | 16 |
 | `fair question` | 13 |
 | `great question` | 13 |
-| `right instinct` | 10 |
-| `fair challenge` | 6 |
+| `right instinct` | 12 |
+| `fair challenge` | 7 |
 | `good eye` | 5 |
 | `good find` | 5 |
 | `nice find` | 1 |
 | `good work` | 1 |
 | `well done` | 1 |
 
-**compliance** (80)
+**compliance** (83)
 
 | phrase | n |
 |---|---|
-| `understood -` | 55 |
+| `understood -` | 58 |
 | `noted -` | 25 |
 
-**apology** (71)
+**reversal** (81)
+
+| phrase | n |
+|---|---|
+| `that reframes` | 22 |
+| `correction to my` | 18 |
+| `correction to what i` | 12 |
+| `changes the calculus` | 5 |
+| `i made a mistake` | 4 |
+| `that changes things` | 4 |
+| `that changes the picture` | 4 |
+| `correction to something i` | 4 |
+| `in that case` | 2 |
+| `that changes the calculus` | 2 |
+| `different story` | 2 |
+| `that changes the math` | 1 |
+| `given that, ` | 1 |
+
+**apology** (72)
 
 | phrase | n |
 |---|---|
 | `i owe you` | 24 |
 | `that's on me` | 18 |
+| `my fault` | 6 |
 | `that's my fault` | 5 |
-| `my fault` | 5 |
 | `i'm sorry` | 4 |
 | `my bad` | 4 |
 | `sorry about that` | 3 |
@@ -201,20 +220,6 @@
 | `i apologize` | 3 |
 | `i apologize for` | 1 |
 | `this is on me` | 1 |
-
-**reversal** (42)
-
-| phrase | n |
-|---|---|
-| `that reframes` | 21 |
-| `changes the calculus` | 5 |
-| `that changes things` | 4 |
-| `that changes the picture` | 4 |
-| `in that case` | 2 |
-| `that changes the calculus` | 2 |
-| `different story` | 2 |
-| `that changes the math` | 1 |
-| `given that, ` | 1 |
 
 **fabrication** (7)
 
@@ -242,7 +247,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1237 | 1073 | 3.61% |
-| flattery | 204 | 202 | 0.68% |
-| acknowledgment | 80 | 80 | 0.27% |
+| concession | 1335 | 1151 | 3.75% |
+| flattery | 209 | 207 | 0.68% |
+| acknowledgment | 83 | 83 | 0.27% |
 | status | 3 | 3 | 0.01% |

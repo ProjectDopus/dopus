@@ -52,6 +52,7 @@ CREATE TABLE messages (
   model         TEXT,
   is_sidechain  INTEGER,
   is_compact    INTEGER,
+  command       TEXT,
   is_meta       INTEGER,
   is_visible_only INTEGER,
   has_text      INTEGER,       -- 0 for tool-only turns
@@ -141,12 +142,13 @@ def main():
                     1 if stripped else 0,
                     len(stripped),
                     re.sub(r"\s+", " ", text).strip() if stripped else None,
+                    S.command_name(e) if e.get("type") == "user" else None,
                 ))
         if rows:
             db.executemany(
                 "INSERT INTO messages (file_id,line_no,uuid,parent_uuid,fingerprint,"
                 "side,ts,model,is_sidechain,is_compact,is_meta,is_visible_only,"
-                "has_text,text_len,text) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", rows)
+                "has_text,text_len,text,command) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", rows)
             mid_total += len(rows)
         if fid % 400 == 0:
             db.commit()
