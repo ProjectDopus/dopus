@@ -152,6 +152,48 @@ def main():
                 for m in lead_models},
         chi2=x, df=df, n=N, v=V, p=pval)
 
+    # ----------------------------------------- leaderboard by conversational role
+    # Direct replies (depth 1-2 since the human last typed) vs autonomous work
+    # (depth 3+: only tool results / subagent traffic in between). Separates
+    # "folds when answering the user" from "audits itself while working" --
+    # the two are very different sentences about a model, and the orchestrator
+    # role loads the second one onto whichever model is doing the planning.
+    conc_fp = {r["msg_fingerprint"] for r in rows
+               if r["side"] == "assistant" and r["construct"] == "concession"}
+    sa_fp = {r["msg_fingerprint"] for r in rows
+             if r["side"] == "assistant" and r["construct"] == "self_audit"}
+    role_n, role_k, role_sa = defaultdict(Counter), defaultdict(Counter), Counter()
+    cur, depth, seen_fp = None, 0, set()
+    for fid, side, fp, model, inpop in db.execute(
+            f"""SELECT m.file_id, m.side, m.fingerprint, m.model, ({WHERE}) FROM messages m
+                JOIN files f ON m.file_id=f.file_id
+                WHERE f.project != '{P.PROJECT_SLUG}' AND m.is_sidechain=0
+                ORDER BY m.file_id, m.line_no"""):
+        if fid != cur:
+            cur, depth = fid, 0
+        if side == "user":
+            if inpop:
+                depth = 0
+            continue
+        if side != "assistant" or not inpop or fp in seen_fp or model not in lead_models:
+            continue
+        seen_fp.add(fp)
+        depth += 1
+        role = "direct" if depth <= 2 else "autonomous"
+        role_n[model][role] += 1
+        role_k[model][role] += fp in conc_fp
+        role_sa[model] += fp in sa_fp
+    out["leaderboard_by_role"] = {
+        m: {role: dict(messages=role_n[m][role], concession_msgs=role_k[m][role],
+                       rate=pct(role_k[m][role], role_n[m][role]),
+                       ci=wilson(role_k[m][role], role_n[m][role]))
+            for role in ("direct", "autonomous")}
+        for m in lead_models}
+    out["self_audit_by_model"] = {
+        m: dict(messages=mdenom[m], self_audit_msgs=role_sa[m],
+                rate=pct(role_sa[m], mdenom[m]), ci=wilson(role_sa[m], mdenom[m]))
+        for m in lead_models}
+
     out["monthly"] = [dict(month=m, messages=n, concession_msgs=len(mon_msgs[m]),
                            rate=pct(len(mon_msgs[m]), n), ci=wilson(len(mon_msgs[m]), n))
                       for m, n in sorted(mon_denom.items()) if n >= 200]

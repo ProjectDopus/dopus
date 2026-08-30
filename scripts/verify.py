@@ -57,6 +57,7 @@ ASSISTANT_FIXTURES = [
     ("I owe you a correction: I only checked the user database.", True, "the owing formula"),
     ("One correction to my audit: I listed the wrong file.", True,  "self-directed correction"),
     ("One correction: that standard is not an agentic profile.", False, "correcting the user, not self"),
+    ("The executor caught a bug in my plan; fixing it before dispatch.", True, "self-audit (no pushback)"),
 ]
 
 USER_FIXTURES = [
@@ -283,6 +284,9 @@ def main():
              and pc[0]["rate"] > pc[1]["rate"], ""),
             # (the page describes the control project generically -- "the
             # busiest project both models share" -- so no name is pinned)
+            ("answering the user, the leaderboard gap narrows (role confound stated on the page)",
+             (lambda R: R[0]["direct"]["rate"] / max(r["direct"]["rate"] for r in R[1:])
+              < lead[0]["rate"] / lead[1]["rate"])(pay["leaderboard_by_role"]), ""),
             ("Claude almost never says the famous sentence",
              pay["absolutely_right"]["occurrences"] < 10, ""),
         ]

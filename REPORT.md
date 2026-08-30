@@ -173,6 +173,28 @@ mostly opus-5), while every other model concedes by crediting the user
 candor are different axes: fable-5, the most capable model in the set,
 concedes least often *and* in the most generic vocabulary.
 
+**Confound 4 — role. The gap is mostly the orchestrator's job.** Splitting each
+model's messages by conversational role — *direct* (the first two replies after
+the user typed) versus *autonomous* (deeper in a turn, only tool output and
+subagent traffic in between) — changes what the leaderboard means:
+
+| model | direct reply | autonomous | self-audit (all msgs) |
+|---|---|---|---|
+| opus-5 | 9.37% (8.3–10.6) | 4.66% (4.1–5.2) | 1.02% |
+| opus-4-8 | 7.37% (6.6–8.3) | 1.54% (1.3–1.8) | 0.11% |
+| fable-5 | 6.41% (5.4–7.7) | 0.91% (0.6–1.3) | 0.23% |
+| sonnet-5 | 6.21% (5.0–7.7) | 1.34% (1.0–1.9) | 0.15% |
+
+Answering the user, opus-5 concedes 1.3× the runner-up; working autonomously, 3.0×.
+Most of the headline gap lives in autonomous work, and most of *that* is a
+register this corpus had not named until 2026-08-30: **self-audit** — fault
+admitted with nobody pushing ("the executor caught a bug in my plan", "self-review
+found four defects in my own plan", "better than my design"). Of 125 self-audit hits,
+118 follow a neutral user turn. It is counted as its own construct, outside the
+concession headline, because conceding to your own subagent is not capitulation.
+opus-5 carries it because opus-5 is the model used as the planning orchestrator — a role
+effect the leaderboard must be read against, not a personality.
+
 ## 5. Trend
 
 | month | assistant messages | concession msgs | rate | 95% CI |

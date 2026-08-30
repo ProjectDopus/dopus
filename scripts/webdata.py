@@ -212,6 +212,16 @@ def build():
     out["monthly"] = [[d["month"], d["rate"], d["ci"][0], d["ci"][1], d["messages"]]
                       for d in a["monthly"]]
 
+    # Leaderboard by conversational role + self-audit per model. Rows are in
+    # leaderboard (rate) order so the site's tables agree with each other.
+    order = [d["model"] for d in a["leaderboard"]]
+    out["leaderboard_by_role"] = [
+        dict(model=short(m),
+             direct=a["leaderboard_by_role"][m]["direct"],
+             autonomous=a["leaderboard_by_role"][m]["autonomous"],
+             self_audit=a["self_audit_by_model"][m])
+        for m in order]
+
     # Concession vocabulary by model: shares per phrase, plus for each model
     # the phrase whose share most exceeds the pooled share of the other models
     # (min 10 hits, so a fingerprint is a habit, not a fluke).

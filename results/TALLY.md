@@ -77,7 +77,7 @@
 | `DO NOT` | 2 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1630 hits over 30653 messages (4.68%)
+## CLAUDE  —  1755 hits over 30653 messages (4.99%)
 
 **agreement** (777)
 
@@ -180,6 +180,23 @@
 | `good work` | 1 |
 | `well done` | 1 |
 
+**self_audit** (125)
+
+| phrase | n |
+|---|---|
+| `in my own plan` | 29 |
+| `executor caught` | 26 |
+| `self-review caught` | 14 |
+| `defect in my` | 11 |
+| `executors caught` | 11 |
+| `better than my` | 10 |
+| `my plan was wrong` | 8 |
+| `bug in my plan` | 6 |
+| `defects in my` | 6 |
+| `self-review found` | 2 |
+| `flaw in my plan` | 1 |
+| `contradiction in my plan` | 1 |
+
 **compliance** (83)
 
 | phrase | n |
@@ -249,5 +266,6 @@
 |---|---|---|---|
 | concession | 1335 | 1151 | 3.75% |
 | flattery | 209 | 207 | 0.68% |
+| self_audit | 125 | 111 | 0.36% |
 | acknowledgment | 83 | 83 | 0.27% |
 | status | 3 | 3 | 0.01% |
