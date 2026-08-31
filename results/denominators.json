@@ -13,8 +13,8 @@
    "user": 3647
   },
   "4f0a8fe4": {
-   "assistant": 7305,
-   "user": 1125
+   "assistant": 7490,
+   "user": 1159
   },
   "5c1dd88a": {
    "assistant": 15,
@@ -37,13 +37,13 @@
    "user": 292
   },
   "d6fe6c1b": {
-   "assistant": 2116,
-   "user": 386
+   "assistant": 2489,
+   "user": 449
   }
  },
  "totals": {
-  "assistant": 30653,
-  "user": 5644
+  "assistant": 31211,
+  "user": 5741
  },
  "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '<own-project>'"
 }

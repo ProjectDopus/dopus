@@ -62,7 +62,8 @@
       "i owe you",
       "i take full responsibility",
       "there's no good excuse",
-      "no good excuse"
+      "no good excuse",
+      "i destroyed"
     ],
     "wrong_approach": [
       "i overcomplicated this",
@@ -107,7 +108,9 @@
       "i broke",
       "on my part",
       "were both mine",
-      "error was mine"
+      "error was mine",
+      "i should not have",
+      "i was being lazy"
     ],
     "self_audit": [
       "defect in my",
@@ -523,6 +526,13 @@
       "precision": "~95%",
       "date": "2026-08-30",
       "note": "'in my own plan' 36 (10/10 fault), 'executor caught' 26 (8/10 self-fault; the rest 'caught a real environment issue' -- caught something, still concession-adjacent), 'defect(s) in my' 25, 'self-review caught/found' 16, 'better than my' 10 (10/10), 'bug in my plan' 9, 'my plan was wrong' 8. opus-5 carries ~70% of every row"
+    },
+    "i destroyed / i should not have / i was being lazy": {
+      "n": 0,
+      "sampled": 0,
+      "precision": "n=0 at addition",
+      "date": "2026-08-30",
+      "note": "zero-count firsts observed live before their sessions synced: 'I destroyed main.tex', 'I should not have been driving destructive input', 'I was being lazy' (the model echoing the user's own #5 insult back as self-description -- register mirroring). Each is a sibling of a tracked phrase (i broke / i should have / user-side lazy); fixtures prove matcher behavior"
     }
   },
   "assistant_patterns": {

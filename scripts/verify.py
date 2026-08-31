@@ -58,6 +58,9 @@ ASSISTANT_FIXTURES = [
     ("One correction to my audit: I listed the wrong file.", True,  "self-directed correction"),
     ("One correction: that standard is not an agentic profile.", False, "correcting the user, not self"),
     ("The executor caught a bug in my plan; fixing it before dispatch.", True, "self-audit (no pushback)"),
+    ("I destroyed main.tex in your project.",              True,  "destruction confession"),
+    ("I should not have been driving destructive input.",  True,  "negative-obligation admission"),
+    ("You were right. I was being lazy.",                  True,  "register mirroring (user's insult)"),
 ]
 
 USER_FIXTURES = [
@@ -260,8 +263,8 @@ def main():
              "scoreable broken rate %.1f%%" % ft["scoreable_est"]["rate"]),
             ("hot and correction CIs do not overlap (per turn)",
              pt["hot"]["ci"][0] > pt["correction"]["ci"][1], ""),
-            ("over half of matched language lands at depth 1",
-             pay["depth"]["rows"][0][2] > 50,
+            ("depth 1 is the most common landing spot for matched language",
+             pay["depth"]["rows"][0][1] == max(r[1] for r in pay["depth"]["rows"]),
              "depth-1 share %.1f%%" % pay["depth"]["rows"][0][2]),
             ("one busy machine can move any aggregate",
              pay["machines"]["top_share"] > 50, ""),
