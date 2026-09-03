@@ -414,7 +414,7 @@ REPORT_TEMPLATE = """<!DOCTYPE html>
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dopus — corpus analysis">
 <meta property="og:description" content="The full report behind the findings: every figure, every caveat.">
-<meta property="og:image" content="https://dopus-web.pages.dev/img/hero.jpg">
+<meta property="og:image" content="https://projectdopus.org/img/hero.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="img/dopus-glint.svg">
 <style>
