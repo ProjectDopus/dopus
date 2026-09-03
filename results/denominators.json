@@ -9,24 +9,24 @@
    "user": 9
   },
   "4b0743e2": {
-   "assistant": 19381,
-   "user": 3647
+   "assistant": 19448,
+   "user": 3670
   },
   "4f0a8fe4": {
-   "assistant": 7490,
-   "user": 1159
+   "assistant": 7535,
+   "user": 1167
   },
   "5c1dd88a": {
    "assistant": 15,
    "user": 4
   },
   "7224693b": {
-   "assistant": 47,
-   "user": 36
+   "assistant": 64,
+   "user": 42
   },
   "9096d07d": {
-   "assistant": 337,
-   "user": 75
+   "assistant": 349,
+   "user": 81
   },
   "c95c9267": {
    "assistant": 128,
@@ -37,13 +37,13 @@
    "user": 292
   },
   "d6fe6c1b": {
-   "assistant": 2489,
-   "user": 449
+   "assistant": 2637,
+   "user": 464
   }
  },
  "totals": {
-  "assistant": 31211,
-  "user": 5741
+  "assistant": 31500,
+  "user": 5799
  },
  "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '<own-project>'"
 }

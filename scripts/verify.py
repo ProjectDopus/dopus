@@ -276,10 +276,9 @@ def main():
              "ratio %.2f" % (lead[0]["rate"] / lead[1]["rate"])),
             ("the rest of the field is unresolved (CIs overlap)",
              others_overlap, ""),
-            ("the latest month is up sharply",
-             pay["monthly"][-1][1] > pay["monthly"][-2][1], ""),
-            ("the top model is itself rising month over month",
-             len(tm) >= 2 and tm[-1][1] > tm[-2][1], ""),
+            # (the monthly-trend lede is fully derived -- peak month, the
+            # rising/falling verb, and the young-month note all come from the
+            # payload in JS, so no prose is pinned to a month any more)
             ("top model dominates usage in the latest month",
              tm and tm[-1][2] == max(v[2] for v in tm), ""),
             ("the within-project control still favors the top model",

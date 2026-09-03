@@ -1,8 +1,8 @@
 # Phrase tally
 
-## USER  —  501 hits over 5741 messages (4.98%)
+## USER  —  503 hits over 5799 messages (4.97%)
 
-**profanity** (381)
+**profanity** (383)
 
 | phrase | n |
 |---|---|
@@ -10,10 +10,10 @@
 | `fuck` | 87 |
 | `shit` | 71 |
 | `wtf` | 39 |
-| `hell` | 9 |
+| `hell` | 10 |
 | `fucked` | 6 |
+| `crap` | 5 |
 | `damn` | 4 |
-| `crap` | 4 |
 | `shitty` | 3 |
 | `god damnit` | 2 |
 | `bullshit` | 2 |
@@ -77,20 +77,20 @@
 | `DO NOT` | 2 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1829 hits over 31211 messages (5.09%)
+## CLAUDE  —  1845 hits over 31500 messages (5.09%)
 
-**agreement** (796)
+**agreement** (805)
 
 | phrase | n |
 |---|---|
-| `you're right` | 238 |
-| `good catch` | 123 |
-| `right -` | 84 |
-| `fair -` | 72 |
-| `good call` | 57 |
+| `you're right` | 240 |
+| `good catch` | 124 |
+| `right -` | 85 |
+| `fair -` | 74 |
+| `good call` | 58 |
 | `you were right` | 45 |
 | `correct -` | 31 |
-| `agreed -` | 22 |
+| `agreed -` | 24 |
 | `you caught` | 13 |
 | `exactly right -` | 11 |
 | `as you said` | 10 |
@@ -129,16 +129,16 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (418)
+**wrong_approach** (421)
 
 | phrase | n |
 |---|---|
 | `i should have` | 72 |
 | `i was wrong` | 53 |
 | `i introduced` | 33 |
-| `my mistake` | 28 |
+| `my mistake` | 29 |
 | `my error` | 23 |
-| `that was wrong` | 21 |
+| `that was wrong` | 22 |
 | `i shouldn't have` | 20 |
 | `i assumed` | 19 |
 | `i claimed` | 17 |
@@ -150,8 +150,8 @@
 | `on my part` | 10 |
 | `i asserted` | 10 |
 | `i should've` | 9 |
+| `instead of checking` | 8 |
 | `i misread` | 7 |
-| `instead of checking` | 7 |
 | `i stated` | 4 |
 | `were mine` | 3 |
 | `i got that wrong` | 3 |
@@ -199,13 +199,13 @@
 | `self-review found` | 2 |
 | `flaw in my plan` | 1 |
 
-**reversal** (89)
+**reversal** (90)
 
 | phrase | n |
 |---|---|
 | `that reframes` | 23 |
 | `correction to my` | 22 |
-| `correction to what i` | 13 |
+| `correction to what i` | 14 |
 | `correction to something i` | 6 |
 | `changes the calculus` | 5 |
 | `i made a mistake` | 4 |
@@ -217,23 +217,23 @@
 | `that changes the math` | 1 |
 | `given that, ` | 1 |
 
-**compliance** (88)
+**compliance** (89)
 
 | phrase | n |
 |---|---|
-| `understood -` | 62 |
+| `understood -` | 63 |
 | `noted -` | 26 |
 
-**apology** (76)
+**apology** (78)
 
 | phrase | n |
 |---|---|
 | `i owe you` | 24 |
 | `that's on me` | 18 |
-| `my fault` | 7 |
+| `my fault` | 8 |
 | `that's my fault` | 5 |
+| `my bad` | 5 |
 | `i'm sorry` | 4 |
-| `my bad` | 4 |
 | `sorry about that` | 3 |
 | `my apologies` | 3 |
 | `i apologize` | 3 |
@@ -267,8 +267,8 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1388 | 1191 | 3.82% |
+| concession | 1403 | 1204 | 3.82% |
 | flattery | 209 | 207 | 0.66% |
 | self_audit | 141 | 125 | 0.40% |
-| acknowledgment | 88 | 88 | 0.28% |
+| acknowledgment | 89 | 89 | 0.28% |
 | status | 3 | 3 | 0.01% |
