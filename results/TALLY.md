@@ -1,14 +1,14 @@
 # Phrase tally
 
-## USER  —  503 hits over 5799 messages (4.97%)
+## USER  —  506 hits over 5823 messages (5.00%)
 
-**profanity** (383)
+**profanity** (385)
 
 | phrase | n |
 |---|---|
 | `fucking` | 147 |
-| `fuck` | 87 |
-| `shit` | 71 |
+| `fuck` | 88 |
+| `shit` | 72 |
 | `wtf` | 39 |
 | `hell` | 10 |
 | `fucked` | 6 |
@@ -56,11 +56,11 @@
 | `you are not listening` | 1 |
 | `stop doing that` | 1 |
 
-**blasphemy** (28)
+**blasphemy** (29)
 
 | phrase | n |
 |---|---|
-| `jesus christ` | 8 |
+| `jesus christ` | 9 |
 | `my god` | 6 |
 | `jesus` | 5 |
 | `jesus fucking christ` | 3 |
@@ -77,16 +77,16 @@
 | `DO NOT` | 2 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1845 hits over 31500 messages (5.09%)
+## CLAUDE  —  1852 hits over 31607 messages (5.09%)
 
-**agreement** (805)
+**agreement** (808)
 
 | phrase | n |
 |---|---|
-| `you're right` | 240 |
+| `you're right` | 242 |
 | `good catch` | 124 |
 | `right -` | 85 |
-| `fair -` | 74 |
+| `fair -` | 75 |
 | `good call` | 58 |
 | `you were right` | 45 |
 | `correct -` | 31 |
@@ -199,13 +199,13 @@
 | `self-review found` | 2 |
 | `flaw in my plan` | 1 |
 
-**reversal** (90)
+**reversal** (91)
 
 | phrase | n |
 |---|---|
 | `that reframes` | 23 |
 | `correction to my` | 22 |
-| `correction to what i` | 14 |
+| `correction to what i` | 15 |
 | `correction to something i` | 6 |
 | `changes the calculus` | 5 |
 | `i made a mistake` | 4 |
@@ -217,20 +217,20 @@
 | `that changes the math` | 1 |
 | `given that, ` | 1 |
 
-**compliance** (89)
+**compliance** (91)
 
 | phrase | n |
 |---|---|
-| `understood -` | 63 |
+| `understood -` | 65 |
 | `noted -` | 26 |
 
-**apology** (78)
+**apology** (79)
 
 | phrase | n |
 |---|---|
 | `i owe you` | 24 |
 | `that's on me` | 18 |
-| `my fault` | 8 |
+| `my fault` | 9 |
 | `that's my fault` | 5 |
 | `my bad` | 5 |
 | `i'm sorry` | 4 |
@@ -267,8 +267,8 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1403 | 1204 | 3.82% |
-| flattery | 209 | 207 | 0.66% |
+| concession | 1408 | 1208 | 3.82% |
+| flattery | 209 | 207 | 0.65% |
 | self_audit | 141 | 125 | 0.40% |
-| acknowledgment | 89 | 89 | 0.28% |
+| acknowledgment | 91 | 91 | 0.29% |
 | status | 3 | 3 | 0.01% |
