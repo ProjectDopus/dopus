@@ -1,15 +1,15 @@
 # Phrase tally
 
-## USER  —  506 hits over 5823 messages (5.00%)
+## USER  —  514 hits over 5890 messages (5.01%)
 
-**profanity** (385)
+**profanity** (391)
 
 | phrase | n |
 |---|---|
-| `fucking` | 147 |
-| `fuck` | 88 |
+| `fucking` | 151 |
+| `fuck` | 89 |
 | `shit` | 72 |
-| `wtf` | 39 |
+| `wtf` | 40 |
 | `hell` | 10 |
 | `fucked` | 6 |
 | `crap` | 5 |
@@ -24,12 +24,12 @@
 | `ass` | 1 |
 | `god damn` | 1 |
 
-**insult** (50)
+**insult** (52)
 
 | phrase | n |
 |---|---|
 | `stupid` | 22 |
-| `lazy` | 8 |
+| `lazy` | 10 |
 | `dumb` | 5 |
 | `useless` | 4 |
 | `idiot` | 4 |
@@ -77,18 +77,18 @@
 | `DO NOT` | 2 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1852 hits over 31607 messages (5.09%)
+## CLAUDE  —  1873 hits over 31871 messages (5.10%)
 
-**agreement** (808)
+**agreement** (818)
 
 | phrase | n |
 |---|---|
-| `you're right` | 242 |
+| `you're right` | 248 |
 | `good catch` | 124 |
 | `right -` | 85 |
-| `fair -` | 75 |
+| `fair -` | 77 |
 | `good call` | 58 |
-| `you were right` | 45 |
+| `you were right` | 47 |
 | `correct -` | 31 |
 | `agreed -` | 24 |
 | `you caught` | 13 |
@@ -129,25 +129,25 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (421)
+**wrong_approach** (428)
 
 | phrase | n |
 |---|---|
-| `i should have` | 72 |
+| `i should have` | 74 |
 | `i was wrong` | 53 |
 | `i introduced` | 33 |
 | `my mistake` | 29 |
 | `my error` | 23 |
 | `that was wrong` | 22 |
-| `i shouldn't have` | 20 |
-| `i assumed` | 19 |
+| `i shouldn't have` | 21 |
+| `i assumed` | 20 |
 | `i claimed` | 17 |
 | `without checking` | 16 |
-| `my bug` | 13 |
+| `my bug` | 14 |
+| `is mine` | 13 |
 | `was mine` | 13 |
 | `i broke` | 12 |
-| `is mine` | 12 |
-| `on my part` | 10 |
+| `on my part` | 11 |
 | `i asserted` | 10 |
 | `i should've` | 9 |
 | `instead of checking` | 8 |
@@ -165,11 +165,11 @@
 | `my failure` | 1 |
 | `i should not have` | 1 |
 
-**validation** (209)
+**validation** (210)
 
 | phrase | n |
 |---|---|
-| `good question` | 82 |
+| `good question` | 83 |
 | `good instinct` | 53 |
 | `nice work` | 16 |
 | `fair question` | 13 |
@@ -224,13 +224,13 @@
 | `understood -` | 65 |
 | `noted -` | 26 |
 
-**apology** (79)
+**apology** (80)
 
 | phrase | n |
 |---|---|
 | `i owe you` | 24 |
 | `that's on me` | 18 |
-| `my fault` | 9 |
+| `my fault` | 10 |
 | `that's my fault` | 5 |
 | `my bad` | 5 |
 | `i'm sorry` | 4 |
@@ -241,11 +241,11 @@
 | `i apologize for` | 1 |
 | `this is on me` | 1 |
 
-**fabrication** (7)
+**fabrication** (9)
 
 | phrase | n |
 |---|---|
-| `i guessed` | 4 |
+| `i guessed` | 6 |
 | `i was guessing` | 3 |
 
 **recovery** (3)
@@ -267,8 +267,8 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1408 | 1208 | 3.82% |
-| flattery | 209 | 207 | 0.65% |
-| self_audit | 141 | 125 | 0.40% |
+| concession | 1428 | 1225 | 3.84% |
+| flattery | 210 | 208 | 0.65% |
+| self_audit | 141 | 125 | 0.39% |
 | acknowledgment | 91 | 91 | 0.29% |
 | status | 3 | 3 | 0.01% |
