@@ -37,7 +37,11 @@ Support: `scripts/scan.py` (matchers), `scripts/swear.py` (user-side detectors),
 (enumerate + evenly sample any phrase), `scripts/sweep.py` (find untracked constructions),
 `scripts/followthrough.py` (did a promised action get honored -- **built, NOT calibrated,
 do not quote its numbers**), `scripts/webdata.py` (regenerates `../Dopus-web/data.js`,
-the only figures the public site carries; run after every sync).
+the only figures the public site carries; run after every sync). **Parallel check, not a
+replacement:** `scripts/build_agents.py` + `scripts/agents.py` run the same dictionary over
+non-Claude agents' transcripts (Codex, Kimi Code, BearCode, Gemini, Grok) into a separate
+`agents.sqlite` / `results/agents.json` for the models page; nothing in the main pipeline
+reads them.
 
 Retired scripts, paper drafts, IRB material, and internal notes live in the
 private `ProjectDopus/dopus-lab` repo (locally `~/GitHub/dopus-lab`) — this

@@ -241,6 +241,15 @@ def main():
             ok_w = strip(disk) == strip(json.loads(json.dumps(pay)))
         check("Dopus-web data.js matches the dataset (rerun webdata.py)", ok_w)
 
+        mjs = os.path.join(webdir, "models.js")
+        if os.path.exists(os.path.join(HERE, "..", "results", "agents.json")):
+            mp = webdata.models_payload(ag)
+            ok_m = False
+            if os.path.exists(mjs):
+                raw_m = open(mjs, encoding="utf-8").read()
+                disk_m = json.loads(raw_m[len("window.DOPUS_MODELS = "):].rstrip().rstrip(";"))
+                ok_m = disk_m == json.loads(json.dumps(mp))
+            check("Dopus-web models.js matches agents.json + analysis (rerun webdata.py)", ok_m)
         rp = os.path.join(webdir, "report.html")
         ok_r = (os.path.exists(rp)
                 and open(rp, encoding="utf-8").read() == webdata.report_html())

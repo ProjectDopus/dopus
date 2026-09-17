@@ -171,7 +171,9 @@ python3 scripts/sync.py            # pull new/grown transcripts
 python3 scripts/build_db.py        # rebuild the database        ~10s
 python3 scripts/build_rows.py      # rebuild the dataset         ~25s
 python3 scripts/tally.py && python3 scripts/analyze.py
-python3 scripts/webdata.py         # regenerate ../Dopus-web/data.js (the public site)
+python3 scripts/build_agents.py    # optional: non-Claude agents on this Mac -> agents.sqlite
+python3 scripts/agents.py          # optional: -> results/agents.json (the models page)
+python3 scripts/webdata.py         # regenerate ../Dopus-web/data.js + models.js (the public site)
 python3 scripts/verify.py          # invariants + Dopus-web freshness + prose claims
 ```
 

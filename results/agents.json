@@ -1,0 +1,1101 @@
+{
+ "coverage": {
+  "gemini-3-flash-preview": {
+   "candidate_msgs": 4,
+   "coverage": 50.0,
+   "tracked": 2
+  },
+  "glm-5.2": {
+   "candidate_msgs": 2,
+   "coverage": 100.0,
+   "tracked": 2
+  },
+  "glm-5.3-flash-uncensored": {
+   "candidate_msgs": 3,
+   "coverage": 33.333333333333336,
+   "tracked": 1
+  },
+  "gpt-5.6-luna": {
+   "candidate_msgs": 2,
+   "coverage": 50.0,
+   "tracked": 1
+  },
+  "gpt-5.6-sol": {
+   "candidate_msgs": 19,
+   "coverage": 21.05263157894737,
+   "tracked": 4
+  },
+  "gpt-5.6-terra": {
+   "candidate_msgs": 5,
+   "coverage": 0.0,
+   "tracked": 0
+  },
+  "gpt-6-astra": {
+   "candidate_msgs": 33,
+   "coverage": 54.54545454545455,
+   "tracked": 18
+  },
+  "k3": {
+   "candidate_msgs": 25,
+   "coverage": 52.0,
+   "tracked": 13
+  },
+  "qwen3.8:latest": {
+   "candidate_msgs": 4,
+   "coverage": 0.0,
+   "tracked": 0
+  }
+ },
+ "harnesses": {
+  "bearcode": {
+   "frustration_ci": [
+    1.1411340550450555,
+    7.2666091117465745
+   ],
+   "frustration_msgs": 4,
+   "frustration_rate": 2.9197080291970803,
+   "user_msgs": 137
+  },
+  "codex": {
+   "frustration_ci": [
+    2.5988807675803707,
+    5.349882956422126
+   ],
+   "frustration_msgs": 28,
+   "frustration_rate": 3.7383177570093458,
+   "user_msgs": 749
+  },
+  "gemini": {
+   "frustration_ci": [
+    1.734723475976807e-16,
+    2.3304796847397746
+   ],
+   "frustration_msgs": 0,
+   "frustration_rate": 0.0,
+   "user_msgs": 161
+  },
+  "grok": {
+   "frustration_ci": [
+    0.6567976533097597,
+    18.283853934156518
+   ],
+   "frustration_msgs": 1,
+   "frustration_rate": 3.7037037037037037,
+   "user_msgs": 27
+  },
+  "kimi-code": {
+   "frustration_ci": [
+    5.19566467894248,
+    15.670990790625098
+   ],
+   "frustration_msgs": 11,
+   "frustration_rate": 9.166666666666666,
+   "user_msgs": 120
+  }
+ },
+ "min_n": 500,
+ "models": [
+  {
+   "above_floor": true,
+   "concession_ci": [
+    0.33830732180408274,
+    1.0299367714953664
+   ],
+   "concession_msgs": 12,
+   "concession_rate": 0.5908419497784343,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 2031
+   },
+   "messages": 2031,
+   "model": "gpt-5.6-sol",
+   "self_audit_msgs": 14,
+   "self_audit_rate": 0.6893156080748399,
+   "tone": {
+    "correction": {
+     "ci": [
+      3.287908001292092,
+      34.33684249770991
+     ],
+     "k": 2,
+     "n": 17,
+     "rate": 11.764705882352942
+    },
+    "hot": {
+     "ci": [
+      0.0,
+      29.91527535509594
+     ],
+     "k": 0,
+     "n": 9,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      0.2711367416321705,
+      0.9156965059469316
+     ],
+     "k": 10,
+     "n": 2005,
+     "rate": 0.49875311720698257
+    }
+   },
+   "top_phrases": [
+    [
+     "you're right",
+     4
+    ],
+    [
+     "exactly -",
+     2
+    ],
+    [
+     "right -",
+     2
+    ],
+    [
+     "without checking",
+     2
+    ],
+    [
+     "my regression",
+     1
+    ],
+    [
+     "agreed -",
+     1
+    ],
+    [
+     "i should have",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": true,
+   "concession_ci": [
+    1.6777498653379939,
+    3.314855600965068
+   ],
+   "concession_msgs": 32,
+   "concession_rate": 2.3616236162361623,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 1355
+   },
+   "messages": 1355,
+   "model": "gpt-6-astra",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.46604675535300427,
+      13.495178436800254
+     ],
+     "k": 1,
+     "n": 38,
+     "rate": 2.6315789473684212
+    },
+    "hot": {
+     "ci": [
+      4.586395136730973,
+      19.844834197523582
+     ],
+     "k": 6,
+     "n": 61,
+     "rate": 9.836065573770492
+    },
+    "neutral": {
+     "ci": [
+      1.3517976692987541,
+      2.9218824504877325
+     ],
+     "k": 25,
+     "n": 1256,
+     "rate": 1.9904458598726114
+    }
+   },
+   "top_phrases": [
+    [
+     "you're right",
+     12
+    ],
+    [
+     "right -",
+     5
+    ],
+    [
+     "my mistake",
+     3
+    ],
+    [
+     "agreed -",
+     2
+    ],
+    [
+     "without checking",
+     2
+    ],
+    [
+     "on my part",
+     1
+    ],
+    [
+     "i misread",
+     1
+    ],
+    [
+     "i'm sorry",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": true,
+   "concession_ci": [
+    1.6005142780234713,
+    3.40392362785851
+   ],
+   "concession_msgs": 26,
+   "concession_rate": 2.338129496402878,
+   "harness": "kimi-code",
+   "harnesses": {
+    "bearcode": 222,
+    "kimi-code": 890
+   },
+   "messages": 1112,
+   "model": "k3",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      1.1748029370569721,
+      14.24878719385944
+     ],
+     "k": 2,
+     "n": 47,
+     "rate": 4.25531914893617
+    },
+    "hot": {
+     "ci": [
+      1.5577991894810301,
+      12.53351601521073
+     ],
+     "k": 3,
+     "n": 66,
+     "rate": 4.545454545454546
+    },
+    "neutral": {
+     "ci": [
+      1.378946368361077,
+      3.192224193370706
+     ],
+     "k": 21,
+     "n": 999,
+     "rate": 2.1021021021021022
+    }
+   },
+   "top_phrases": [
+    [
+     "you're right",
+     6
+    ],
+    [
+     "right -",
+     3
+    ],
+    [
+     "my fault",
+     2
+    ],
+    [
+     "good catch",
+     2
+    ],
+    [
+     "fair -",
+     2
+    ],
+    [
+     "is mine",
+     2
+    ],
+    [
+     "agreed -",
+     1
+    ],
+    [
+     "correction to my",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": true,
+   "concession_ci": [
+    0.08879258707064344,
+    1.1722359449542321
+   ],
+   "concession_msgs": 2,
+   "concession_rate": 0.32362459546925565,
+   "harness": "gemini",
+   "harnesses": {
+    "gemini": 618
+   },
+   "messages": 618,
+   "model": "gemini-3-flash-preview",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.08879258707064344,
+      1.1722359449542321
+     ],
+     "k": 2,
+     "n": 618,
+     "rate": 0.32362459546925565
+    }
+   },
+   "top_phrases": [
+    [
+     "you're absolutely right",
+     2
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    0.8427488847002994
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 452
+   },
+   "messages": 452,
+   "model": "gpt-5.6-terra",
+   "self_audit_msgs": 1,
+   "self_audit_rate": 0.22123893805309736,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.0,
+      65.76280471103807
+     ],
+     "k": 0,
+     "n": 2,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      0.0,
+      0.8464627306090936
+     ],
+     "k": 0,
+     "n": 450,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    8.673617379884035e-17,
+    1.0500719437045978
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 362
+   },
+   "messages": 362,
+   "model": "gpt-5.5",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.0,
+      16.113012549493323
+     ],
+     "k": 0,
+     "n": 20,
+     "rate": 0.0
+    },
+    "hot": {
+     "ci": [
+      0.0,
+      65.76280471103807
+     ],
+     "k": 0,
+     "n": 2,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      0.0,
+      1.117258644678247
+     ],
+     "k": 0,
+     "n": 340,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.06980486272232939,
+    2.2045930541260312
+   ],
+   "concession_msgs": 1,
+   "concession_rate": 0.3952569169960474,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 253
+   },
+   "messages": 253,
+   "model": "qwen3.8:latest",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.06980486272232939,
+      2.2045930541260312
+     ],
+     "k": 1,
+     "n": 253,
+     "rate": 0.3952569169960474
+    }
+   },
+   "top_phrases": [
+    [
+     "on my part",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.436371038878235,
+    5.602987687446764
+   ],
+   "concession_msgs": 2,
+   "concession_rate": 1.5873015873015872,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 126
+   },
+   "messages": 126,
+   "model": "qwen3.8-27b-uncensored",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      6.938893903907228e-16,
+      8.567044886890743
+     ],
+     "k": 0,
+     "n": 41,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      0.6476375454219536,
+      8.178858150288166
+     ],
+     "k": 2,
+     "n": 85,
+     "rate": 2.3529411764705883
+    }
+   },
+   "top_phrases": [
+    [
+     "on my part",
+     1
+    ],
+    [
+     "correct -",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.4867129823876971,
+    6.224595318765317
+   ],
+   "concession_msgs": 2,
+   "concession_rate": 1.7699115044247788,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 113
+   },
+   "messages": 113,
+   "model": "glm-5.2",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "hot": {
+     "ci": [
+      15.003570882017147,
+      84.99642911798286
+     ],
+     "k": 2,
+     "n": 4,
+     "rate": 50.0
+    },
+    "neutral": {
+     "ci": [
+      0.0,
+      3.4044182287383373
+     ],
+     "k": 0,
+     "n": 109,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": [
+    [
+     "i should have",
+     1
+    ],
+    [
+     "you're right",
+     1
+    ],
+    [
+     "that's on me",
+     1
+    ],
+    [
+     "i apologize",
+     1
+    ],
+    [
+     "i apologize for the confusion",
+     1
+    ],
+    [
+     "that was incorrect",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.19424213233478899,
+    5.965080359061393
+   ],
+   "concession_msgs": 1,
+   "concession_rate": 1.098901098901099,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 91
+   },
+   "messages": 91,
+   "model": "gpt-5.4",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "hot": {
+     "ci": [
+      0.0,
+      79.34567085261071
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      0.19640335355123467,
+      6.028554447679776
+     ],
+     "k": 1,
+     "n": 90,
+     "rate": 1.1111111111111112
+    }
+   },
+   "top_phrases": [
+    [
+     "you were right",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    1.7442401159453307,
+    13.91672332228667
+   ],
+   "concession_msgs": 3,
+   "concession_rate": 5.084745762711864,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 59
+   },
+   "messages": 59,
+   "model": "gpt-5.6-luna",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.0,
+      79.34567085261071
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    },
+    "hot": {
+     "ci": [
+      0.0,
+      32.44156195108769
+     ],
+     "k": 0,
+     "n": 8,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      2.061459636463049,
+      16.217343370877003
+     ],
+     "k": 3,
+     "n": 50,
+     "rate": 6.0
+    }
+   },
+   "top_phrases": [
+    [
+     "exactly -",
+     1
+    ],
+    [
+     "good catch",
+     1
+    ],
+    [
+     "you were right to call that out",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.46604675535300427,
+    13.495178436800254
+   ],
+   "concession_msgs": 1,
+   "concession_rate": 2.6315789473684212,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 38
+   },
+   "messages": 38,
+   "model": "glm-5.3-flash-uncensored",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.46604675535300427,
+      13.495178436800254
+     ],
+     "k": 1,
+     "n": 38,
+     "rate": 2.6315789473684212
+    }
+   },
+   "top_phrases": [
+    [
+     "my mistake",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    7.651103235297099,
+    31.136799295455862
+   ],
+   "concession_msgs": 6,
+   "concession_rate": 16.216216216216218,
+   "harness": "grok",
+   "harnesses": {
+    "grok": 37
+   },
+   "messages": 37,
+   "model": "grok-4.5-build",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      3.6223160969787447,
+      62.44717358814613
+     ],
+     "k": 1,
+     "n": 5,
+     "rate": 20.0
+    },
+    "hot": {
+     "ci": [
+      0.0,
+      79.34567085261071
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      7.092519905439937,
+      32.634702724978865
+     ],
+     "k": 5,
+     "n": 31,
+     "rate": 16.129032258064516
+    }
+   },
+   "top_phrases": [
+    [
+     "right -",
+     6
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    2.6518208796947245,
+    28.914583860740674
+   ],
+   "concession_msgs": 2,
+   "concession_rate": 9.523809523809524,
+   "harness": "grok",
+   "harnesses": {
+    "grok": 21
+   },
+   "messages": 21,
+   "model": "grok-4.6-build",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      9.452865480086615,
+      90.54713451991339
+     ],
+     "k": 1,
+     "n": 2,
+     "rate": 50.0
+    },
+    "neutral": {
+     "ci": [
+      0.9351752490529954,
+      24.639215336545213
+     ],
+     "k": 1,
+     "n": 19,
+     "rate": 5.2631578947368425
+    }
+   },
+   "top_phrases": [
+    [
+     "right -",
+     2
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    2.7755575615628914e-15,
+    25.88400172488141
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 11
+   },
+   "messages": 11,
+   "model": "gpt-5",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.0,
+      65.76280471103807
+     ],
+     "k": 0,
+     "n": 2,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      0.0,
+      29.91527535509594
+     ],
+     "k": 0,
+     "n": 9,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    35.433884297520656
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "kimi-code",
+   "harnesses": {
+    "kimi-code": 7
+   },
+   "messages": 7,
+   "model": "kimi-for-coding",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      35.433884297520656
+     ],
+     "k": 0,
+     "n": 7,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    39.03430336530645
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 6
+   },
+   "messages": 6,
+   "model": "gpt-5.3-codex",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      39.03430336530645
+     ],
+     "k": 0,
+     "n": 6,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    43.4491494752081
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 5
+   },
+   "messages": 5,
+   "model": "qwen3.8-27b-uncensored-8-bit",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      43.4491494752081
+     ],
+     "k": 0,
+     "n": 5,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    65.76280471103807
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 2
+   },
+   "messages": 2,
+   "model": "nemotron-3-super",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      65.76280471103807
+     ],
+     "k": 0,
+     "n": 2,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    79.34567085261071
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 1
+   },
+   "messages": 1,
+   "model": "gpt-5.2-codex",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      79.34567085261071
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    79.34567085261071
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 1
+   },
+   "messages": 1,
+   "model": "qwen3.5:9b",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      79.34567085261071
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    79.34567085261071
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 1
+   },
+   "messages": 1,
+   "model": "gemma4:31b",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      79.34567085261071
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    79.34567085261071
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "gemini",
+   "harnesses": {
+    "gemini": 1
+   },
+   "messages": 1,
+   "model": "gemini-3.1-pro-preview",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      79.34567085261071
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  }
+ ]
+}

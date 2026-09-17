@@ -323,6 +323,46 @@ def stamp_meta(payload):
         open(ip, "w", encoding="utf-8").write(new)
 
 
+def models_payload(a):
+    """The models page: Claude models from the main pipeline (analysis.json)
+    plus the parallel check (results/agents.json), on one model axis. Counts
+    only; the same text guard applies at write time."""
+    ap = os.path.join(P.RESULTS, "agents.json")
+    if not os.path.exists(ap):
+        return None
+    ag = json.load(open(ap))
+    rows = []
+    pb = a.get("phrase_by_model", {})
+    sa = a.get("self_audit_by_model", {})
+    for d in a["leaderboard"]:
+        m = d["model"]
+        top = sorted(pb["counts"].get(m, {}).items(), key=lambda kv: -kv[1])[:6] if pb else []
+        rows.append(dict(model=short(m), harness="claude-code", family="claude",
+                         messages=d["messages"], concession_msgs=d["concession_msgs"],
+                         rate=d["concession_rate"], ci=d["concession_ci"],
+                         self_audit_rate=sa.get(m, {}).get("rate", 0.0),
+                         top_phrases=top, above_floor=True, coverage=None))
+    for d in ag["models"]:
+        fam = ("gpt" if d["model"].startswith("gpt") else "kimi" if d["model"] in ("k3", "kimi-for-coding")
+               else "gemini" if d["model"].startswith("gemini") else "grok" if d["model"].startswith("grok")
+               else "local")
+        cov = ag.get("coverage", {}).get(d["model"])
+        rows.append(dict(model=d["model"], harness=d["harness"], family=fam,
+                         messages=d["messages"], concession_msgs=d["concession_msgs"],
+                         rate=d["concession_rate"], ci=d["concession_ci"],
+                         self_audit_rate=d["self_audit_rate"], top_phrases=d["top_phrases"][:6],
+                         above_floor=d["above_floor"], tone=d.get("tone", {}),
+                         coverage=(cov or {}).get("coverage")))
+    rows.sort(key=lambda r: (-r["above_floor"], -r["rate"]))
+    harn = dict(ag["harnesses"])
+    harn["claude-code"] = dict(user_msgs=a["constructs"]["frustration"]["denom"],
+                               frustration_msgs=a["constructs"]["frustration"]["messages"],
+                               frustration_rate=a["constructs"]["frustration"]["rate"],
+                               frustration_ci=a["constructs"]["frustration"]["ci"])
+    return dict(min_n=ag["min_n"], models=rows, harnesses=harn,
+                claude_corpus_last=a["corpus"]["last"][:10])
+
+
 def render(payload):
     return "window.DOPUS = %s;\n" % json.dumps(payload, sort_keys=True,
                                                separators=(",", ": "), indent=1)
@@ -504,6 +544,17 @@ def main():
     stamp_meta(payload)
     print("wrote %s (%d bytes, corpus through %s)"
           % (OUT, os.path.getsize(OUT), payload["corpus"]["last"]))
+    mp = models_payload(json.load(open(os.path.join(P.RESULTS, "analysis.json"))))
+    if mp is not None:
+        bad = guard(mp, dictionary_vocab(P.PHRASES))
+        if bad:
+            for path, sample in bad:
+                print("  GUARD %s: %r" % (path, sample))
+            sys.exit("text guard rejected models.js -- NOT written")
+        mo = os.path.join(WEB_DIR, "models.js")
+        open(mo, "w", encoding="utf-8").write(
+            "window.DOPUS_MODELS = %s;\n" % json.dumps(mp, sort_keys=True, separators=(",", ": "), indent=1))
+        print("wrote %s (%d models)" % (mo, len(mp["models"])))
     rp = os.path.join(WEB_DIR, "report.html")
     open(rp, "w", encoding="utf-8").write(report_html())
     print("wrote %s (%d bytes, from REPORT.md)" % (rp, os.path.getsize(rp)))

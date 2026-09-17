@@ -19,6 +19,7 @@ results/*
 !results/analysis.json
 !results/TALLY.md
 !results/followthrough.json
+!results/agents.json
 # Calibration labels are fingerprints + verdicts, no message text. The sample
 # .md they answer DOES carry message text and stays ignored.
 !results/coding/
@@ -46,3 +47,4 @@ venv/
 # transcript screenshots and other raw-content exhibits -- IRB: never leaves this machine
 evidence/
 .discover.sh
+agents.sqlite
