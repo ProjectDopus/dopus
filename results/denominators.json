@@ -9,41 +9,45 @@
    "user": 9
   },
   "4b0743e2": {
-   "assistant": 19607,
-   "user": 3710
+   "assistant": 19818,
+   "user": 3768
   },
   "4f0a8fe4": {
-   "assistant": 7629,
-   "user": 1184
+   "assistant": 7878,
+   "user": 1241
   },
   "5c1dd88a": {
    "assistant": 15,
    "user": 4
   },
   "7224693b": {
-   "assistant": 74,
-   "user": 49
+   "assistant": 81,
+   "user": 52
   },
   "9096d07d": {
-   "assistant": 349,
-   "user": 81
+   "assistant": 355,
+   "user": 85
   },
   "c95c9267": {
    "assistant": 133,
    "user": 62
   },
   "d4b4df10": {
-   "assistant": 1289,
-   "user": 292
+   "assistant": 1509,
+   "user": 318
   },
   "d6fe6c1b": {
-   "assistant": 2740,
-   "user": 489
+   "assistant": 2995,
+   "user": 502
+  },
+  "4c542d15": {
+   "assistant": 133,
+   "user": 62
   }
  },
  "totals": {
-  "assistant": 31871,
-  "user": 5890
+  "assistant": 32952,
+  "user": 6113
  },
  "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '<own-project>'"
 }

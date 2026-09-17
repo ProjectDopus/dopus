@@ -279,8 +279,11 @@ def main():
             # (the monthly-trend lede is fully derived -- peak month, the
             # rising/falling verb, and the young-month note all come from the
             # payload in JS, so no prose is pinned to a month any more)
-            ("top model dominates usage in the latest month",
-             tm and tm[-1][2] == max(v[2] for v in tm), ""),
+            ("the peak-rate month is also the top model's peak-usage month",
+             (lambda peak: peak == max(tm, key=lambda v: v[2])[0])(
+                 max(pay["monthly"], key=lambda m: m[1])[0]),
+             "peak month %s vs top-model usage peak %s" % (
+                 max(pay["monthly"], key=lambda m: m[1])[0], max(tm, key=lambda v: v[2])[0])),
             ("the within-project control still favors the top model",
              len(pc) == 2 and pc[0]["model"] == lead[0]["model"]
              and pc[0]["rate"] > pc[1]["rate"], ""),
