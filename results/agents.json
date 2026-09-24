@@ -31,14 +31,14 @@
    "tracked": 0
   },
   "gpt-6-astra": {
-   "candidate_msgs": 33,
-   "coverage": 54.54545454545455,
-   "tracked": 18
+   "candidate_msgs": 53,
+   "coverage": 52.83018867924528,
+   "tracked": 28
   },
   "k3": {
-   "candidate_msgs": 25,
-   "coverage": 52.0,
-   "tracked": 13
+   "candidate_msgs": 55,
+   "coverage": 45.45454545454545,
+   "tracked": 25
   },
   "qwen3.8:latest": {
    "candidate_msgs": 4,
@@ -58,12 +58,12 @@
   },
   "codex": {
    "frustration_ci": [
-    2.5988807675803707,
-    5.349882956422126
+    5.256365206981233,
+    8.309404742543505
    ],
-   "frustration_msgs": 28,
-   "frustration_rate": 3.7383177570093458,
-   "user_msgs": 749
+   "frustration_msgs": 68,
+   "frustration_rate": 6.621226874391431,
+   "user_msgs": 1027
   },
   "gemini": {
    "frustration_ci": [
@@ -85,16 +85,96 @@
   },
   "kimi-code": {
    "frustration_ci": [
-    5.19566467894248,
-    15.670990790625098
+    10.08360911981093,
+    19.670588307460605
    ],
-   "frustration_msgs": 11,
-   "frustration_rate": 9.166666666666666,
-   "user_msgs": 120
+   "frustration_msgs": 29,
+   "frustration_rate": 14.215686274509803,
+   "user_msgs": 204
   }
  },
  "min_n": 500,
  "models": [
+  {
+   "above_floor": true,
+   "concession_ci": [
+    1.7359147511347843,
+    2.9810670536414534
+   ],
+   "concession_msgs": 51,
+   "concession_rate": 2.2767857142857144,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 2240
+   },
+   "messages": 2240,
+   "model": "gpt-6-astra",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.2899656114363977,
+      8.719065627768062
+     ],
+     "k": 1,
+     "n": 61,
+     "rate": 1.639344262295082
+    },
+    "hot": {
+     "ci": [
+      4.668294470914588,
+      12.18160116823587
+     ],
+     "k": 15,
+     "n": 197,
+     "rate": 7.614213197969543
+    },
+    "neutral": {
+     "ci": [
+      1.2724435494491324,
+      2.445959771339394
+     ],
+     "k": 35,
+     "n": 1982,
+     "rate": 1.7658930373360242
+    }
+   },
+   "top_phrases": [
+    [
+     "you're right",
+     20
+    ],
+    [
+     "right -",
+     6
+    ],
+    [
+     "agreed -",
+     3
+    ],
+    [
+     "my mistake",
+     3
+    ],
+    [
+     "exactly -",
+     3
+    ],
+    [
+     "without checking",
+     3
+    ],
+    [
+     "i misunderstood",
+     2
+    ],
+    [
+     "i should've",
+     2
+    ]
+   ]
+  },
   {
    "above_floor": true,
    "concession_ci": [
@@ -174,100 +254,20 @@
   {
    "above_floor": true,
    "concession_ci": [
-    1.6777498653379939,
-    3.314855600965068
+    2.0498616729664922,
+    3.497997782248377
    ],
-   "concession_msgs": 32,
-   "concession_rate": 2.3616236162361623,
-   "harness": "codex",
-   "harnesses": {
-    "codex": 1355
-   },
-   "messages": 1355,
-   "model": "gpt-6-astra",
-   "self_audit_msgs": 0,
-   "self_audit_rate": 0.0,
-   "tone": {
-    "correction": {
-     "ci": [
-      0.46604675535300427,
-      13.495178436800254
-     ],
-     "k": 1,
-     "n": 38,
-     "rate": 2.6315789473684212
-    },
-    "hot": {
-     "ci": [
-      4.586395136730973,
-      19.844834197523582
-     ],
-     "k": 6,
-     "n": 61,
-     "rate": 9.836065573770492
-    },
-    "neutral": {
-     "ci": [
-      1.3517976692987541,
-      2.9218824504877325
-     ],
-     "k": 25,
-     "n": 1256,
-     "rate": 1.9904458598726114
-    }
-   },
-   "top_phrases": [
-    [
-     "you're right",
-     12
-    ],
-    [
-     "right -",
-     5
-    ],
-    [
-     "my mistake",
-     3
-    ],
-    [
-     "agreed -",
-     2
-    ],
-    [
-     "without checking",
-     2
-    ],
-    [
-     "on my part",
-     1
-    ],
-    [
-     "i misread",
-     1
-    ],
-    [
-     "i'm sorry",
-     1
-    ]
-   ]
-  },
-  {
-   "above_floor": true,
-   "concession_ci": [
-    1.6005142780234713,
-    3.40392362785851
-   ],
-   "concession_msgs": 26,
-   "concession_rate": 2.338129496402878,
+   "concession_msgs": 52,
+   "concession_rate": 2.6804123711340204,
    "harness": "kimi-code",
    "harnesses": {
     "bearcode": 222,
-    "kimi-code": 890
+    "kimi-code": 1718
    },
-   "messages": 1112,
+   "messages": 1940,
    "model": "k3",
-   "self_audit_msgs": 0,
-   "self_audit_rate": 0.0,
+   "self_audit_msgs": 1,
+   "self_audit_rate": 0.05154639175257732,
    "tone": {
     "correction": {
      "ci": [
@@ -280,55 +280,55 @@
     },
     "hot": {
      "ci": [
-      1.5577991894810301,
-      12.53351601521073
+      5.716445517274648,
+      16.407875851811568
      ],
-     "k": 3,
-     "n": 66,
-     "rate": 4.545454545454546
+     "k": 12,
+     "n": 122,
+     "rate": 9.836065573770492
     },
     "neutral": {
      "ci": [
-      1.378946368361077,
-      3.192224193370706
+      1.5672109703824524,
+      2.9313087848452826
      ],
-     "k": 21,
-     "n": 999,
-     "rate": 2.1021021021021022
+     "k": 38,
+     "n": 1771,
+     "rate": 2.145680406549972
     }
    },
    "top_phrases": [
     [
      "you're right",
-     6
+     12
     ],
     [
      "right -",
-     3
+     8
+    ],
+    [
+     "i introduced",
+     7
     ],
     [
      "my fault",
-     2
-    ],
-    [
-     "good catch",
-     2
+     5
     ],
     [
      "fair -",
-     2
+     4
+    ],
+    [
+     "good catch",
+     3
     ],
     [
      "is mine",
+     3
+    ],
+    [
+     "my bad",
      2
-    ],
-    [
-     "agreed -",
-     1
-    ],
-    [
-     "correction to my",
-     1
     ]
    ]
   },

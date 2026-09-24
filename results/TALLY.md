@@ -1,17 +1,17 @@
 # Phrase tally
 
-## USER  —  526 hits over 6113 messages (4.96%)
+## USER  —  532 hits over 6216 messages (4.95%)
 
-**profanity** (401)
+**profanity** (406)
 
 | phrase | n |
 |---|---|
-| `fucking` | 154 |
-| `fuck` | 91 |
-| `shit` | 75 |
+| `fucking` | 155 |
+| `fuck` | 92 |
+| `shit` | 77 |
 | `wtf` | 41 |
 | `hell` | 10 |
-| `fucked` | 6 |
+| `fucked` | 7 |
 | `crap` | 5 |
 | `damn` | 4 |
 | `shitty` | 3 |
@@ -24,11 +24,11 @@
 | `ass` | 1 |
 | `god damn` | 1 |
 
-**insult** (54)
+**insult** (55)
 
 | phrase | n |
 |---|---|
-| `stupid` | 23 |
+| `stupid` | 24 |
 | `lazy` | 10 |
 | `dumb` | 5 |
 | `useless` | 4 |
@@ -77,18 +77,18 @@
 | `DO NOT` | 2 |
 | `STOP` | 1 |
 
-## CLAUDE  —  1929 hits over 32952 messages (5.10%)
+## CLAUDE  —  1943 hits over 33648 messages (5.03%)
 
-**agreement** (831)
+**agreement** (836)
 
 | phrase | n |
 |---|---|
-| `you're right` | 252 |
-| `good catch` | 125 |
+| `you're right` | 254 |
+| `good catch` | 126 |
 | `right -` | 87 |
 | `fair -` | 78 |
 | `good call` | 59 |
-| `you were right` | 50 |
+| `you were right` | 51 |
 | `correct -` | 31 |
 | `agreed -` | 25 |
 | `you caught` | 13 |
@@ -101,10 +101,10 @@
 | `thats exactly right` | 4 |
 | `exactly -` | 4 |
 | `you were right about` | 4 |
+| `you're absolutely right` | 3 |
 | `fair correction` | 3 |
 | `you called it` | 3 |
 | `you're right to call me out` | 3 |
-| `you're absolutely right` | 2 |
 | `you're exactly right` | 2 |
 | `youve got it exactly right` | 2 |
 | `fair complaint` | 2 |
@@ -129,7 +129,7 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (446)
+**wrong_approach** (448)
 
 | phrase | n |
 |---|---|
@@ -137,7 +137,7 @@
 | `i was wrong` | 56 |
 | `i introduced` | 33 |
 | `my mistake` | 31 |
-| `that was wrong` | 24 |
+| `that was wrong` | 25 |
 | `my error` | 23 |
 | `i assumed` | 21 |
 | `i shouldn't have` | 21 |
@@ -152,10 +152,10 @@
 | `i should've` | 9 |
 | `i misread` | 8 |
 | `instead of checking` | 8 |
+| `my doing` | 4 |
 | `i stated` | 4 |
 | `were mine` | 3 |
 | `i got that wrong` | 3 |
-| `my doing` | 3 |
 | `my regression` | 2 |
 | `i was being lazy` | 2 |
 | `error was mine` | 1 |
@@ -165,11 +165,11 @@
 | `my failure` | 1 |
 | `i should not have` | 1 |
 
-**validation** (218)
+**validation** (220)
 
 | phrase | n |
 |---|---|
-| `good question` | 86 |
+| `good question` | 88 |
 | `good instinct` | 54 |
 | `nice work` | 16 |
 | `fair question` | 15 |
@@ -182,12 +182,12 @@
 | `nice find` | 1 |
 | `well done` | 1 |
 
-**self_audit** (141)
+**self_audit** (142)
 
 | phrase | n |
 |---|---|
 | `executor caught` | 30 |
-| `in my own plan` | 29 |
+| `in my own plan` | 30 |
 | `self-review caught` | 14 |
 | `better than my` | 14 |
 | `defect in my` | 13 |
@@ -199,14 +199,14 @@
 | `self-review found` | 2 |
 | `flaw in my plan` | 1 |
 
-**reversal** (100)
+**reversal** (102)
 
 | phrase | n |
 |---|---|
 | `that reframes` | 26 |
 | `correction to my` | 23 |
-| `correction to what i` | 16 |
-| `correction to something i` | 7 |
+| `correction to what i` | 17 |
+| `correction to something i` | 8 |
 | `changes the calculus` | 5 |
 | `i made a mistake` | 4 |
 | `that changes things` | 4 |
@@ -217,12 +217,12 @@
 | `that changes the math` | 1 |
 | `given that, ` | 1 |
 
-**compliance** (97)
+**compliance** (99)
 
 | phrase | n |
 |---|---|
-| `understood -` | 69 |
-| `noted -` | 28 |
+| `understood -` | 70 |
+| `noted -` | 29 |
 
 **apology** (82)
 
@@ -267,8 +267,8 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1470 | 1264 | 3.84% |
-| flattery | 218 | 216 | 0.66% |
-| self_audit | 141 | 125 | 0.38% |
-| acknowledgment | 97 | 97 | 0.29% |
+| concession | 1479 | 1273 | 3.78% |
+| flattery | 220 | 218 | 0.65% |
+| self_audit | 142 | 126 | 0.37% |
+| acknowledgment | 99 | 99 | 0.29% |
 | status | 3 | 3 | 0.01% |
