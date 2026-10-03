@@ -183,6 +183,11 @@ def main():
     check("user rows == live re-count from db", live_u == file_u,
           "file=%d live=%d -- dataset is STALE, rerun build_rows.py" % (file_u, live_u))
 
+    import re as _re
+    mids = [r[0] for r in db.execute("SELECT DISTINCT machine_id FROM files")]
+    check("every machine id is an 8-hex hash (never a hostname)",
+          all(_re.fullmatch(r"[0-9a-f]{8}", m or "") for m in mids),
+          "offenders: %s" % [m for m in mids if not _re.fullmatch(r"[0-9a-f]{8}", m or "")])
     if den:
         check("denominators present for both sides",
               den.get("totals", {}).get("assistant") and den["totals"].get("user"))

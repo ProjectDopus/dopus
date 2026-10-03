@@ -56,7 +56,7 @@ SSHOPT = ["-o", "BatchMode=yes", "-o", "ConnectTimeout=20",
 # Kimi/GLM excluded by decision -- this archive is Claude only.
 MID_CMD = ('MID=$(python3 -c "import sys;sys.path.insert(0,\'/tmp\');import scan;'
            'print(scan.machine_id())" 2>/dev/null); '
-           '[ -z "$MID" ] && MID=$(hostname | tr -c \'A-Za-z0-9\' \'-\')\n')
+           '[ -z "$MID" ] && MID=$(printf %s "$(hostname)" | shasum | cut -c1-8)\n')
 
 # Fast path: inventory the KNOWN roots from hosts.json. A bare `find /` costs
 # minutes on a multi-terabyte fileserver and re-derives roots we already

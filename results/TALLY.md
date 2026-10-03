@@ -18,8 +18,8 @@
 | `shitty` | 3 |
 | `piss` | 2 |
 | `god damnit` | 2 |
-| `ass` | 2 |
 | `fuckin` | 2 |
+| `ass` | 2 |
 | `pissed` | 1 |
 | `damnit` | 1 |
 | `god damn` | 1 |

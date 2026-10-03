@@ -12,6 +12,10 @@
    "assistant": 22649,
    "user": 4236
   },
+  "4c542d15": {
+   "assistant": 133,
+   "user": 62
+  },
   "4f0a8fe4": {
    "assistant": 8139,
    "user": 1297
@@ -39,10 +43,6 @@
   "d6fe6c1b": {
    "assistant": 3118,
    "user": 525
-  },
-  "4c542d15": {
-   "assistant": 133,
-   "user": 62
   }
  },
  "totals": {
