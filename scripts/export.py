@@ -107,6 +107,21 @@ def guard(bundle, vocab):
             bad.append((path, s[:80]))
 
     visit(bundle, "$")
+    # machine ids are hashes; a hostname-shaped key under per_machine is a leak
+    # even though it passes the generic token shape (one did, 2026-09-16).
+    def mids(o, path):
+        if isinstance(o, dict):
+            for k, v in o.items():
+                if k == "per_machine" and isinstance(v, dict):
+                    for m in v:
+                        if not re.fullmatch(r"[0-9a-f]{8,16}", str(m)):
+                            bad.append((path + ".per_machine." + str(m)[:24], "machine id is not a hash"))
+                else:
+                    mids(v, path + "." + str(k)[:24])
+        elif isinstance(o, list):
+            for i, v in enumerate(o):
+                mids(v, "%s[%d]" % (path, i))
+    mids(bundle, "$")
     return bad
 
 
