@@ -1,16 +1,16 @@
 # Phrase tally
 
-## USER  —  584 hits over 6687 messages (5.20%)
+## USER  —  627 hits over 7015 messages (5.30%)
 
-**profanity** (452)
+**profanity** (485)
 
 | phrase | n |
 |---|---|
-| `fucking` | 165 |
-| `fuck` | 100 |
-| `shit` | 94 |
-| `wtf` | 44 |
-| `hell` | 12 |
+| `fucking` | 180 |
+| `fuck` | 105 |
+| `shit` | 104 |
+| `wtf` | 45 |
+| `hell` | 14 |
 | `fucked` | 7 |
 | `damn` | 6 |
 | `crap` | 6 |
@@ -24,30 +24,30 @@
 | `damnit` | 1 |
 | `god damn` | 1 |
 
-**insult** (59)
+**insult** (63)
 
 | phrase | n |
 |---|---|
-| `stupid` | 25 |
+| `stupid` | 27 |
 | `lazy` | 10 |
 | `dumb` | 6 |
 | `useless` | 5 |
 | `idiot` | 4 |
+| `sloppy` | 3 |
+| `pathetic` | 3 |
 | `dumbass` | 3 |
-| `sloppy` | 2 |
 | `moron` | 2 |
-| `pathetic` | 2 |
 
-**not_listening** (34)
+**not_listening** (37)
 
 | phrase | n |
 |---|---|
-| `you keep` | 7 |
+| `you keep` | 9 |
 | `i told you` | 7 |
 | `did you even look` | 4 |
+| `like i said` | 3 |
 | `just stop` | 3 |
 | `pay attention` | 2 |
-| `like i said` | 2 |
 | `how many times` | 2 |
 | `listen to me` | 2 |
 | `i already told you` | 1 |
@@ -56,55 +56,55 @@
 | `you are not listening` | 1 |
 | `stop doing that` | 1 |
 
-**blasphemy** (29)
+**blasphemy** (31)
 
 | phrase | n |
 |---|---|
-| `jesus christ` | 9 |
+| `jesus christ` | 10 |
 | `my god` | 6 |
 | `jesus` | 5 |
-| `jesus fucking christ` | 3 |
+| `jesus fucking christ` | 4 |
 | `for the love of god` | 2 |
 | `god this is` | 2 |
 | `holy god` | 1 |
 | `oh my god` | 1 |
 
-**shouting** (10)
+**shouting** (11)
 
 | phrase | n |
 |---|---|
 | `NO` | 7 |
 | `DO NOT` | 2 |
-| `STOP` | 1 |
+| `STOP` | 2 |
 
-## CLAUDE  —  2025 hits over 36219 messages (4.89%)
+## CLAUDE  —  2084 hits over 37784 messages (4.84%)
 
-**agreement** (878)
+**agreement** (908)
 
 | phrase | n |
 |---|---|
-| `you're right` | 267 |
-| `good catch` | 126 |
-| `right -` | 99 |
-| `fair -` | 80 |
+| `you're right` | 283 |
+| `good catch` | 127 |
+| `right -` | 101 |
+| `fair -` | 82 |
 | `good call` | 60 |
-| `you were right` | 53 |
+| `you were right` | 54 |
 | `correct -` | 32 |
 | `agreed -` | 28 |
+| `as you said` | 17 |
 | `you caught` | 13 |
-| `as you said` | 12 |
 | `exactly right -` | 11 |
 | `fair hit` | 11 |
 | `fair enough` | 11 |
 | `nice catch` | 9 |
-| `you're right to push back` | 6 |
+| `you're right to push back` | 7 |
+| `fair point` | 5 |
 | `thats exactly right` | 4 |
 | `exactly -` | 4 |
 | `you were right about` | 4 |
-| `fair point` | 4 |
+| `spot on` | 4 |
 | `you're absolutely right` | 3 |
 | `fair correction` | 3 |
-| `spot on` | 3 |
 | `you called it` | 3 |
 | `true -` | 3 |
 | `you're right to call me out` | 3 |
@@ -129,29 +129,29 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (466)
+**wrong_approach** (476)
 
 | phrase | n |
 |---|---|
-| `i should have` | 77 |
+| `i should have` | 79 |
 | `i was wrong` | 57 |
-| `i introduced` | 34 |
-| `my mistake` | 33 |
+| `my mistake` | 35 |
+| `i introduced` | 35 |
 | `that was wrong` | 27 |
+| `i assumed` | 23 |
+| `i shouldn't have` | 23 |
 | `my error` | 23 |
-| `i assumed` | 22 |
-| `i shouldn't have` | 22 |
-| `without checking` | 20 |
+| `without checking` | 21 |
 | `i claimed` | 19 |
 | `my bug` | 15 |
+| `is mine` | 15 |
 | `was mine` | 15 |
 | `i broke` | 14 |
-| `is mine` | 14 |
 | `on my part` | 13 |
 | `i asserted` | 10 |
 | `instead of checking` | 10 |
+| `i misread` | 9 |
 | `i should've` | 9 |
-| `i misread` | 8 |
 | `my doing` | 4 |
 | `i stated` | 4 |
 | `were mine` | 3 |
@@ -165,14 +165,14 @@
 | `my failure` | 1 |
 | `i should not have` | 1 |
 
-**validation** (225)
+**validation** (231)
 
 | phrase | n |
 |---|---|
-| `good question` | 91 |
+| `good question` | 92 |
 | `good instinct` | 54 |
-| `nice work` | 16 |
-| `fair question` | 16 |
+| `fair question` | 19 |
+| `nice work` | 17 |
 | `right instinct` | 13 |
 | `great question` | 13 |
 | `fair challenge` | 7 |
@@ -181,6 +181,7 @@
 | `good work` | 3 |
 | `nice find` | 1 |
 | `well done` | 1 |
+| `good push` | 1 |
 
 **self_audit** (142)
 
@@ -199,18 +200,18 @@
 | `self-review found` | 2 |
 | `flaw in my plan` | 1 |
 
-**compliance** (108)
+**compliance** (112)
 
 | phrase | n |
 |---|---|
-| `understood -` | 78 |
-| `noted -` | 30 |
+| `understood -` | 79 |
+| `noted -` | 33 |
 
-**reversal** (105)
+**reversal** (106)
 
 | phrase | n |
 |---|---|
-| `that reframes` | 26 |
+| `that reframes` | 27 |
 | `correction to my` | 23 |
 | `correction to what i` | 18 |
 | `correction to something i` | 8 |
@@ -224,14 +225,14 @@
 | `that changes the math` | 1 |
 | `given that, ` | 1 |
 
-**apology** (84)
+**apology** (90)
 
 | phrase | n |
 |---|---|
-| `i owe you` | 25 |
-| `that's on me` | 18 |
-| `my fault` | 11 |
-| `i'm sorry` | 6 |
+| `i owe you` | 26 |
+| `that's on me` | 19 |
+| `my fault` | 14 |
+| `i'm sorry` | 7 |
 | `that's my fault` | 5 |
 | `my bad` | 5 |
 | `sorry about that` | 3 |
@@ -241,12 +242,13 @@
 | `i apologize for` | 1 |
 | `this is on me` | 1 |
 
-**fabrication** (11)
+**fabrication** (13)
 
 | phrase | n |
 |---|---|
-| `i guessed` | 8 |
+| `i guessed` | 9 |
 | `i was guessing` | 3 |
+| `i made those up` | 1 |
 
 **recovery** (4)
 
@@ -267,8 +269,8 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1546 | 1336 | 3.69% |
-| flattery | 225 | 223 | 0.62% |
-| self_audit | 142 | 126 | 0.35% |
-| acknowledgment | 108 | 108 | 0.30% |
+| concession | 1595 | 1382 | 3.66% |
+| flattery | 231 | 229 | 0.61% |
+| self_audit | 142 | 126 | 0.33% |
+| acknowledgment | 112 | 112 | 0.30% |
 | status | 4 | 4 | 0.01% |
