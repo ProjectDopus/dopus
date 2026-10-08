@@ -61,6 +61,9 @@ ASSISTANT_FIXTURES = [
     ("I destroyed main.tex in your project.",              True,  "destruction confession"),
     ("I should not have been driving destructive input.",  True,  "negative-obligation admission"),
     ("You were right. I was being lazy.",                  True,  "register mirroring (user's insult)"),
+    ("I misread your message, sorry.",                      True,  "self-audit: misread"),
+    ("I misread the grep.",                                 True,  "self-audit: misread (object follows)"),
+    ("you misread the spec",                                False, "misread aimed at the user"),
 ]
 
 USER_FIXTURES = [

@@ -161,7 +161,8 @@
       "correction to my",
       "correction to what i",
       "correction to something i",
-      "i made a mistake"
+      "i made a mistake",
+      "i misread"
     ],
     "restart": [
       "let me start over completely",
@@ -526,6 +527,13 @@
       "precision": "~95%",
       "date": "2026-08-30",
       "note": "'in my own plan' 36 (10/10 fault), 'executor caught' 26 (8/10 self-fault; the rest 'caught a real environment issue' -- caught something, still concession-adjacent), 'defect(s) in my' 25, 'self-review caught/found' 16, 'better than my' 10 (10/10), 'bug in my plan' 9, 'my plan was wrong' 8. opus-5 carries ~70% of every row"
+    },
+    "i misread": {
+      "n": 12,
+      "sampled": 12,
+      "precision": "10/12",
+      "date": "2026-10-07",
+      "note": "full enumeration: opus-5 5, opus-4-8 4, fable-5-1 2, opus-5-5 1. Ten genuine first-person self-corrections ('I misread the grep', 'I misread it twice. Let me stop guessing'); the two misses quote the Dopus tally itself and fall under the own-project exclusion. First self_audit hit for opus-5-5 ('I misread your message, sorry' after acting on a prompt the user never typed)"
     },
     "i destroyed / i should not have / i was being lazy": {
       "n": 0,
