@@ -1,6 +1,6 @@
 # Phrase tally
 
-## USER  —  702 hits over 7627 messages (5.43%)
+## USER  —  702 hits over 7650 messages (5.41%)
 
 **profanity** (549)
 
@@ -78,15 +78,15 @@
 | `STOP` | 2 |
 | `STOP IT` | 1 |
 
-## CLAUDE  —  2149 hits over 40385 messages (4.67%)
+## CLAUDE  —  2152 hits over 40430 messages (4.67%)
 
-**agreement** (949)
+**agreement** (951)
 
 | phrase | n |
 |---|---|
-| `you're right` | 304 |
+| `you're right` | 305 |
 | `good catch` | 127 |
-| `right -` | 106 |
+| `right -` | 107 |
 | `fair -` | 82 |
 | `good call` | 61 |
 | `you were right` | 58 |
@@ -130,12 +130,12 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (488)
+**wrong_approach** (489)
 
 | phrase | n |
 |---|---|
 | `i should have` | 82 |
-| `i was wrong` | 58 |
+| `i was wrong` | 59 |
 | `my mistake` | 37 |
 | `i introduced` | 35 |
 | `that was wrong` | 29 |
@@ -270,7 +270,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1654 | 1437 | 3.56% |
+| concession | 1657 | 1439 | 3.56% |
 | flattery | 231 | 229 | 0.57% |
 | self_audit | 145 | 128 | 0.32% |
 | acknowledgment | 115 | 115 | 0.28% |

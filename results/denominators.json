@@ -32,6 +32,10 @@
    "assistant": 356,
    "user": 86
   },
+  "a1183501": {
+   "assistant": 45,
+   "user": 23
+  },
   "c95c9267": {
    "assistant": 180,
    "user": 81
@@ -46,8 +50,8 @@
   }
  },
  "totals": {
-  "assistant": 40385,
-  "user": 7627
+  "assistant": 40430,
+  "user": 7650
  },
  "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '<own-project>'"
 }
