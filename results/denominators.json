@@ -5,49 +5,49 @@
    "user": 10
   },
   "3d7c4125": {
-   "assistant": 36,
-   "user": 23
+   "assistant": 42,
+   "user": 25
   },
   "4b0743e2": {
-   "assistant": 23142,
-   "user": 4351
+   "assistant": 24840,
+   "user": 4675
   },
   "4c542d15": {
    "assistant": 133,
    "user": 62
   },
   "4f0a8fe4": {
-   "assistant": 9090,
-   "user": 1475
+   "assistant": 9385,
+   "user": 1539
   },
   "5c1dd88a": {
    "assistant": 15,
    "user": 4
   },
   "7224693b": {
-   "assistant": 94,
-   "user": 55
+   "assistant": 590,
+   "user": 241
   },
   "9096d07d": {
    "assistant": 356,
    "user": 86
   },
   "c95c9267": {
-   "assistant": 149,
-   "user": 71
+   "assistant": 180,
+   "user": 81
   },
   "d4b4df10": {
-   "assistant": 1537,
-   "user": 337
+   "assistant": 1572,
+   "user": 354
   },
   "d6fe6c1b": {
-   "assistant": 3216,
-   "user": 541
+   "assistant": 3256,
+   "user": 550
   }
  },
  "totals": {
-  "assistant": 37784,
-  "user": 7015
+  "assistant": 40385,
+  "user": 7627
  },
  "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '<own-project>'"
 }
