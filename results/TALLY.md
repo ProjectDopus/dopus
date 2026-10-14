@@ -1,36 +1,36 @@
 # Phrase tally
 
-## USER  —  702 hits over 7650 messages (5.41%)
+## USER  —  713 hits over 7744 messages (5.46%)
 
-**profanity** (549)
+**profanity** (558)
 
 | phrase | n |
 |---|---|
-| `fucking` | 210 |
-| `fuck` | 118 |
-| `shit` | 117 |
-| `wtf` | 50 |
+| `fucking` | 213 |
+| `fuck` | 120 |
+| `shit` | 119 |
+| `wtf` | 51 |
 | `hell` | 14 |
 | `fucked` | 8 |
 | `damn` | 6 |
 | `crap` | 6 |
 | `bullshit` | 5 |
 | `shitty` | 3 |
+| `fuckin` | 3 |
 | `ass` | 3 |
 | `piss` | 2 |
 | `god damnit` | 2 |
-| `fuckin` | 2 |
 | `pissed` | 1 |
 | `damnit` | 1 |
 | `god damn` | 1 |
 
-**insult** (67)
+**insult** (69)
 
 | phrase | n |
 |---|---|
-| `stupid` | 30 |
+| `stupid` | 31 |
 | `lazy` | 10 |
-| `dumb` | 6 |
+| `dumb` | 7 |
 | `useless` | 5 |
 | `idiot` | 4 |
 | `sloppy` | 3 |
@@ -78,20 +78,20 @@
 | `STOP` | 2 |
 | `STOP IT` | 1 |
 
-## CLAUDE  —  2152 hits over 40430 messages (4.67%)
+## CLAUDE  —  2162 hits over 40851 messages (4.65%)
 
-**agreement** (951)
+**agreement** (955)
 
 | phrase | n |
 |---|---|
-| `you're right` | 305 |
+| `you're right` | 307 |
 | `good catch` | 127 |
 | `right -` | 107 |
 | `fair -` | 82 |
 | `good call` | 61 |
 | `you were right` | 58 |
 | `correct -` | 32 |
-| `agreed -` | 30 |
+| `agreed -` | 31 |
 | `as you said` | 17 |
 | `fair enough` | 15 |
 | `you caught` | 13 |
@@ -99,7 +99,7 @@
 | `exactly right -` | 11 |
 | `nice catch` | 9 |
 | `you're right to push back` | 8 |
-| `fair point` | 7 |
+| `fair point` | 8 |
 | `thats exactly right` | 4 |
 | `exactly -` | 4 |
 | `you were right about` | 4 |
@@ -130,19 +130,19 @@
 | `your instinct is exactly right` | 1 |
 | `like you said` | 1 |
 
-**wrong_approach** (489)
+**wrong_approach** (493)
 
 | phrase | n |
 |---|---|
-| `i should have` | 82 |
+| `i should have` | 84 |
 | `i was wrong` | 59 |
 | `my mistake` | 37 |
-| `i introduced` | 35 |
+| `i introduced` | 36 |
 | `that was wrong` | 29 |
 | `i shouldn't have` | 24 |
+| `without checking` | 23 |
 | `i assumed` | 23 |
 | `my error` | 23 |
-| `without checking` | 22 |
 | `i claimed` | 19 |
 | `my bug` | 15 |
 | `is mine` | 15 |
@@ -184,12 +184,12 @@
 | `well done` | 1 |
 | `good push` | 1 |
 
-**self_audit** (145)
+**self_audit** (146)
 
 | phrase | n |
 |---|---|
 | `executor caught` | 32 |
-| `in my own plan` | 30 |
+| `in my own plan` | 31 |
 | `better than my` | 15 |
 | `self-review caught` | 14 |
 | `defect in my` | 13 |
@@ -208,7 +208,7 @@
 | `understood -` | 81 |
 | `noted -` | 34 |
 
-**reversal** (109)
+**reversal** (110)
 
 | phrase | n |
 |---|---|
@@ -216,7 +216,7 @@
 | `correction to my` | 23 |
 | `correction to what i` | 18 |
 | `correction to something i` | 8 |
-| `in that case` | 6 |
+| `in that case` | 7 |
 | `that changes the picture` | 6 |
 | `changes the calculus` | 5 |
 | `i made a mistake` | 4 |
@@ -270,8 +270,8 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1657 | 1439 | 3.56% |
-| flattery | 231 | 229 | 0.57% |
-| self_audit | 145 | 128 | 0.32% |
+| concession | 1666 | 1447 | 3.54% |
+| flattery | 231 | 229 | 0.56% |
+| self_audit | 146 | 129 | 0.32% |
 | acknowledgment | 115 | 115 | 0.28% |
 | status | 4 | 4 | 0.01% |

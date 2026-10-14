@@ -68,12 +68,12 @@
   },
   "codex": {
    "frustration_ci": [
-    5.670356422788784,
-    8.556807139055746
+    5.692987863400685,
+    8.569866308954442
    ],
-   "frustration_msgs": 84,
-   "frustration_rate": 6.976744186046512,
-   "user_msgs": 1204
+   "frustration_msgs": 85,
+   "frustration_rate": 6.995884773662551,
+   "user_msgs": 1215
   },
   "gemini": {
    "frustration_ci": [
@@ -189,16 +189,16 @@
   {
    "above_floor": true,
    "concession_ci": [
-    2.097045786704059,
-    3.314834451451682
+    2.1447169378078277,
+    3.3685403469434245
    ],
-   "concession_msgs": 71,
-   "concession_rate": 2.6384243775548124,
+   "concession_msgs": 73,
+   "concession_rate": 2.6897568165070007,
    "harness": "codex",
    "harnesses": {
-    "codex": 2691
+    "codex": 2714
    },
-   "messages": 2691,
+   "messages": 2714,
    "model": "gpt-6-astra",
    "self_audit_msgs": 0,
    "self_audit_rate": 0.0,
@@ -214,21 +214,21 @@
     },
     "hot": {
      "ci": [
-      5.88309210410259,
-      12.963936909266376
+      5.859359991192431,
+      12.913713164838613
      ],
      "k": 22,
-     "n": 250,
-     "rate": 8.8
+     "n": 251,
+     "rate": 8.764940239043824
     },
     "neutral": {
      "ci": [
-      1.4564500221648629,
-      2.5758590723915433
+      1.5149707501516674,
+      2.6471048116528304
      ],
-     "k": 46,
-     "n": 2373,
-     "rate": 1.9384745048461862
+     "k": 48,
+     "n": 2395,
+     "rate": 2.0041753653444676
     }
    },
    "top_phrases": [
@@ -257,11 +257,11 @@
      3
     ],
     [
-     "i misread",
-     2
+     "you were right",
+     3
     ],
     [
-     "i'm sorry",
+     "i misread",
      2
     ]
    ]
