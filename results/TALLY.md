@@ -78,7 +78,7 @@
 | `STOP` | 2 |
 | `STOP IT` | 1 |
 
-## CLAUDE  —  2162 hits over 40851 messages (4.65%)
+## CLAUDE  —  2181 hits over 40851 messages (4.68%)
 
 **agreement** (955)
 
@@ -208,6 +208,25 @@
 | `understood -` | 81 |
 | `noted -` | 34 |
 
+**apology** (112)
+
+| phrase | n |
+|---|---|
+| `i owe you` | 26 |
+| `that's on me` | 21 |
+| `my fault` | 14 |
+| `sorry -` | 13 |
+| `i'm sorry` | 8 |
+| `one's on me` | 6 |
+| `that's my fault` | 5 |
+| `my bad` | 5 |
+| `sorry about that` | 3 |
+| `my apologies` | 3 |
+| `i apologize` | 3 |
+| `i destroyed` | 3 |
+| `i apologize for` | 1 |
+| `this is on me` | 1 |
+
 **reversal** (110)
 
 | phrase | n |
@@ -225,23 +244,6 @@
 | `different story` | 3 |
 | `that changes the math` | 1 |
 | `given that, ` | 1 |
-
-**apology** (93)
-
-| phrase | n |
-|---|---|
-| `i owe you` | 26 |
-| `that's on me` | 21 |
-| `my fault` | 14 |
-| `i'm sorry` | 8 |
-| `that's my fault` | 5 |
-| `my bad` | 5 |
-| `sorry about that` | 3 |
-| `my apologies` | 3 |
-| `i apologize` | 3 |
-| `i destroyed` | 3 |
-| `i apologize for` | 1 |
-| `this is on me` | 1 |
 
 **fabrication** (13)
 
@@ -270,7 +272,7 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 1666 | 1447 | 3.54% |
+| concession | 1685 | 1460 | 3.57% |
 | flattery | 231 | 229 | 0.56% |
 | self_audit | 146 | 129 | 0.32% |
 | acknowledgment | 115 | 115 | 0.28% |

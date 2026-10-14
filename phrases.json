@@ -59,6 +59,7 @@
       "my bad",
       "this is on me",
       "that's on me",
+      "one's on me",
       "i owe you",
       "i take full responsibility",
       "there's no good excuse",
@@ -260,6 +261,9 @@
       "noted",
       "ack",
       "acknowledged"
+    ],
+    "apology": [
+      "sorry"
     ]
   },
   "assistant_negation_guard": {
@@ -527,6 +531,13 @@
       "precision": "~95%",
       "date": "2026-08-30",
       "note": "'in my own plan' 36 (10/10 fault), 'executor caught' 26 (8/10 self-fault; the rest 'caught a real environment issue' -- caught something, still concession-adjacent), 'defect(s) in my' 25, 'self-review caught/found' 16, 'better than my' 10 (10/10), 'bug in my plan' 9, 'my plan was wrong' 8. opus-5 carries ~70% of every row"
+    },
+    "one's on me / sentence-initial sorry": {
+      "n": 16,
+      "sampled": 16,
+      "precision": "16/16",
+      "date": "2026-10-14",
+      "note": "full enumeration. 'that/this one's on me' 5 (opus-5 2, opus-5-5 2, opus-4-8 1), all genuine fault-taking; the existing 'that's on me' missed them on the contraction. Bare sentence-initial 'Sorry,' / 'Sorry.' 11 (opus-5-5 5, opus-5 4, fable-5 1, sonnet-5 1), all genuine apologies ('Sorry, that was a mess', 'Sorry, I went off checking other machines'); added as an opener so mid-sentence 'sorry' stays out. Prompted by 'Sorry, that one's on me.' being an opus-5-5 habit that scored zero"
     },
     "i misread": {
       "n": 12,

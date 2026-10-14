@@ -64,6 +64,10 @@ ASSISTANT_FIXTURES = [
     ("I misread your message, sorry.",                      True,  "self-audit: misread"),
     ("I misread the grep.",                                 True,  "self-audit: misread (object follows)"),
     ("you misread the spec",                                False, "misread aimed at the user"),
+    ("Sorry, that one's on me.",                             True,  "bare sorry opener + one's on me"),
+    ("Sorry. That's been disrupting your work.",            True,  "bare sorry opener, period form"),
+    ("Freed 1.2 GB. This one's on me.",                      True,  "one's on me, this-form"),
+    ("the API returned sorry, no results found",            False, "sorry mid-sentence"),
 ]
 
 USER_FIXTURES = [
