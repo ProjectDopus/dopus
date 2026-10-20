@@ -43,11 +43,12 @@ python3 scripts/collect.py
 # 2. Build the local dataset (~1 min total)
 python3 scripts/build_db.py
 python3 scripts/build_rows.py
-python3 scripts/verify.py          # must say "all checks passed"
 
-# 3. Compute your aggregates
+# 3. Compute your aggregates, then check everything agrees
+python3 scripts/tally.py
 python3 scripts/analyze.py
 python3 scripts/followthrough.py
+python3 scripts/verify.py          # must say "all checks passed"
 
 # 4. Calibrate: label 25 of your own records (~10 min)
 python3 scripts/followthrough.py --code 25

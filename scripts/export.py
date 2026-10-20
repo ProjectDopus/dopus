@@ -139,8 +139,14 @@ def git_stamp():
     try:
         commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=P.ROOT,
                                 capture_output=True, text=True, timeout=10).stdout.strip()
-        dirty = bool(subprocess.run(["git", "status", "--porcelain"], cwd=P.ROOT,
-                                    capture_output=True, text=True, timeout=10).stdout.strip())
+        # Dirty means the instrument changed: phrases.json, scripts/, anything
+        # tracked outside results/. The pipeline rewrites tracked files under
+        # results/ on every run (analysis.json, denominators.json), so a
+        # contributor's clean clone is "dirty" the moment it works -- those
+        # are outputs, not the instrument, and must not flag the bundle.
+        dirty = bool(subprocess.run(["git", "status", "--porcelain", "--", ".", ":!results"],
+                                    cwd=P.ROOT, capture_output=True, text=True,
+                                    timeout=10).stdout.strip())
         return commit[:12] or None, dirty
     except Exception:
         return None, None
@@ -171,12 +177,29 @@ def build(participant):
         for k in ("note", "rules"):          # prose constants; counts travel, prose doesn't
             ft.pop(k, None)
 
+    # Calibration labels travel only if they are THIS machine's: the repo
+    # tracks the maintainer's label files, so a contributor's clone carries
+    # verdicts on records that do not exist in their data. A label file is
+    # kept when its fingerprints are found in the local follow-through
+    # population; a file of someone else's verdicts matches nothing.
+    local_fp = set()
+    fj = os.path.join(P.RESULTS, "followthrough.jsonl")
+    if os.path.exists(fj):
+        for line in open(fj, encoding="utf-8"):
+            try:
+                local_fp.add(json.loads(line)["msg_fingerprint"])
+            except (ValueError, KeyError):
+                pass
     labels = []
     cdir = os.path.join(P.RESULTS, "coding")
     if os.path.isdir(cdir):
         for n in sorted(os.listdir(cdir)):
             if re.match(r"followthrough-labels-.*\.json$", n):
                 d = json.load(open(os.path.join(cdir, n)))
+                fps = [r.get("msg_fingerprint") for r in d.get("records", [])]
+                if local_fp and fps and sum(f in local_fp for f in fps) * 2 < len(fps):
+                    print("skipping %s: its verdicts are not on this machine's records" % n)
+                    continue
                 labels.append({"file": n,
                                "records": [{"msg_fingerprint": r["msg_fingerprint"],
                                             "detector": r.get("detector"),
