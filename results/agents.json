@@ -37,12 +37,12 @@
   },
   "gpt-6-astra": {
    "candidate_msgs": 75,
-   "coverage": 58.666666666666664,
-   "tracked": 44
+   "coverage": 60.0,
+   "tracked": 45
   },
   "k3": {
-   "candidate_msgs": 66,
-   "coverage": 40.90909090909091,
+   "candidate_msgs": 69,
+   "coverage": 39.130434782608695,
    "tracked": 27
   },
   "qwen3.8-flash-next": {
@@ -68,12 +68,12 @@
   },
   "codex": {
    "frustration_ci": [
-    5.692987863400685,
-    8.569866308954442
+    5.73881208522976,
+    8.617460595253986
    ],
-   "frustration_msgs": 85,
-   "frustration_rate": 6.995884773662551,
-   "user_msgs": 1215
+   "frustration_msgs": 86,
+   "frustration_rate": 7.0434070434070435,
+   "user_msgs": 1221
   },
   "gemini": {
    "frustration_ci": [
@@ -95,12 +95,12 @@
   },
   "kimi-code": {
    "frustration_ci": [
-    11.532447917460782,
-    20.456720380423537
+    11.041158109825249,
+    19.6293220551865
    ],
    "frustration_msgs": 39,
-   "frustration_rate": 15.476190476190476,
-   "user_msgs": 252
+   "frustration_rate": 14.828897338403042,
+   "user_msgs": 263
   }
  },
  "min_n": 500,
@@ -108,20 +108,20 @@
   {
    "above_floor": true,
    "concession_ci": [
-    1.6412184040492748,
-    2.7151813291354725
+    1.4627767814568893,
+    2.421435924725023
    ],
    "concession_msgs": 59,
-   "concession_rate": 2.112423916935195,
+   "concession_rate": 1.883179061602298,
    "harness": "kimi-code",
    "harnesses": {
     "bearcode": 222,
-    "kimi-code": 2571
+    "kimi-code": 2911
    },
-   "messages": 2793,
+   "messages": 3133,
    "model": "k3",
-   "self_audit_msgs": 3,
-   "self_audit_rate": 0.10741138560687433,
+   "self_audit_msgs": 9,
+   "self_audit_rate": 0.2872646026172997,
    "tone": {
     "correction": {
      "ci": [
@@ -143,12 +143,12 @@
     },
     "neutral": {
      "ci": [
-      1.2372962400930614,
-      2.2330435443108976
+      1.0932395689367644,
+      1.9742393961257372
      ],
      "k": 43,
-     "n": 2585,
-     "rate": 1.6634429400386848
+     "n": 2925,
+     "rate": 1.4700854700854702
     }
    },
    "top_phrases": [
@@ -189,16 +189,16 @@
   {
    "above_floor": true,
    "concession_ci": [
-    2.1447169378078277,
-    3.3685403469434245
+    2.201376367982795,
+    3.436239241512458
    ],
-   "concession_msgs": 73,
-   "concession_rate": 2.6897568165070007,
+   "concession_msgs": 75,
+   "concession_rate": 2.7522935779816513,
    "harness": "codex",
    "harnesses": {
-    "codex": 2714
+    "codex": 2725
    },
-   "messages": 2714,
+   "messages": 2725,
    "model": "gpt-6-astra",
    "self_audit_msgs": 0,
    "self_audit_rate": 0.0,
@@ -214,21 +214,21 @@
     },
     "hot": {
      "ci": [
-      5.859359991192431,
-      12.913713164838613
+      5.720894178212488,
+      12.620352003378176
      ],
      "k": 22,
-     "n": 251,
-     "rate": 8.764940239043824
+     "n": 257,
+     "rate": 8.560311284046692
     },
     "neutral": {
      "ci": [
-      1.5149707501516674,
-      2.6471048116528304
+      1.5838304260299667,
+      2.7359883174346606
      ],
-     "k": 48,
-     "n": 2395,
-     "rate": 2.0041753653444676
+     "k": 50,
+     "n": 2400,
+     "rate": 2.0833333333333335
     }
    },
    "top_phrases": [
@@ -245,11 +245,11 @@
      5
     ],
     [
-     "agreed -",
-     4
+     "without checking",
+     5
     ],
     [
-     "without checking",
+     "agreed -",
      4
     ],
     [
@@ -898,6 +898,35 @@
      "n": 2,
      "rate": 0.0
     },
+    "neutral": {
+     "ci": [
+      0.0,
+      29.91527535509594
+     ],
+     "k": 0,
+     "n": 9,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    29.91527535509594
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 9
+   },
+   "messages": 9,
+   "model": "gpt-daybreak-blue-latest",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
     "neutral": {
      "ci": [
       0.0,
