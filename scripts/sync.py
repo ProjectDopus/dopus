@@ -107,10 +107,12 @@ def remote_cmd(h, inner):
     sudo = "sudo -n " if h.get("sudo") else ""
     if h["kind"] == "direct":
         return ["ssh"] + SSHOPT + [addr(h), sudo + inner]
+    # via: hop through the jump box as root, then dial addr(h) -- which may
+    # carry a username ("user@host") when the far box's account differs.
     jump = h["jump"]
     inner_q = inner.replace("'", "'\"'\"'")
     return ["ssh"] + SSHOPT + [jump,
-            "sudo -n ssh " + " ".join(SSHOPT) + " " + h["name"] + " '" + sudo + inner_q + "'"]
+            "sudo -n ssh " + " ".join(SSHOPT) + " " + addr(h) + " '" + sudo + inner_q + "'"]
 
 
 def push(h, local_path, remote_path):
@@ -123,7 +125,7 @@ def push(h, local_path, remote_path):
     run(["scp"] + SSHOPT + [local_path, jump + ":" + remote_path],
         timeout=300)
     run(["ssh"] + SSHOPT + [jump, "sudo -n scp " + " ".join(SSHOPT) + " " +
-                   remote_path + " " + h["name"] + ":" + remote_path],
+                   remote_path + " " + addr(h) + ":" + remote_path],
                    capture_output=True, timeout=600)
 
 
@@ -348,7 +350,7 @@ def fetch_files(h, fetch):
         if jump:
             run(["ssh"] + SSHOPT + [jump,
                 "sudo -n rm -f /tmp/sync.tgz; sudo -n scp " + " ".join(SSHOPT) + " " +
-                h["name"] + ":/tmp/sync.tgz /tmp/sync.tgz && sudo -n chown $(whoami) /tmp/sync.tgz"],
+                addr(h) + ":/tmp/sync.tgz /tmp/sync.tgz && sudo -n chown $(whoami) /tmp/sync.tgz"],
                 timeout=1800)
             src = jump + ":/tmp/sync.tgz"
         else:
