@@ -1,5 +1,9 @@
 {
  "per_machine": {
+  "2b719f5e": {
+   "assistant": 74,
+   "user": 42
+  },
   "315ca601": {
    "assistant": 16,
    "user": 10
@@ -9,24 +13,28 @@
    "user": 25
   },
   "4b0743e2": {
-   "assistant": 26484,
-   "user": 5108
+   "assistant": 27646,
+   "user": 5410
   },
   "4c542d15": {
    "assistant": 133,
    "user": 62
   },
   "4f0a8fe4": {
-   "assistant": 9523,
-   "user": 1558
+   "assistant": 10508,
+   "user": 1786
   },
   "5c1dd88a": {
    "assistant": 15,
    "user": 4
   },
   "7224693b": {
-   "assistant": 645,
-   "user": 258
+   "assistant": 685,
+   "user": 282
+  },
+  "8f069b6c": {
+   "assistant": 1045,
+   "user": 170
   },
   "9096d07d": {
    "assistant": 356,
@@ -35,6 +43,10 @@
   "a1183501": {
    "assistant": 45,
    "user": 23
+  },
+  "a76947d6": {
+   "assistant": 209,
+   "user": 49
   },
   "c95c9267": {
    "assistant": 181,
@@ -45,13 +57,13 @@
    "user": 354
   },
   "d6fe6c1b": {
-   "assistant": 3274,
-   "user": 555
+   "assistant": 3294,
+   "user": 562
   }
  },
  "totals": {
-  "assistant": 42286,
-  "user": 8125
+  "assistant": 45821,
+  "user": 8947
  },
  "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '<own-project>'"
 }

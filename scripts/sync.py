@@ -231,7 +231,7 @@ def main():
                                capture_output=True, timeout=120)
                 if h["kind"] == "via":
                     subprocess.run(["ssh"] + SSHOPT + [h["jump"],
-                        "sudo -n scp " + " ".join(SSHOPT) + " /tmp/scan.py " + name + ":/tmp/"],
+                        "sudo -n scp " + " ".join(SSHOPT) + " /tmp/scan.py " + addr(h) + ":/tmp/"],
                         capture_output=True, timeout=180)
                 inv_path = os.path.join(P.ROOT, ".inventory.sh")
                 with open(inv_path, "w") as fh:

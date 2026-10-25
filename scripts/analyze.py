@@ -222,10 +222,15 @@ def main():
             messages=n, concession_msgs=c, rate=pct(c, n))
 
     # -------------------------------------- within-project control (confound)
-    # Busiest single project where the top two leaderboard models both have
-    # enough volume: does the leaderboard gap survive holding the project fixed?
+    # Busiest single project where the top-RATED model and the highest-volume
+    # other model both have enough volume: does the leaderboard gap survive
+    # holding the project fixed? (`lead` is volume-ordered; until 2026-10 the
+    # top-rated model was also #2 by volume, so lead[:2] happened to be the
+    # intended pair. Opus 5.5 overtaking it in volume exposed that.)
     if len(lead) >= 2:
-        top2 = [lead[0]["model"], lead[1]["model"]]
+        top = max(lead, key=lambda d: d["concession_rate"])["model"]
+        other = next(d["model"] for d in lead if d["model"] != top)
+        top2 = [top, other]
         pj = defaultdict(dict)
         for model, proj, n in db.execute(
                 f"""SELECT m.model, f.project, COUNT(DISTINCT m.fingerprint)
