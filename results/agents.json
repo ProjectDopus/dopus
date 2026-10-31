@@ -40,6 +40,11 @@
    "coverage": 60.0,
    "tracked": 45
   },
+  "gpt-6-luna": {
+   "candidate_msgs": 1,
+   "coverage": 0.0,
+   "tracked": 0
+  },
   "gpt-6.1-sol": {
    "candidate_msgs": 3,
    "coverage": 100.0,
@@ -78,12 +83,12 @@
   },
   "codex": {
    "frustration_ci": [
-    5.760616094112524,
-    8.629707067043405
+    5.394895537854086,
+    8.089786777292781
    ],
    "frustration_msgs": 87,
-   "frustration_rate": 7.061688311688312,
-   "user_msgs": 1232
+   "frustration_rate": 6.61596958174905,
+   "user_msgs": 1315
   },
   "gemini": {
    "frustration_ci": [
@@ -96,12 +101,12 @@
   },
   "grok": {
    "frustration_ci": [
-    2.7755575615628914e-15,
-    25.88400172488141
+    0.0,
+    22.810184305529166
    ],
    "frustration_msgs": 0,
    "frustration_rate": 0.0,
-   "user_msgs": 11
+   "user_msgs": 13
   },
   "kimi-code": {
    "frustration_ci": [
@@ -564,6 +569,40 @@
   {
    "above_floor": false,
    "concession_ci": [
+    0.8088373473795232,
+    5.206964190506777
+   ],
+   "concession_msgs": 4,
+   "concession_rate": 2.0725388601036268,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 193
+   },
+   "messages": 193,
+   "model": "gpt-daybreak-blue-latest",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.8088373473795232,
+      5.206964190506777
+     ],
+     "k": 4,
+     "n": 193,
+     "rate": 2.0725388601036268
+    }
+   },
+   "top_phrases": [
+    [
+     "without checking",
+     5
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
     0.436371038878235,
     5.602987687446764
    ],
@@ -789,16 +828,16 @@
   {
    "above_floor": false,
    "concession_ci": [
-    1.2834336300788758,
-    10.454891974394322
+    1.2367579124893058,
+    10.096059539054655
    ],
    "concession_msgs": 3,
-   "concession_rate": 3.75,
+   "concession_rate": 3.6144578313253013,
    "harness": "codex",
    "harnesses": {
-    "codex": 80
+    "codex": 83
    },
-   "messages": 80,
+   "messages": 83,
    "model": "gpt-6.1-sol",
    "self_audit_msgs": 0,
    "self_audit_rate": 0.0,
@@ -814,12 +853,12 @@
     },
     "neutral": {
      "ci": [
-      1.3337708283515264,
-      10.840159425379229
+      1.2834336300788758,
+      10.454891974394322
      ],
      "k": 3,
-     "n": 77,
-     "rate": 3.896103896103896
+     "n": 80,
+     "rate": 3.75
     }
    },
    "top_phrases": [
@@ -934,6 +973,35 @@
   {
    "above_floor": false,
    "concession_ci": [
+    0.0,
+    12.064720365810762
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 28
+   },
+   "messages": 28,
+   "model": "gpt-6-luna",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "neutral": {
+     "ci": [
+      0.0,
+      12.064720365810762
+     ],
+     "k": 0,
+     "n": 28,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
     6.938893903907228e-16,
     12.455903714463581
    ],
@@ -955,6 +1023,44 @@
      ],
      "k": 0,
      "n": 27,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    1.3877787807814457e-15,
+    14.865952572596125
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 22
+   },
+   "messages": 22,
+   "model": "codex-auto-review",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.0,
+      65.76280471103807
+     ],
+     "k": 0,
+     "n": 2,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      0.0,
+      16.113012549493323
+     ],
+     "k": 0,
+     "n": 20,
      "rate": 0.0
     }
    },
@@ -1001,31 +1107,36 @@
   {
    "above_floor": false,
    "concession_ci": [
-    0.0,
-    29.91527535509594
+    1.9890371327130507,
+    43.50062147680602
    ],
-   "concession_msgs": 0,
-   "concession_rate": 0.0,
-   "harness": "codex",
+   "concession_msgs": 1,
+   "concession_rate": 11.11111111111111,
+   "harness": "grok",
    "harnesses": {
-    "codex": 9
+    "grok": 9
    },
    "messages": 9,
-   "model": "gpt-daybreak-blue-latest",
+   "model": "grok-4.7-build",
    "self_audit_msgs": 0,
    "self_audit_rate": 0.0,
    "tone": {
     "neutral": {
      "ci": [
-      0.0,
-      29.91527535509594
+      1.9890371327130507,
+      43.50062147680602
      ],
-     "k": 0,
+     "k": 1,
      "n": 9,
-     "rate": 0.0
+     "rate": 11.11111111111111
     }
    },
-   "top_phrases": []
+   "top_phrases": [
+    [
+     "in that case",
+     1
+    ]
+   ]
   },
   {
    "above_floor": false,
@@ -1084,40 +1195,6 @@
     }
    },
    "top_phrases": []
-  },
-  {
-   "above_floor": false,
-   "concession_ci": [
-    2.567895594897482,
-    51.313450331902985
-   ],
-   "concession_msgs": 1,
-   "concession_rate": 14.285714285714286,
-   "harness": "grok",
-   "harnesses": {
-    "grok": 7
-   },
-   "messages": 7,
-   "model": "grok-4.7-build",
-   "self_audit_msgs": 0,
-   "self_audit_rate": 0.0,
-   "tone": {
-    "neutral": {
-     "ci": [
-      2.567895594897482,
-      51.313450331902985
-     ],
-     "k": 1,
-     "n": 7,
-     "rate": 14.285714285714286
-    }
-   },
-   "top_phrases": [
-    [
-     "in that case",
-     1
-    ]
-   ]
   },
   {
    "above_floor": false,
