@@ -1,5 +1,10 @@
 {
  "coverage": {
+  "deepseek-v4.1-flash-1017": {
+   "candidate_msgs": 2,
+   "coverage": 0.0,
+   "tracked": 0
+  },
   "gemini-3-flash-preview": {
    "candidate_msgs": 4,
    "coverage": 50.0,
@@ -74,12 +79,12 @@
  "harnesses": {
   "bearcode": {
    "frustration_ci": [
-    2.432370248475172,
-    9.114077177526447
+    2.652483692561692,
+    9.228178790793546
    ],
-   "frustration_msgs": 8,
-   "frustration_rate": 4.761904761904762,
-   "user_msgs": 168
+   "frustration_msgs": 9,
+   "frustration_rate": 5.0,
+   "user_msgs": 180
   },
   "codex": {
    "frustration_ci": [
@@ -781,6 +786,53 @@
      1
     ]
    ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    3.3162525379483707
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "bearcode",
+   "harnesses": {
+    "bearcode": 112
+   },
+   "messages": 112,
+   "model": "deepseek-v4.1-flash-1017",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.0,
+      79.34567085261071
+     ],
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    },
+    "hot": {
+     "ci": [
+      0.0,
+      35.433884297520656
+     ],
+     "k": 0,
+     "n": 7,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      3.469446951953614e-16,
+      3.5622616875120543
+     ],
+     "k": 0,
+     "n": 104,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
   },
   {
    "above_floor": false,
