@@ -1,5 +1,10 @@
 {
  "coverage": {
+  "codex-auto-review": {
+   "candidate_msgs": 1,
+   "coverage": 0.0,
+   "tracked": 0
+  },
   "deepseek-v4.1-flash-1017": {
    "candidate_msgs": 2,
    "coverage": 0.0,
@@ -51,9 +56,9 @@
    "tracked": 0
   },
   "gpt-6.1-sol": {
-   "candidate_msgs": 3,
+   "candidate_msgs": 9,
    "coverage": 100.0,
-   "tracked": 3
+   "tracked": 9
   },
   "k3": {
    "candidate_msgs": 69,
@@ -79,21 +84,21 @@
  "harnesses": {
   "bearcode": {
    "frustration_ci": [
-    2.652483692561692,
-    9.228178790793546
+    2.6377062581009842,
+    9.178681394894877
    ],
    "frustration_msgs": 9,
-   "frustration_rate": 5.0,
-   "user_msgs": 180
+   "frustration_rate": 4.972375690607735,
+   "user_msgs": 181
   },
   "codex": {
    "frustration_ci": [
-    5.394895537854086,
-    8.089786777292781
+    5.484225144469303,
+    7.988480403016772
    ],
-   "frustration_msgs": 87,
-   "frustration_rate": 6.61596958174905,
-   "user_msgs": 1315
+   "frustration_msgs": 101,
+   "frustration_rate": 6.6272965879265096,
+   "user_msgs": 1524
   },
   "gemini": {
    "frustration_ci": [
@@ -540,6 +545,82 @@
   {
    "above_floor": false,
    "concession_ci": [
+    2.1996477468231133,
+    6.872622595711124
+   ],
+   "concession_msgs": 11,
+   "concession_rate": 3.9145907473309607,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 281
+   },
+   "messages": 281,
+   "model": "gpt-6.1-sol",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.0,
+      65.76280471103807
+     ],
+     "k": 0,
+     "n": 2,
+     "rate": 0.0
+    },
+    "hot": {
+     "ci": [
+      11.18600527894031,
+      46.87050099580635
+     ],
+     "k": 5,
+     "n": 20,
+     "rate": 25.0
+    },
+    "neutral": {
+     "ci": [
+      1.0659301222663318,
+      4.961121912114831
+     ],
+     "k": 6,
+     "n": 259,
+     "rate": 2.3166023166023164
+    }
+   },
+   "top_phrases": [
+    [
+     "you're right",
+     5
+    ],
+    [
+     "i should have",
+     2
+    ],
+    [
+     "i'm sorry",
+     2
+    ],
+    [
+     "i shouldn't have",
+     1
+    ],
+    [
+     "i misunderstood",
+     1
+    ],
+    [
+     "that was wrong",
+     1
+    ],
+    [
+     "i assumed",
+     1
+    ]
+   ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
     0.06925710794052804,
     2.1875671428754146
    ],
@@ -604,6 +685,53 @@
      5
     ]
    ]
+  },
+  {
+   "above_floor": false,
+   "concession_ci": [
+    0.0,
+    2.4971139145718713
+   ],
+   "concession_msgs": 0,
+   "concession_rate": 0.0,
+   "harness": "codex",
+   "harnesses": {
+    "codex": 150
+   },
+   "messages": 150,
+   "model": "codex-auto-review",
+   "self_audit_msgs": 0,
+   "self_audit_rate": 0.0,
+   "tone": {
+    "correction": {
+     "ci": [
+      0.0,
+      20.388926630434785
+     ],
+     "k": 0,
+     "n": 15,
+     "rate": 0.0
+    },
+    "hot": {
+     "ci": [
+      0.0,
+      29.91527535509594
+     ],
+     "k": 0,
+     "n": 9,
+     "rate": 0.0
+    },
+    "neutral": {
+     "ci": [
+      0.0,
+      2.958681963253688
+     ],
+     "k": 0,
+     "n": 126,
+     "rate": 0.0
+    }
+   },
+   "top_phrases": []
   },
   {
    "above_floor": false,
@@ -880,57 +1008,6 @@
   {
    "above_floor": false,
    "concession_ci": [
-    1.2367579124893058,
-    10.096059539054655
-   ],
-   "concession_msgs": 3,
-   "concession_rate": 3.6144578313253013,
-   "harness": "codex",
-   "harnesses": {
-    "codex": 83
-   },
-   "messages": 83,
-   "model": "gpt-6.1-sol",
-   "self_audit_msgs": 0,
-   "self_audit_rate": 0.0,
-   "tone": {
-    "hot": {
-     "ci": [
-      0.0,
-      56.15060804490177
-     ],
-     "k": 0,
-     "n": 3,
-     "rate": 0.0
-    },
-    "neutral": {
-     "ci": [
-      1.2834336300788758,
-      10.454891974394322
-     ],
-     "k": 3,
-     "n": 80,
-     "rate": 3.75
-    }
-   },
-   "top_phrases": [
-    [
-     "you're right",
-     1
-    ],
-    [
-     "i should have",
-     1
-    ],
-    [
-     "i shouldn't have",
-     1
-    ]
-   ]
-  },
-  {
-   "above_floor": false,
-   "concession_ci": [
     1.7442401159453307,
     13.91672332228667
    ],
@@ -1075,44 +1152,6 @@
      ],
      "k": 0,
      "n": 27,
-     "rate": 0.0
-    }
-   },
-   "top_phrases": []
-  },
-  {
-   "above_floor": false,
-   "concession_ci": [
-    1.3877787807814457e-15,
-    14.865952572596125
-   ],
-   "concession_msgs": 0,
-   "concession_rate": 0.0,
-   "harness": "codex",
-   "harnesses": {
-    "codex": 22
-   },
-   "messages": 22,
-   "model": "codex-auto-review",
-   "self_audit_msgs": 0,
-   "self_audit_rate": 0.0,
-   "tone": {
-    "correction": {
-     "ci": [
-      0.0,
-      65.76280471103807
-     ],
-     "k": 0,
-     "n": 2,
-     "rate": 0.0
-    },
-    "neutral": {
-     "ci": [
-      0.0,
-      16.113012549493323
-     ],
-     "k": 0,
-     "n": 20,
      "rate": 0.0
     }
    },

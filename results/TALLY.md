@@ -1,16 +1,16 @@
 # Phrase tally
 
-## USER  —  1060 hits over 10617 messages (6.09%)
+## USER  —  1085 hits over 11019 messages (6.02%)
 
-**profanity** (833)
+**profanity** (851)
 
 | phrase | n |
 |---|---|
-| `fucking` | 324 |
-| `fuck` | 179 |
-| `shit` | 179 |
-| `wtf` | 72 |
-| `hell` | 15 |
+| `fucking` | 329 |
+| `shit` | 183 |
+| `fuck` | 182 |
+| `wtf` | 75 |
+| `hell` | 18 |
 | `bullshit` | 11 |
 | `damn` | 9 |
 | `fucked` | 8 |
@@ -24,25 +24,25 @@
 | `god damn` | 2 |
 | `damnit` | 1 |
 
-**insult** (106)
+**insult** (110)
 
 | phrase | n |
 |---|---|
-| `stupid` | 51 |
+| `stupid` | 54 |
 | `lazy` | 15 |
+| `useless` | 8 |
 | `dumb` | 8 |
 | `idiot` | 8 |
-| `useless` | 7 |
 | `sloppy` | 5 |
 | `pathetic` | 5 |
 | `moron` | 4 |
 | `dumbass` | 3 |
 
-**not_listening** (53)
+**not_listening** (55)
 
 | phrase | n |
 |---|---|
-| `i told you` | 14 |
+| `i told you` | 16 |
 | `you keep` | 10 |
 | `did you even look` | 4 |
 | `stop it` | 4 |
@@ -70,39 +70,40 @@
 | `holy god` | 1 |
 | `oh my god` | 1 |
 
-**shouting** (18)
+**shouting** (19)
 
 | phrase | n |
 |---|---|
 | `NO` | 12 |
 | `DO NOT` | 3 |
 | `STOP` | 2 |
+| `I TOLD YOU` | 1 |
 | `STOP IT` | 1 |
 
-## CLAUDE  —  2664 hits over 53357 messages (4.34%)
+## CLAUDE  —  2734 hits over 54782 messages (4.34%)
 
-**agreement** (1171)
+**agreement** (1203)
 
 | phrase | n |
 |---|---|
-| `you're right` | 413 |
-| `good catch` | 132 |
-| `right -` | 122 |
-| `fair -` | 93 |
-| `you were right` | 71 |
+| `you're right` | 430 |
+| `good catch` | 133 |
+| `right -` | 125 |
+| `fair -` | 95 |
+| `you were right` | 75 |
 | `good call` | 68 |
-| `agreed -` | 47 |
+| `agreed -` | 48 |
 | `correct -` | 34 |
-| `as you said` | 25 |
-| `fair enough` | 23 |
-| `fair point` | 18 |
+| `as you said` | 26 |
+| `fair enough` | 24 |
+| `fair point` | 19 |
 | `you caught` | 16 |
 | `fair hit` | 12 |
 | `exactly right -` | 11 |
 | `nice catch` | 9 |
 | `spot on` | 8 |
 | `you're right to push back` | 8 |
-| `you were right about` | 6 |
+| `you were right about` | 7 |
 | `thats exactly right` | 5 |
 | `exactly -` | 4 |
 | `you're absolutely right` | 3 |
@@ -132,22 +133,22 @@
 | `like you said` | 1 |
 | `you are right` | 1 |
 
-**wrong_approach** (618)
+**wrong_approach** (640)
 
 | phrase | n |
 |---|---|
-| `i should have` | 122 |
-| `i was wrong` | 72 |
-| `my mistake` | 53 |
+| `i should have` | 127 |
+| `i was wrong` | 76 |
+| `my mistake` | 54 |
 | `i introduced` | 38 |
-| `that was wrong` | 33 |
-| `i shouldn't have` | 33 |
-| `without checking` | 32 |
+| `that was wrong` | 36 |
+| `without checking` | 35 |
+| `i shouldn't have` | 35 |
 | `i assumed` | 28 |
+| `is mine` | 25 |
 | `my error` | 25 |
-| `is mine` | 22 |
 | `i claimed` | 20 |
-| `i misread` | 18 |
+| `i misread` | 19 |
 | `on my part` | 18 |
 | `my bug` | 15 |
 | `was mine` | 15 |
@@ -188,15 +189,15 @@
 | `well done` | 1 |
 | `good push` | 1 |
 
-**apology** (157)
+**apology** (163)
 
 | phrase | n |
 |---|---|
-| `sorry -` | 31 |
+| `sorry -` | 34 |
 | `i owe you` | 29 |
-| `that's on me` | 25 |
-| `my fault` | 20 |
-| `i'm sorry` | 15 |
+| `that's on me` | 26 |
+| `my fault` | 21 |
+| `i'm sorry` | 16 |
 | `sorry about that` | 7 |
 | `my bad` | 7 |
 | `one's on me` | 6 |
@@ -206,6 +207,13 @@
 | `i destroyed` | 3 |
 | `i apologize for` | 1 |
 | `this is on me` | 1 |
+
+**compliance** (158)
+
+| phrase | n |
+|---|---|
+| `understood -` | 119 |
+| `noted -` | 39 |
 
 **self_audit** (156)
 
@@ -224,21 +232,14 @@
 | `contradiction in my plan` | 3 |
 | `flaw in my plan` | 1 |
 
-**compliance** (151)
+**reversal** (139)
 
 | phrase | n |
 |---|---|
-| `understood -` | 112 |
-| `noted -` | 39 |
-
-**reversal** (137)
-
-| phrase | n |
-|---|---|
-| `correction to my` | 29 |
+| `correction to my` | 30 |
 | `that reframes` | 27 |
 | `correction to what i` | 24 |
-| `in that case` | 15 |
+| `in that case` | 16 |
 | `that changes the picture` | 9 |
 | `correction to something i` | 8 |
 | `i made a mistake` | 6 |
@@ -249,13 +250,14 @@
 | `that changes the math` | 1 |
 | `given that, ` | 1 |
 
-**fabrication** (17)
+**fabrication** (18)
 
 | phrase | n |
 |---|---|
 | `i guessed` | 12 |
 | `i was guessing` | 4 |
 | `i made those up` | 1 |
+| `i made that up` | 1 |
 
 **recovery** (4)
 
@@ -276,8 +278,8 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 2103 | 1807 | 3.39% |
-| flattery | 250 | 248 | 0.46% |
-| self_audit | 156 | 139 | 0.26% |
-| acknowledgment | 151 | 151 | 0.28% |
+| concession | 2166 | 1860 | 3.40% |
+| flattery | 250 | 248 | 0.45% |
+| acknowledgment | 158 | 158 | 0.29% |
+| self_audit | 156 | 139 | 0.25% |
 | status | 4 | 4 | 0.01% |
