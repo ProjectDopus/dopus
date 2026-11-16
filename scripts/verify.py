@@ -297,6 +297,14 @@ def main():
              "ratio %.2f" % (lead[0]["rate"] / lead[1]["rate"])),
             ("the rest of the field is unresolved (CIs overlap)",
              others_overlap, ""),
+            ("the top model leads every same-month test with a clear interval",
+             len(pay["headtohead_months"]) >= 2 and all(
+                 h["rows"][0][0] == lead[0]["model"]
+                 and h["rows"][0][3] > max(r[4] for r in h["rows"][1:])
+                 for h in pay["headtohead_months"]),
+             "months tested: %s" % ", ".join(
+                 "%s top=%s" % (h["month"], h["rows"][0][0])
+                 for h in pay["headtohead_months"])),
             # (the monthly-trend lede is fully derived -- peak month, the
             # rising/falling verb, and the young-month note all come from the
             # payload in JS, so no prose is pinned to a month any more)

@@ -27,7 +27,7 @@ WHERE = ("m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 "
          "AND m.is_visible_only=0 AND f.project != '%s'" % P.PROJECT_SLUG)
 
 # Models with fewer than this many messages can't carry a rate worth printing.
-MIN_MODEL_N = 500
+MIN_MODEL_N = 1000
 
 
 def pct(n, d):

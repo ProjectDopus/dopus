@@ -191,9 +191,21 @@ def build():
         for m, v in months.items():
             if v["messages"] >= 500:
                 by_month[m].append([short(model), v["rate"], v["messages"]])
-    month = max(by_month, key=lambda m: (len(by_month[m]), m))
-    out["headtohead"] = dict(month=month,
-                             rows=sorted(by_month[month], key=lambda r: -r[1]))
+    # Every month where two or more ranked models ran at volume, oldest first.
+    # One month alone was a single draw; the claim is that the order holds in
+    # each of them (verify.py watches that sentence).
+    out["headtohead_months"] = []
+    for month in sorted(by_month):
+        if len(by_month[month]) < 2:
+            continue
+        rows = []
+        for model, months in mm.items():
+            v = months.get(month)
+            if v and v["messages"] >= 500:
+                lo, hi = wilson(v["concession_msgs"], v["messages"])
+                rows.append([short(model), v["rate"], v["messages"], lo, hi])
+        out["headtohead_months"].append(
+            dict(month=month, rows=sorted(rows, key=lambda r: -r[1])))
     top_model = a["leaderboard"][0]["model"]
     out["top_model_monthly"] = dict(
         model=short(top_model),
