@@ -1,8 +1,8 @@
 {
  "per_machine": {
   "2b719f5e": {
-   "assistant": 406,
-   "user": 96
+   "assistant": 474,
+   "user": 105
   },
   "315ca601": {
    "assistant": 16,
@@ -13,16 +13,16 @@
    "user": 25
   },
   "4b0743e2": {
-   "assistant": 31874,
-   "user": 6505
+   "assistant": 32066,
+   "user": 6572
   },
   "4c542d15": {
    "assistant": 133,
    "user": 62
   },
   "4f0a8fe4": {
-   "assistant": 13660,
-   "user": 2243
+   "assistant": 13969,
+   "user": 2299
   },
   "5c1dd88a": {
    "assistant": 15,
@@ -33,8 +33,8 @@
    "user": 21
   },
   "7224693b": {
-   "assistant": 1518,
-   "user": 572
+   "assistant": 1944,
+   "user": 655
   },
   "8f069b6c": {
    "assistant": 1045,
@@ -61,13 +61,13 @@
    "user": 354
   },
   "d6fe6c1b": {
-   "assistant": 3502,
-   "user": 639
+   "assistant": 3591,
+   "user": 663
   }
  },
  "totals": {
-  "assistant": 54782,
-  "user": 11019
+  "assistant": 55866,
+  "user": 11258
  },
  "where_clause": "m.has_text=1 AND m.is_sidechain=0 AND m.is_compact=0 AND m.is_meta=0 AND m.is_visible_only=0 AND f.project != '<own-project>'"
 }
