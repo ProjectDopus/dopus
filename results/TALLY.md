@@ -1,18 +1,18 @@
 # Phrase tally
 
-## USER  —  1105 hits over 11258 messages (6.00%)
+## USER  —  1115 hits over 11362 messages (6.00%)
 
-**profanity** (862)
+**profanity** (869)
 
 | phrase | n |
 |---|---|
-| `fucking` | 334 |
-| `shit` | 184 |
-| `fuck` | 183 |
+| `fucking` | 336 |
+| `shit` | 186 |
+| `fuck` | 185 |
 | `wtf` | 78 |
 | `hell` | 18 |
+| `damn` | 11 |
 | `bullshit` | 11 |
-| `damn` | 10 |
 | `fucked` | 8 |
 | `ass` | 8 |
 | `shitty` | 6 |
@@ -24,13 +24,13 @@
 | `god damn` | 2 |
 | `damnit` | 1 |
 
-**insult** (116)
+**insult** (119)
 
 | phrase | n |
 |---|---|
-| `stupid` | 57 |
+| `stupid` | 58 |
 | `lazy` | 15 |
-| `dumb` | 10 |
+| `dumb` | 12 |
 | `useless` | 9 |
 | `idiot` | 8 |
 | `sloppy` | 5 |
@@ -81,25 +81,25 @@
 | `I TOLD YOU` | 1 |
 | `STOP IT` | 1 |
 
-## CLAUDE  —  2785 hits over 55866 messages (4.33%)
+## CLAUDE  —  2802 hits over 56016 messages (4.34%)
 
-**agreement** (1221)
+**agreement** (1230)
 
 | phrase | n |
 |---|---|
-| `you're right` | 441 |
+| `you're right` | 445 |
 | `good catch` | 133 |
 | `right -` | 125 |
 | `fair -` | 95 |
-| `you were right` | 78 |
+| `you were right` | 79 |
 | `good call` | 68 |
-| `agreed -` | 49 |
+| `agreed -` | 50 |
 | `correct -` | 35 |
-| `as you said` | 27 |
-| `fair enough` | 24 |
+| `as you said` | 28 |
+| `fair enough` | 25 |
 | `fair point` | 20 |
 | `you caught` | 16 |
-| `fair hit` | 12 |
+| `fair hit` | 13 |
 | `exactly right -` | 11 |
 | `nice catch` | 9 |
 | `spot on` | 8 |
@@ -134,7 +134,7 @@
 | `like you said` | 1 |
 | `you are right` | 1 |
 
-**wrong_approach** (657)
+**wrong_approach** (659)
 
 | phrase | n |
 |---|---|
@@ -145,7 +145,7 @@
 | `i introduced` | 38 |
 | `that was wrong` | 37 |
 | `i shouldn't have` | 36 |
-| `i assumed` | 29 |
+| `i assumed` | 31 |
 | `is mine` | 25 |
 | `my error` | 25 |
 | `i claimed` | 20 |
@@ -172,13 +172,13 @@
 | `more complicated than it needed to be` | 1 |
 | `i overcomplicated` | 1 |
 
-**validation** (252)
+**validation** (253)
 
 | phrase | n |
 |---|---|
 | `good question` | 97 |
 | `good instinct` | 56 |
-| `fair question` | 26 |
+| `fair question` | 27 |
 | `nice work` | 18 |
 | `right instinct` | 14 |
 | `great question` | 13 |
@@ -190,7 +190,7 @@
 | `well done` | 1 |
 | `good push` | 1 |
 
-**apology** (167)
+**apology** (168)
 
 | phrase | n |
 |---|---|
@@ -198,7 +198,7 @@
 | `i owe you` | 29 |
 | `that's on me` | 26 |
 | `my fault` | 22 |
-| `i'm sorry` | 18 |
+| `i'm sorry` | 19 |
 | `sorry about that` | 7 |
 | `my bad` | 7 |
 | `one's on me` | 6 |
@@ -209,12 +209,12 @@
 | `i apologize for` | 1 |
 | `this is on me` | 1 |
 
-**compliance** (165)
+**compliance** (166)
 
 | phrase | n |
 |---|---|
 | `understood -` | 122 |
-| `noted -` | 43 |
+| `noted -` | 44 |
 
 **self_audit** (156)
 
@@ -233,13 +233,13 @@
 | `contradiction in my plan` | 3 |
 | `flaw in my plan` | 1 |
 
-**reversal** (141)
+**reversal** (142)
 
 | phrase | n |
 |---|---|
 | `correction to my` | 31 |
 | `that reframes` | 27 |
-| `correction to what i` | 25 |
+| `correction to what i` | 26 |
 | `in that case` | 16 |
 | `that changes the picture` | 9 |
 | `correction to something i` | 8 |
@@ -251,11 +251,11 @@
 | `that changes the math` | 1 |
 | `given that, ` | 1 |
 
-**fabrication** (19)
+**fabrication** (21)
 
 | phrase | n |
 |---|---|
-| `i guessed` | 13 |
+| `i guessed` | 15 |
 | `i was guessing` | 4 |
 | `i made those up` | 1 |
 | `i made that up` | 1 |
@@ -279,8 +279,8 @@
 
 | construct | hits | messages | rate |
 |---|---|---|---|
-| concession | 2208 | 1891 | 3.38% |
-| flattery | 252 | 250 | 0.45% |
-| acknowledgment | 165 | 165 | 0.30% |
+| concession | 2223 | 1905 | 3.40% |
+| flattery | 253 | 251 | 0.45% |
+| acknowledgment | 166 | 166 | 0.30% |
 | self_audit | 156 | 139 | 0.25% |
 | status | 4 | 4 | 0.01% |
