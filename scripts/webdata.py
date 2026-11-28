@@ -236,7 +236,10 @@ def build():
 
     # Concession vocabulary by model: shares per phrase, plus for each model
     # the phrase whose share most exceeds the pooled share of the other models
-    # (min 10 hits, so a fingerprint is a habit, not a fluke).
+    # (min 10 hits, so a fingerprint is a habit, not a fluke; and at least
+    # 1.25x the others' share, so a phrase the model uses exactly as often as
+    # everyone else is never reported as distinctive -- a low-volume model can
+    # have only one phrase past the hit floor, and it won on a ratio of 1.0).
     pb = a["phrase_by_model"]
     ms = [short(m) for m in pb["models"]]
     phrases = [p for p in pb["phrases"] if p != "other"]
@@ -255,7 +258,7 @@ def build():
             ratio = shares[m][p] / other_share if other_share else float("inf")
             if best is None or ratio > best[1]:
                 best = (p, ratio, shares[m][p], other_share)
-        if best:
+        if best and best[1] >= 1.25:
             fp[m] = dict(phrase=best[0], ratio=best[1], share=best[2], others=best[3])
     out["phrase_by_model"] = dict(
         models=ms, phrases=phrases, shares=shares, counts=counts, totals=totals,

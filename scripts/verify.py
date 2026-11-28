@@ -272,9 +272,14 @@ def main():
         tm = pay["top_model_monthly"]["rows"]
         pc = pay.get("project_control") or []
         or_turn = pay["stats"]["pairs"]["hot_vs_correction_turn"]["odds"]
-        others_overlap = all(
+        # the models below the runner-up, pairwise
+        tail = lead[2:]
+        tail_overlap = all(
             a["ci"][0] <= b["ci"][1] and b["ci"][0] <= a["ci"][1]
-            for i, a in enumerate(lead[1:]) for b in lead[i + 2:])
+            for i, a in enumerate(tail) for b in tail[i + 1:])
+        # same-month tests the top model takes part in
+        own = [h for h in pay["headtohead_months"]
+               if any(r[0] == lead[0]["model"] for r in h["rows"])]
         ag = json.load(open(ap))
         CLAIMS = [
             ("swearing roughly doubles the fold rate",
@@ -292,19 +297,26 @@ def main():
             ("top model clears the field with non-overlapping intervals",
              lead[0]["ci"][0] > max(d["ci"][1] for d in lead[1:]),
              "leaderboard CIs now overlap"),
-            ("top model roughly 1.8x the rest of the field",
-             1.5 <= lead[0]["rate"] / lead[1]["rate"] <= 2.2,
-             "ratio %.2f" % (lead[0]["rate"] / lead[1]["rate"])),
-            ("the rest of the field is unresolved (CIs overlap)",
-             others_overlap, ""),
-            ("the top model leads every same-month test with a clear interval",
-             len(pay["headtohead_months"]) >= 2 and all(
+            # (the lede's "roughly N x the runner-up" is derived on the page from
+            # the two top rates, so no ratio is pinned any more)
+            ("the runner-up's interval clears some of the models below it and not others",
+             any(lead[1]["ci"][0] > d["ci"][1] for d in tail)
+             and any(lead[1]["ci"][0] <= d["ci"][1] for d in tail), ""),
+            ("the models below the runner-up are unresolved (CIs overlap)",
+             len(tail) >= 2 and tail_overlap, ""),
+            ("the top model and the runner-up never share a same-month test",
+             not any({lead[0]["model"], lead[1]["model"]} <= {r[0] for r in h["rows"]}
+                     for h in pay["headtohead_months"]), ""),
+            ("the top model leads every same-month test it is in, with a clear interval",
+             len(own) >= 2 and all(
                  h["rows"][0][0] == lead[0]["model"]
                  and h["rows"][0][3] > max(r[4] for r in h["rows"][1:])
-                 for h in pay["headtohead_months"]),
+                 for h in own),
              "months tested: %s" % ", ".join(
                  "%s top=%s" % (h["month"], h["rows"][0][0])
                  for h in pay["headtohead_months"])),
+            # (a month the top model is absent from gets a derived line on the
+            # page naming that month's leader, so nothing is pinned for it)
             # (the monthly-trend lede is fully derived -- peak month, the
             # rising/falling verb, and the young-month note all come from the
             # payload in JS, so no prose is pinned to a month any more)
